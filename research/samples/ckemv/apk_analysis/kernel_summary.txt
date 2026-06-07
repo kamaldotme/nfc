@@ -1,0 +1,1489 @@
+=== libckemv_android.so — function inventory grouped by crate ===
+
+## core  (361 fns, 84576 bytes)
+  0x000426c4      20b  i=   5  c=  0  s=  0  core::ops::function::FnOnce::call_once
+  0x000426d8     120b  i=  30  c=  3  s=  0  core::ptr::drop_in_place<core::option::Option<alloc::vec::Vec<ckemv_emv_kernel::types::ParsedTlv>>>
+  0x00042750      48b  i=  12  c=  0  s=  0  core::ptr::drop_in_place<core::result::Result<ckemv_core::response::Response,ckemv_core::error::Error>>
+  0x00042780      20b  i=   5  c=  0  s=  0  core::ptr::drop_in_place<core::result::Result<jni::wrapper::jnienv::JNIEnv,jni::wrapper::errors::Error>>
+  0x00042794      24b  i=   6  c=  0  s=  0  core::ptr::drop_in_place<core::result::Result<jni::wrapper::strings::java_str::JavaStr,jni::wrapper::errors::Error>>
+  0x000427ac     108b  i=  27  c=  2  s=  0  core::ptr::drop_in_place<core::option::Option<alloc::boxed::Box<dyn ckemv_emv_kernel::types::EmvKernelStrategy>>>
+  0x00042818      96b  i=  24  c=  1  s=  0  core::ptr::drop_in_place<std::sync::poison::mutex::MutexGuard<core::option::Option<ckemv_emv_kernel::dispatcher::TransactionDispatcher>>>
+  0x00042878      96b  i=  24  c=  1  s=  0  core::ptr::drop_in_place<std::sync::poison::PoisonError<std::sync::poison::mutex::MutexGuard<core::option::Option<ckemv_emv_kernel::dispatcher::TransactionDispatcher>>>>
+  0x000428d8      24b  i=   6  c=  0  s=  0  core::ptr::drop_in_place<alloc::string::String>
+  0x000428f0     180b  i=  45  c=  4  s=  0  core::ptr::drop_in_place<ckemv_core::error::Error>
+  0x000429a4     224b  i=  56  c=  6  s=  0  core::ptr::drop_in_place<serde_json::error::Error>
+  0x00042a84     320b  i=  80  c=  6  s=  0  core::ptr::drop_in_place<serde_json::value::Value>
+  0x00042bc4     336b  i=  84  c=  6  s=  0  core::ptr::drop_in_place<jni::wrapper::errors::Error>
+  0x00042d14      64b  i=  16  c=  1  s=  0  core::ptr::drop_in_place<jni::wrapper::jnienv::NativeMethod>
+  0x00042d54     900b  i= 225  c= 27  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::results::EmvResults>
+  0x000430d8     108b  i=  27  c=  2  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::types::KernelAction>
+  0x00043144     136b  i=  34  c=  4  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::types::TransactionContext>
+  0x000431cc     124b  i=  31  c=  1  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<alloc::string::String>>
+  0x00043248     392b  i=  98  c= 13  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::dispatcher::TransactionDispatcher>
+  0x000433d0     144b  i=  36  c=  2  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<jni::wrapper::jnienv::NativeMethod>>
+  0x00043460     120b  i=  30  c=  1  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<$LP$u8,u8,alloc::string::String$RP$>>
+  0x0004bb7c     320b  i=  80  c=  6  s=  0  core::ptr::drop_in_place<serde_json::value::Value>
+  0x0004bcbc      40b  i=  10  c=  1  s=  0  core::ptr::drop_in_place<$LP$alloc::string::String,serde_json::value::Value$RP$>
+  0x0004ce60      16b  i=   4  c=  0  s=  0  core::fmt::Write::write_fmt
+  0x0004ce70     240b  i=  60  c=  1  s=  0  core::ptr::drop_in_place<std::collections::hash::map::HashMap<regex_automata::util::determinize::state::State,regex_automata::hybrid::id::LazyStateID>>
+  0x0004cf60      24b  i=   6  c=  0  s=  0  core::ptr::drop_in_place<alloc::string::String>
+  0x0004cf78     320b  i=  80  c=  6  s=  0  core::ptr::drop_in_place<serde_json::value::Value>
+  0x0004d0b8     340b  i=  85  c= 10  s=  0  core::ptr::drop_in_place<jni::wrapper::signature::JavaType>
+  0x0004d20c     252b  i=  63  c=  8  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::types::ParsedTlv>
+  0x0004d308     812b  i= 203  c= 22  s=  0  core::ptr::drop_in_place<regex_automata::hybrid::dfa::Cache>
+  0x0004d634      80b  i=  20  c=  4  s=  0  core::ptr::drop_in_place<regex_automata::meta::wrappers::HybridCache>
+  0x0004d684     200b  i=  50  c=  6  s=  0  core::ptr::drop_in_place<regex_automata::meta::wrappers::PikeVMCache>
+  0x0004d74c     116b  i=  29  c=  3  s=  0  core::ptr::drop_in_place<regex_automata::util::sparse_set::SparseSets>
+  0x0004d7c0      84b  i=  21  c=  1  s=  0  core::ptr::drop_in_place<regex_automata::meta::wrappers::BoundedBacktrackerCache>
+  0x0004d814     436b  i= 109  c= 22  s=  0  core::ptr::drop_in_place<alloc::boxed::Box<regex_automata::meta::regex::Cache>>
+  0x0004f70c      96b  i=  24  c=  3  s=  0  core::ptr::drop_in_place<core::result::Result<serde_json::value::Value,serde_json::error::Error>>
+  0x0004f76c     320b  i=  80  c=  6  s=  0  core::ptr::drop_in_place<serde_json::value::Value>
+  0x0004f8ac     200b  i=  50  c=  4  s=  0  core::ptr::drop_in_place<serde_json::error::ErrorCode>
+  0x0004f974     184b  i=  46  c=  5  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<serde_json::value::Value>>
+  0x0004fe30     192b  i=  48  c=  5  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<jni::wrapper::signature::JavaType>>
+  0x0004fef0     292b  i=  73  c=  2  s=  1  core::hash::BuildHasher::hash_one
+  0x00050014     284b  i=  71  c=  2  s=  1  core::hash::BuildHasher::hash_one
+  0x000526b4     148b  i=  37  c=  7  s=  0  core::ptr::drop_in_place<alloc::collections::btree::map::IntoIter<alloc::string::String,serde_json::value::Value>>
+  0x00052748     128b  i=  32  c=  4  s=  0  core::ptr::drop_in_place<<alloc::collections::btree::map::IntoIter<K,V,A> as core::ops::drop::Drop>::drop::DropGuard<alloc::string::String,serde_json::value::Value,alloc::alloc::Global>>
+  0x000527c8     432b  i= 108  c= 12  s=  0  core::ptr::drop_in_place<serde_json::value::Value>
+  0x00052978     192b  i=  48  c=  5  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<jni::wrapper::signature::JavaType>>
+  0x00053a80      24b  i=   6  c=  0  s=  0  core::fmt::num::_<impl core::fmt::Debug for usize>::fmt
+  0x00053a98     180b  i=  45  c=  3  s=  0  core::ptr::drop_in_place<serde_json::value::ser::SerializeMap>
+  0x00053d70      24b  i=   6  c=  0  s=  0  core::fmt::num::_<impl core::fmt::Debug for usize>::fmt
+  0x00053d88      20b  i=   5  c=  1  s=  0  core::ops::function::FnOnce::call_once{{vtable.shim}}
+  0x00053d9c     416b  i= 104  c= 18  s=  0  core::ptr::drop_in_place<core::cell::UnsafeCell<core::option::Option<regex_automata::meta::regex::Cache>>>
+  0x00053f3c     108b  i=  27  c=  2  s=  0  core::ptr::drop_in_place<core::option::Option<alloc::boxed::Box<dyn ckemv_emv_kernel::types::EmvKernelStrategy>>>
+  0x00053fa8      96b  i=  24  c=  3  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<regex_automata::util::pool::inner::CacheLine<std::sync::poison::mutex::Mutex<alloc::vec::Vec<alloc::boxed::Box<regex_automata::meta::regex::Cache>>>>>>
+  0x00054008     248b  i=  62  c= 13  s=  0  core::ptr::drop_in_place<regex_automata::util::pool::Pool<regex_automata::meta::regex::Cache,alloc::boxed::Box<dyn core::ops::function::Fn<$LP$$RP$>$u2b$Output $u3d$ regex_automata::meta::regex::Cache$u2b$core::marker::Sync$u2b$core::marker::Send$u2b$core::panic::unwind_safe::RefUnwindSafe$u2b$core::panic::unwind_safe::UnwindSafe>>>
+  0x00054100     328b  i=  82  c= 10  s=  0  core::ptr::drop_in_place<android_logger::Config>
+  0x00054248      24b  i=   6  c=  0  s=  0  core::ptr::drop_in_place<alloc::ffi::c_str::NulError>
+  0x00054260     816b  i= 204  c= 22  s=  0  core::ptr::drop_in_place<regex_automata::hybrid::dfa::Cache>
+  0x00054590      80b  i=  20  c=  4  s=  0  core::ptr::drop_in_place<regex_automata::meta::wrappers::HybridCache>
+  0x000545e0     200b  i=  50  c=  6  s=  0  core::ptr::drop_in_place<regex_automata::meta::wrappers::PikeVMCache>
+  0x000546a8     124b  i=  31  c=  1  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<alloc::string::String>>
+  0x00054724     116b  i=  29  c=  3  s=  0  core::ptr::drop_in_place<regex_automata::util::sparse_set::SparseSets>
+  0x00054798     192b  i=  48  c=  7  s=  0  core::ptr::drop_in_place<core::option::Option<env_filter::op::FilterOp>>
+  0x00054858      84b  i=  21  c=  1  s=  0  core::ptr::drop_in_place<regex_automata::meta::wrappers::BoundedBacktrackerCache>
+  0x00054d7c     240b  i=  60  c=  4  s=  0  core::fmt::Write::write_char
+  0x00054e6c      16b  i=   4  c=  0  s=  0  core::fmt::Write::write_fmt
+  0x00054e7c     400b  i= 100  c= 18  s=  0  core::ptr::drop_in_place<core::cell::UnsafeCell<core::option::Option<regex_automata::meta::regex::Cache>>>
+  0x0005500c     184b  i=  46  c=  5  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<regex_automata::util::pool::inner::CacheLine<std::sync::poison::mutex::Mutex<alloc::vec::Vec<alloc::boxed::Box<regex_automata::meta::regex::Cache>>>>>>
+  0x000550c4     108b  i=  27  c=  2  s=  0  core::ptr::drop_in_place<core::option::Option<alloc::boxed::Box<dyn core::ops::function::Fn<$LP$&mut dyn core::fmt::Write,&log::Record$RP$>$u2b$Output $u3d$ core::result::Result<$LP$$RP$,core::fmt::Error>$u2b$core::marker::Sync$u2b$core::marker::Send>>>
+  0x00055130     308b  i=  77  c= 15  s=  0  core::ptr::drop_in_place<regex_automata::util::pool::Pool<regex_automata::meta::regex::Cache,alloc::boxed::Box<dyn core::ops::function::Fn<$LP$$RP$>$u2b$Output $u3d$ regex_automata::meta::regex::Cache$u2b$core::marker::Sync$u2b$core::marker::Send$u2b$core::panic::unwind_safe::RefUnwindSafe$u2b$core::panic::unwind_safe::UnwindSafe>>>
+  0x00055264     328b  i=  82  c= 10  s=  0  core::ptr::drop_in_place<android_logger::Config>
+  0x000553ac      24b  i=   6  c=  0  s=  0  core::ptr::drop_in_place<android_logger::AndroidLogger>
+  0x000553c4     812b  i= 203  c= 22  s=  0  core::ptr::drop_in_place<regex_automata::hybrid::dfa::Cache>
+  0x000556f0      80b  i=  20  c=  4  s=  0  core::ptr::drop_in_place<regex_automata::meta::wrappers::HybridCache>
+  0x00055740     200b  i=  50  c=  6  s=  0  core::ptr::drop_in_place<regex_automata::meta::wrappers::PikeVMCache>
+  0x00055808     116b  i=  29  c=  3  s=  0  core::ptr::drop_in_place<regex_automata::util::sparse_set::SparseSets>
+  0x0005587c     192b  i=  48  c=  7  s=  0  core::ptr::drop_in_place<core::option::Option<env_filter::op::FilterOp>>
+  0x0005593c      84b  i=  21  c=  1  s=  0  core::ptr::drop_in_place<regex_automata::meta::wrappers::BoundedBacktrackerCache>
+  0x000566d8      64b  i=  16  c=  1  s=  0  core::ops::function::FnOnce::call_once{{vtable.shim}}
+  0x00056718     172b  i=  43  c=  2  s=  0  core::ops::function::FnOnce::call_once{{vtable.shim}}
+  0x000567c4     132b  i=  33  c=  2  s=  0  core::ops::function::FnOnce::call_once{{vtable.shim}}
+  0x00056848     236b  i=  59  c=  1  s=  0  core::ptr::drop_in_place<std::collections::hash::map::HashMap<regex_automata::util::determinize::state::State,regex_automata::hybrid::id::LazyStateID>>
+  0x00056934     204b  i=  51  c=  7  s=  0  core::ptr::drop_in_place<regex_automata::util::pool::inner::CacheLine<std::sync::poison::mutex::Mutex<alloc::vec::Vec<alloc::boxed::Box<regex_automata::meta::regex::Cache>>>>>
+  0x00056a00     184b  i=  46  c=  5  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<regex_automata::util::pool::inner::CacheLine<std::sync::poison::mutex::Mutex<alloc::vec::Vec<alloc::boxed::Box<regex_automata::meta::regex::Cache>>>>>>
+  0x00056ab8     108b  i=  27  c=  2  s=  0  core::ptr::drop_in_place<core::option::Option<alloc::boxed::Box<dyn core::ops::function::Fn<$LP$&mut dyn core::fmt::Write,&log::Record$RP$>$u2b$Output $u3d$ core::result::Result<$LP$$RP$,core::fmt::Error>$u2b$core::marker::Sync$u2b$core::marker::Send>>>
+  0x00056b24     468b  i= 117  c= 15  s=  0  core::ptr::drop_in_place<std::sync::once_lock::OnceLock<android_logger::AndroidLogger>::initialize<std::sync::once_lock::OnceLock<android_logger::AndroidLogger>::get_or_init<android_logger::init_once::{{closure}}>::{{closure}},$u21$>::{{closure}}>
+  0x00056cf8     224b  i=  56  c= 11  s=  0  core::ptr::drop_in_place<regex_automata::util::pool::Pool<regex_automata::meta::regex::Cache,alloc::boxed::Box<dyn core::ops::function::Fn<$LP$$RP$>$u2b$Output $u3d$ regex_automata::meta::regex::Cache$u2b$core::marker::Sync$u2b$core::marker::Send$u2b$core::panic::unwind_safe::RefUnwindSafe$u2b$core::panic::unwind_safe::UnwindSafe>>>
+  0x00056dd8     808b  i= 202  c= 22  s=  0  core::ptr::drop_in_place<regex_automata::hybrid::dfa::Cache>
+  0x00057100     404b  i= 101  c= 18  s=  0  core::ptr::drop_in_place<regex_automata::meta::regex::Cache>
+  0x00057294      80b  i=  20  c=  4  s=  0  core::ptr::drop_in_place<regex_automata::meta::wrappers::HybridCache>
+  0x000572e4     200b  i=  50  c=  6  s=  0  core::ptr::drop_in_place<regex_automata::meta::wrappers::PikeVMCache>
+  0x000573ac     116b  i=  29  c=  3  s=  0  core::ptr::drop_in_place<regex_automata::util::sparse_set::SparseSets>
+  0x00057420      84b  i=  21  c=  1  s=  0  core::ptr::drop_in_place<regex_automata::meta::wrappers::BoundedBacktrackerCache>
+  0x00057474      68b  i=  17  c=  3  s=  0  core::ptr::drop_in_place<alloc::boxed::Box<regex_automata::meta::regex::Cache>>
+  0x00058254      96b  i=  24  c=  1  s=  0  core::ptr::drop_in_place<std::sync::poison::mutex::MutexGuard<alloc::vec::Vec<alloc::boxed::Box<regex_automata::meta::regex::Cache>>>>
+  0x000582b4     212b  i=  53  c=  4  s=  0  core::ptr::drop_in_place<regex_automata::util::pool::PoolGuard<regex_automata::meta::regex::Cache,alloc::boxed::Box<dyn core::ops::function::Fn<$LP$$RP$>$u2b$Output $u3d$ regex_automata::meta::regex::Cache$u2b$core::marker::Sync$u2b$core::marker::Send$u2b$core::panic::unwind_safe::RefUnwindSafe$u2b$core::panic::unwind_safe::UnwindSafe>>>
+  0x00058388     808b  i= 202  c= 22  s=  0  core::ptr::drop_in_place<regex_automata::hybrid::dfa::Cache>
+  0x000586b0     388b  i=  97  c= 18  s=  0  core::ptr::drop_in_place<regex_automata::meta::regex::Cache>
+  0x00058834      80b  i=  20  c=  4  s=  0  core::ptr::drop_in_place<regex_automata::meta::wrappers::HybridCache>
+  0x00058884     200b  i=  50  c=  6  s=  0  core::ptr::drop_in_place<regex_automata::meta::wrappers::PikeVMCache>
+  0x0005894c     116b  i=  29  c=  3  s=  0  core::ptr::drop_in_place<regex_automata::util::sparse_set::SparseSets>
+  0x000589c0      84b  i=  21  c=  1  s=  0  core::ptr::drop_in_place<regex_automata::meta::wrappers::BoundedBacktrackerCache>
+  0x00058a14      68b  i=  17  c=  3  s=  0  core::ptr::drop_in_place<alloc::boxed::Box<regex_automata::meta::regex::Cache>>
+  0x00059138      80b  i=  20  c=  0  s=  0  core::ptr::drop_in_place<alloc::sync::Weak<dyn regex_automata::meta::strategy::Strategy,&alloc::alloc::Global>>
+  0x00059188     236b  i=  59  c=  2  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<alloc::vec::Vec<core::option::Option<alloc::sync::Arc<str>>>>>
+  0x00059274     196b  i=  49  c=  6  s=  0  core::ptr::drop_in_place<regex_automata::meta::regex::RegexInfoI>
+  0x00059338     104b  i=  26  c=  1  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<regex_syntax::hir::Properties>>
+  0x00059938     224b  i=  56  c=  4  s=  0  core::fmt::Write::write_char
+  0x00059a18      16b  i=   4  c=  0  s=  0  core::fmt::Write::write_fmt
+  0x00059a28     156b  i=  39  c=  4  s=  0  core::ptr::drop_in_place<std::io::default_write_fmt::Adapter<std::sys::stdio::unix::Stderr>>
+  0x00059e74     156b  i=  39  c=  4  s=  0  core::ptr::drop_in_place<std::io::error::Error>
+  0x00059f10     156b  i=  39  c=  4  s=  0  core::ptr::drop_in_place<core::result::Result<$LP$$RP$,std::io::error::Error>>
+  0x00059fac      56b  i=  14  c=  3  s=  0  core::ptr::drop_in_place<std::sys::thread_local::abort_on_dtor_unwind::DtorUnwindGuard>
+  0x0005a13c     224b  i=  56  c=  6  s=  0  core::ptr::drop_in_place<serde_json::error::Error>
+  0x0005a658      24b  i=   6  c=  0  s=  0  core::ptr::drop_in_place<alloc::string::String>
+  0x0005a670     200b  i=  50  c=  4  s=  0  core::ptr::drop_in_place<serde_json::error::ErrorImpl>
+  0x0005ada4     200b  i=  50  c=  4  s=  0  core::ptr::drop_in_place<serde_json::error::ErrorCode>
+  0x0005c4c0     200b  i=  50  c=  4  s=  0  core::ptr::drop_in_place<serde_json::error::ErrorCode>
+  0x0005cee0      16b  i=   4  c=  0  s=  0  core::fmt::Write::write_fmt
+  0x0005cef0      24b  i=   6  c=  0  s=  0  core::ptr::drop_in_place<alloc::string::String>
+  0x0005eb14      60b  i=  15  c=  1  s=  0  core::ops::function::FnOnce::call_once
+  0x0005eb50     260b  i=  65  c=  2  s=  0  core::ptr::drop_in_place<hashbrown::raw::RawTable<$LP$alloc::string::String,alloc::string::String$RP$>>
+  0x0005ec54     208b  i=  52  c=  0  s=  0  core::ptr::drop_in_place<hashbrown::scopeguard::ScopeGuard<&mut hashbrown::raw::RawTableInner,hashbrown::raw::RawTableInner::rehash_in_place::{{closure}}>>
+  0x0005ed24      60b  i=  15  c=  0  s=  0  core::ptr::drop_in_place<hashbrown::scopeguard::ScopeGuard<hashbrown::raw::RawTableInner,hashbrown::raw::RawTableInner::prepare_resize<alloc::alloc::Global>::{{closure}}>>
+  0x0005ed60     104b  i=  26  c=  2  s=  0  core::ptr::drop_in_place<hashbrown::scopeguard::ScopeGuard<$LP$usize,&mut hashbrown::raw::RawTable<$LP$alloc::string::String,alloc::string::String$RP$>$RP$,hashbrown::raw::RawTable<$LP$alloc::string::String,alloc::string::String$RP$>::clone_from_impl::{{closure}}>>
+  0x0005f80c     284b  i=  71  c=  2  s=  1  core::hash::BuildHasher::hash_one
+  0x0005f928     292b  i=  73  c=  2  s=  1  core::hash::BuildHasher::hash_one
+  0x00060fdc      16b  i=   4  c=  0  s=  0  core::fmt::Write::write_fmt
+  0x00060fec      24b  i=   6  c=  0  s=  0  core::ptr::drop_in_place<alloc::string::String>
+  0x00061004     236b  i=  59  c=  5  s=  0  core::ptr::drop_in_place<iso7816_tlv::ber::tlv::Tlv>
+  0x00061760      80b  i=  20  c=  0  s=  0  core::ptr::drop_in_place<alloc::sync::Weak<dyn ckemv_emv_kernel::crypto::CaKeyProvider,&alloc::alloc::Global>>
+  0x00061858     120b  i=  30  c=  3  s=  0  core::ptr::drop_in_place<core::option::Option<alloc::vec::Vec<ckemv_emv_kernel::types::ParsedTlv>>>
+  0x000618d0     108b  i=  27  c=  2  s=  0  core::ptr::drop_in_place<core::option::Option<alloc::boxed::Box<dyn ckemv_emv_kernel::types::EmvKernelStrategy>>>
+  0x0006193c      24b  i=   6  c=  0  s=  0  core::ptr::drop_in_place<alloc::string::String>
+  0x00061954     236b  i=  59  c=  5  s=  0  core::ptr::drop_in_place<iso7816_tlv::ber::tlv::Tlv>
+  0x00061a40     144b  i=  36  c=  4  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::types::StepResult>
+  0x00061ad0     900b  i= 225  c= 27  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::results::EmvResults>
+  0x00061e54      44b  i=  11  c=  0  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::kernels::visa::VisaState>
+  0x00061e80     264b  i=  66  c= 10  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::kernels::visa::VisaKernel>
+  0x00061f88     124b  i=  31  c=  1  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<alloc::string::String>>
+  0x00062004      44b  i=  11  c=  0  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::kernels::mchip::MChipState>
+  0x00062030     192b  i=  48  c=  5  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<iso7816_tlv::ber::tlv::Tlv>>
+  0x000620f0     264b  i=  66  c= 10  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::kernels::mchip::MastercardKernel>
+  0x00063a6c     168b  i=  42  c=  6  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::types::ParsedTlv>
+  0x00063b14     104b  i=  26  c=  3  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<ckemv_emv_kernel::types::ParsedTlv>>
+  0x0006579c      24b  i=   6  c=  0  s=  0  core::fmt::num::_<impl core::fmt::Debug for u8>::fmt
+  0x000657b4     120b  i=  30  c=  3  s=  0  core::ptr::drop_in_place<core::option::Option<alloc::vec::Vec<ckemv_emv_kernel::types::ParsedTlv>>>
+  0x0006582c      44b  i=  11  c=  0  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::kernels::visa::VisaState>
+  0x00065858     192b  i=  48  c=  5  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<iso7816_tlv::ber::tlv::Tlv>>
+  0x00067c0c     124b  i=  31  c=  1  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<ckemv_emv_kernel::dol::DolEntry>>
+  0x000694cc      60b  i=  15  c=  1  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::crypto::PublicKey>
+  0x0006bd78      24b  i=   6  c=  0  s=  0  core::fmt::num::_<impl core::fmt::Debug for u8>::fmt
+  0x0006bd90     120b  i=  30  c=  3  s=  0  core::ptr::drop_in_place<core::option::Option<alloc::vec::Vec<ckemv_emv_kernel::types::ParsedTlv>>>
+  0x0006be08      44b  i=  11  c=  0  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::kernels::mchip::MChipState>
+  0x0006be34     192b  i=  48  c=  5  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<iso7816_tlv::ber::tlv::Tlv>>
+  0x0006e6e8     236b  i=  59  c=  5  s=  0  core::ptr::drop_in_place<iso7816_tlv::ber::tlv::Tlv>
+  0x0006e7d4     252b  i=  63  c=  8  s=  0  core::ptr::drop_in_place<ckemv_emv_kernel::types::ParsedTlv>
+  0x0006e8d0     120b  i=  30  c=  1  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<$LP$u8,u8,alloc::string::String$RP$>>
+  0x00076c44     128b  i=  32  c=  1  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<num_bigint::biguint::BigUint>>
+  0x0007a26c     236b  i=  59  c=  5  s=  0  core::ptr::drop_in_place<iso7816_tlv::ber::tlv::Tlv>
+  0x0007a79c     236b  i=  59  c=  5  s=  0  core::ptr::drop_in_place<iso7816_tlv::ber::value::Value>
+  0x0007a888     192b  i=  48  c=  5  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<iso7816_tlv::ber::tlv::Tlv>>
+  0x0007dd78     340b  i=  85  c= 10  s=  0  core::ptr::drop_in_place<jni::wrapper::signature::JavaType>
+  0x0007decc     336b  i=  84  c=  6  s=  0  core::ptr::drop_in_place<jni::wrapper::errors::Error>
+  0x0007f4d0      92b  i=  23  c=  2  s=  1  core::ptr::drop_in_place<bytes::bytes::Shared>
+  0x00081100      44b  i=  11  c=  0  s=  0  core::fmt::num::_<impl core::fmt::Debug for i32>::fmt
+  0x0008112c      44b  i=  11  c=  0  s=  0  core::fmt::num::_<impl core::fmt::Debug for usize>::fmt
+  0x00081158     336b  i=  84  c=  3  s=  0  core::fmt::Write::write_char
+  0x000812a8     404b  i= 101  c=  5  s=  0  core::fmt::Write::write_char
+  0x0008143c     288b  i=  72  c=  2  s=  0  core::fmt::Write::write_char
+  0x0008155c      28b  i=   7  c=  0  s=  0  core::fmt::Write::write_fmt
+  0x00081578      28b  i=   7  c=  0  s=  0  core::fmt::Write::write_fmt
+  0x00081594      28b  i=   7  c=  0  s=  0  core::fmt::Write::write_fmt
+  0x000815b0      28b  i=   7  c=  0  s=  0  core::fmt::Write::write_fmt
+  0x000815cc     272b  i=  68  c=  0  s=  0  core::num::_<impl u64>::from_ascii_radix
+  0x000816dc     452b  i= 113  c=  0  s=  0  core::num::_<impl usize>::from_ascii_radix
+  0x000818a0     168b  i=  42  c=  2  s=  0  core::ops::function::Fn::call
+  0x00081948      20b  i=   5  c=  0  s=  0  core::ops::function::Fn::call
+  0x0008195c      24b  i=   6  c=  0  s=  0  core::ops::function::FnOnce::call_once{{vtable.shim}}
+  0x00081974     184b  i=  46  c=  4  s=  0  core::ops::function::FnOnce::call_once{{vtable.shim}}
+  0x00081a2c      24b  i=   6  c=  0  s=  0  core::ops::function::FnOnce::call_once{{vtable.shim}}
+  0x00081a44      16b  i=   4  c=  0  s=  0  core::ops::function::FnOnce::call_once{{vtable.shim}}
+  0x00081a54      16b  i=   4  c=  0  s=  0  core::ops::function::FnOnce::call_once{{vtable.shim}}
+  0x00081a64     204b  i=  51  c=  4  s=  1  core::ops::function::FnOnce::call_once{{vtable.shim}}
+  0x00081b30     380b  i=  95  c= 11  s=  0  core::ops::function::FnOnce::call_once
+  0x00081cac      32b  i=   8  c=  0  s=  0  core::ptr::drop_in_place<std::io::default_write_fmt::Adapter<std::io::cursor::Cursor<&mut $u5b$u8$u5d$>>>
+  0x00081ccc     116b  i=  29  c=  6  s=  0  core::ptr::drop_in_place<addr2line::Context<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>>
+  0x00081d40     148b  i=  37  c=  7  s=  0  core::ptr::drop_in_place<addr2line::unit::DwoUnit<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>>
+  0x00081dd4     232b  i=  58  c= 10  s=  0  core::ptr::drop_in_place<addr2line::unit::ResUnit<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>>
+  0x00081ebc      88b  i=  22  c=  3  s=  0  core::ptr::drop_in_place<addr2line::unit::SupUnit<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>>
+  0x00081f14     208b  i=  52  c=  6  s=  0  core::ptr::drop_in_place<addr2line::unit::ResUnits<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>>
+  0x00081fe4     264b  i=  66  c=  7  s=  0  core::ptr::drop_in_place<addr2line::unit::SupUnits<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>>
+  0x000820ec      92b  i=  23  c=  4  s=  0  core::ptr::drop_in_place<gimli::read::dwarf::Dwarf<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>>
+  0x00082148     120b  i=  30  c=  2  s=  0  core::ptr::drop_in_place<alloc::boxed::Box<dyn core::ops::function::FnOnce<$LP$$RP$>$u2b$Output $u3d$ $LP$$RP$>>
+  0x000821c0      88b  i=  22  c=  3  s=  0  core::ptr::drop_in_place<gimli::read::dwarf::Unit<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>,usize>>
+  0x00082218     100b  i=  25  c=  1  s=  0  core::ptr::drop_in_place<addr2line::function::LazyFunction<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>>
+  0x0008227c     196b  i=  49  c=  5  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<addr2line::unit::ResUnit<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>>>
+  0x00082340     280b  i=  70  c=  7  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<addr2line::unit::SupUnit<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>>>
+  0x00082458      92b  i=  23  c=  4  s=  0  core::ptr::drop_in_place<alloc::sync::ArcInner<gimli::read::dwarf::Dwarf<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>>>
+  0x000824b4     172b  i=  43  c=  2  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<addr2line::function::LazyFunction<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>>>
+  0x00082560     132b  i=  33  c=  6  s=  0  core::ptr::drop_in_place<core::result::Result<addr2line::Context<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>,gimli::read::Error>>
+  0x000825e4     156b  i=  39  c=  2  s=  0  core::ptr::drop_in_place<alloc::boxed::Box<$u5b$addr2line::function::LazyFunction<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>$u5d$>>
+  0x00082680     152b  i=  38  c=  3  s=  0  core::ptr::drop_in_place<core::option::Option<gimli::read::line::IncompleteLineProgram<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>,usize>>>
+  0x00082718      68b  i=  17  c=  0  s=  0  core::ptr::drop_in_place<core::result::Result<addr2line::frame::FrameIter<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>,gimli::read::Error>>
+  0x0008275c     216b  i=  54  c=  3  s=  0  core::ptr::drop_in_place<core::result::Result<addr2line::function::Functions<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>,gimli::read::Error>>
+  0x00082834      64b  i=  16  c=  0  s=  0  core::ptr::drop_in_place<core::result::Result<core::option::Option<alloc::sync::Arc<std::sync::poison::mutex::Mutex<alloc::vec::Vec<u8>>>>,std::thread::local::AccessError>>
+  0x00082874     224b  i=  56  c= 10  s=  0  core::ptr::drop_in_place<core::result::Result<core::option::Option<alloc::boxed::Box<addr2line::unit::DwoUnit<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>>>>,gimli::read::Error>>
+  0x00082954      40b  i=  10  c=  0  s=  0  core::ptr::drop_in_place<alloc::boxed::convert::<impl core::convert::From<alloc::string::String> for alloc::boxed::Box<dyn core::error::Error$u2b$core::marker::Sync$u2b$core::marker::Send>>::from::StringError>
+  0x0008297c     140b  i=  35  c=  3  s=  0  core::ptr::drop_in_place<gimli::read::line::LineRows<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>,gimli::read::line::IncompleteLineProgram<gimli::read::endian_slice::EndianSlice<gimli::endianity::LittleEndian>,usize>,usize>>
+  0x00082a08     112b  i=  28  c=  2  s=  0  core::ptr::drop_in_place<<alloc::collections::btree::map::IntoIter<K,V,A> as core::ops::drop::Drop>::drop::DropGuard<u64,core::result::Result<alloc::sync::Arc<gimli::read::abbrev::Abbreviations>,gimli::read::Error>,alloc::alloc::Global>>
+  0x00082a78      40b  i=  10  c=  0  s=  0  core::ptr::drop_in_place<alloc::string::String>
+  0x00082aa0     172b  i=  43  c=  4  s=  0  core::ptr::drop_in_place<std::io::error::Error>
+  0x00082b4c      40b  i=  10  c=  0  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<u8>>
+  0x00082b74     128b  i=  32  c=  1  s=  0  core::ptr::drop_in_place<std::io::stdio::StdinLock>
+  0x00082bf4      40b  i=  10  c=  0  s=  0  core::ptr::drop_in_place<std::ffi::os_str::OsString>
+  0x00082c1c      40b  i=  10  c=  0  s=  0  core::ptr::drop_in_place<alloc::ffi::c_str::NulError>
+  0x00082c44     280b  i=  70  c=  5  s=  0  core::ptr::drop_in_place<gimli::read::abbrev::Abbreviations>
+  0x00082d5c     184b  i=  46  c=  5  s=  0  core::ptr::drop_in_place<gimli::read::abbrev::AbbreviationsCache>
+  0x00082e14     128b  i=  32  c=  1  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<alloc::string::String>>
+  0x00082e94      80b  i=  20  c=  1  s=  0  core::ptr::drop_in_place<std::backtrace_rs::symbolize::gimli::Library>
+  0x00082ee4      64b  i=  16  c=  1  s=  0  core::ptr::drop_in_place<std::backtrace_rs::backtrace::libunwind::Bomb>
+  0x00082f24      48b  i=  12  c=  0  s=  0  core::ptr::drop_in_place<std::backtrace_rs::symbolize::gimli::elf::Object>
+  0x00082f54     184b  i=  46  c=  3  s=  0  core::ptr::drop_in_place<std::backtrace_rs::symbolize::gimli::stash::Stash>
+  0x0008300c     132b  i=  33  c=  1  s=  0  core::ptr::drop_in_place<alloc::vec::Vec<addr2line::line::LineSequence>>
+  0x00083090     112b  i=  28  c=  1  s=  0  core::ptr::drop_in_place<alloc::boxed::Box<$u5b$alloc::string::String$u5d$>>
+  0x00083100      52b  i=  13  c=  0  s=  0  core::ptr::drop_in_place<std::panicking::begin_panic_handler::FormatStringPayload>
+  0x00083134     220b  i=  55  c= 12  s=  0  core::ptr::drop_in_place<$LP$usize,std::backtrace_rs::symbolize::gimli::Mapping$RP$>
+  0x00083210      32b  i=   8  c=  0  s=  0  core::ptr::drop_in_place<core::result::Result<$LP$$RP$,std::io::error::Error>>
+  0x00083230     108b  i=  27  c=  2  s=  0  core::ptr::drop_in_place<alloc::boxed::Box<dyn core::any::Any$u2b$core::marker::Send>>
+  0x0008329c      56b  i=  14  c=  0  s=  0  core::ptr::drop_in_place<std::sync::poison::rwlock::RwLockReadGuard<std::panicking::Hook>>
+  0x000832d4     228b  i=  57  c=  3  s=  0  core::ptr::drop_in_place<core::result::Result<addr2line::line::Lines,gimli::read::Error>>
+  0x000833b8     184b  i=  46  c=  0  s=  0  core::str::validations::next_code_point
+  0x00083470     144b  i=  36  c=  1  s=  0  core::str::_<impl str>::split_once
+  0x00083500     316b  i=  79  c=  0  s=  0  core::str::_<impl str>::trim_start_matches
+  0x0008363c      20b  i=   5  c=  0  s=  0  core::error::Error::cause
+  0x00083650      16b  i=   4  c=  0  s=  0  core::error::Error::provide
+  0x00083660      48b  i=  12  c=  0  s=  0  core::error::Error::type_id
+  0x00083690      20b  i=   5  c=  0  s=  0  core::panic::PanicPayload::as_str
+  0x000836a4     204b  i=  51  c=  3  s=  0  core::slice::sort::shared::pivot::median3_rec
+  0x00083770     204b  i=  51  c=  3  s=  0  core::slice::sort::shared::pivot::median3_rec
+  0x0008383c     208b  i=  52  c=  3  s=  0  core::slice::sort::shared::pivot::median3_rec
+  0x0008390c     208b  i=  52  c=  3  s=  0  core::slice::sort::shared::pivot::median3_rec
+  0x000839dc     304b  i=  76  c=  3  s=  0  core::slice::sort::shared::pivot::median3_rec
+  0x00083b0c     204b  i=  51  c=  3  s=  0  core::slice::sort::shared::pivot::median3_rec
+  0x00083bd8     416b  i= 104  c=  0  s=  0  core::slice::sort::shared::smallsort::sort4_stable
+  0x00083d78     700b  i= 175  c=  1  s=  0  core::slice::sort::shared::smallsort::sort8_stable
+  0x00084034    1220b  i= 305  c=  3  s=  0  core::slice::sort::shared::smallsort::small_sort_general
+  0x000844f8     204b  i=  51  c=  0  s=  0  core::slice::sort::shared::smallsort::insertion_sort_shift_left
+  0x000845c4     160b  i=  40  c=  0  s=  0  core::slice::sort::shared::smallsort::insertion_sort_shift_left
+  0x00084664     328b  i=  82  c=  6  s=  0  core::slice::sort::stable::driftsort_main
+  0x000847ac     328b  i=  82  c=  6  s=  0  core::slice::sort::stable::driftsort_main
+  0x000848f4     364b  i=  91  c=  6  s=  0  core::slice::sort::stable::driftsort_main
+  0x00084a60     328b  i=  82  c=  6  s=  0  core::slice::sort::stable::driftsort_main
+  0x00084ba8     328b  i=  82  c=  6  s=  0  core::slice::sort::stable::driftsort_main
+  0x00084cf0    1264b  i= 316  c=  7  s=  0  core::slice::sort::stable::drift::sort
+  0x000851e0    1264b  i= 316  c=  7  s=  0  core::slice::sort::stable::drift::sort
+  0x000856d0    1508b  i= 377  c=  7  s=  0  core::slice::sort::stable::drift::sort
+  0x00085cb4    1324b  i= 331  c=  7  s=  0  core::slice::sort::stable::drift::sort
+  0x000861e0    1240b  i= 310  c=  7  s=  0  core::slice::sort::stable::drift::sort
+  0x000866b8    2104b  i= 526  c= 12  s=  0  core::slice::sort::stable::quicksort::quicksort
+  0x00086ef0    2056b  i= 514  c= 10  s=  0  core::slice::sort::stable::quicksort::quicksort
+  0x000876f8    1976b  i= 494  c= 12  s=  0  core::slice::sort::stable::quicksort::quicksort
+  0x00087eb0    1800b  i= 450  c= 10  s=  0  core::slice::sort::stable::quicksort::quicksort
+  0x000885b8    1792b  i= 448  c= 10  s=  0  core::slice::sort::stable::quicksort::quicksort
+  0x00088cb8     252b  i=  63  c=  0  s=  0  core::slice::sort::unstable::ipnsort
+  0x00088db4     272b  i=  68  c=  0  s=  0  core::slice::sort::unstable::heapsort::heapsort
+  0x00088ec4    1092b  i= 273  c=  2  s=  0  core::slice::sort::unstable::quicksort::quicksort
+  0x00089308      28b  i=   7  c=  1  s=  0  core::panicking::assert_failed
+  0x00089324      28b  i=   7  c=  1  s=  0  core::panicking::assert_failed
+  0x000a7b44     120b  i=  30  c=  2  s=  0  core::ptr::drop_in_place<panic_unwind::imp::Exception>
+  0x000a7bbc     140b  i=  35  c=  4  s=  0  core::ptr::drop_in_place<alloc::boxed::Box<panic_unwind::imp::Exception>>
+  0x000a9ca8     200b  i=  50  c=  1  s=  0  core::fmt::Write::write_char
+  0x000a9d70      28b  i=   7  c=  0  s=  0  core::fmt::Write::write_fmt
+  0x000a9d8c      96b  i=  24  c=  2  s=  0  core::str::_<impl str>::trim_start_matches
+  0x000a9dec     344b  i=  86  c=  3  s=  0  core::str::iter::SplitInternal<P>::next
+  0x000a9f44     200b  i=  50  c=  0  s=  1  core::escape::escape_unicode
+  0x000af344     136b  i=  34  c=  2  s=  0  core::slice::_<impl $u5b$T$u5d$>::copy_within
+  0x000af3cc      96b  i=  24  c=  3  s=  0  core::slice::index::range
+  0x000b1950      28b  i=   7  c=  0  s=  0  core::fmt::Write::write_fmt
+  0x000b196c      40b  i=  10  c=  0  s=  0  core::ptr::drop_in_place<alloc::string::String>
+  0x000b3188     656b  i= 164  c=  2  s=  2  core::char::methods::_<impl char>::escape_debug_ext
+  0x000b3418     260b  i=  65  c=  0  s=  0  core::ffi::c_str::CStr::from_bytes_with_nul
+  0x000b351c      28b  i=   7  c=  1  s=  1  core::option::unwrap_failed
+  0x000b3538      72b  i=  18  c=  1  s=  0  core::option::expect_failed
+  0x000b3580      32b  i=   8  c=  1  s=  0  core::panicking::panic_fmt
+  0x000b35a0      60b  i=  15  c=  2  s=  0  core::panicking::panic_nounwind_fmt
+  0x000b35dc      52b  i=  13  c=  1  s=  0  core::panicking::panic
+  0x000b3610      60b  i=  15  c=  1  s=  0  core::panicking::panic_nounwind
+  0x000b364c      60b  i=  15  c=  1  s=  0  core::panicking::panic_nounwind_nobacktrace
+  0x000b3688      80b  i=  20  c=  1  s=  0  core::panicking::panic_bounds_check
+  0x000b36d8      24b  i=   6  c=  1  s=  1  core::panicking::panic_cannot_unwind
+  0x000b36f0      24b  i=   6  c=  1  s=  0  core::panicking::panic_in_cleanup
+  0x000b3708      28b  i=   7  c=  1  s=  0  core::panicking::assert_failed
+  0x000b3724      28b  i=   7  c=  1  s=  0  core::panicking::assert_failed
+  0x000b3740     232b  i=  58  c=  1  s=  0  core::panicking::assert_failed_inner
+  0x000b3828      92b  i=  23  c=  1  s=  0  core::result::unwrap_failed
+  0x000b3b5c     424b  i= 106  c=  2  s=  4  core::fmt::builders::DebugStruct::field
+  0x000b3d04     204b  i=  51  c=  1  s=  0  core::fmt::builders::DebugStruct::finish_non_exhaustive
+  0x000b3dd0     124b  i=  31  c=  0  s=  0  core::fmt::builders::DebugStruct::finish
+  0x000b3e4c     312b  i=  78  c=  0  s=  0  core::fmt::builders::DebugTuple::field
+  0x000b3f84     176b  i=  44  c=  0  s=  1  core::fmt::builders::DebugTuple::finish
+  0x000b4034     308b  i=  77  c=  0  s=  0  core::fmt::builders::DebugList::entry
+  0x000b4168      88b  i=  22  c=  0  s=  0  core::fmt::builders::DebugList::finish
+  0x000b41c0     272b  i=  68  c=  2  s=  0  core::fmt::builders::DebugMap::entry
+  0x000b42d0     404b  i= 101  c=  1  s=  3  core::fmt::builders::DebugMap::key
+  0x000b4464     152b  i=  38  c=  1  s=  0  core::fmt::builders::DebugMap::finish
+  0x000b44fc      28b  i=   7  c=  0  s=  0  core::fmt::Write::write_fmt
+  0x000b4534     508b  i= 127  c=  0  s=  0  core::fmt::write
+  0x000b4730     964b  i= 241  c=  4  s=  0  core::fmt::Formatter::pad_integral
+  0x000b4af4     136b  i=  34  c=  0  s=  0  core::fmt::Formatter::pad_integral::write_prefix
+  0x000b4b7c     784b  i= 196  c=  1  s=  0  core::fmt::Formatter::pad
+  0x000b4e8c      24b  i=   6  c=  0  s=  0  core::fmt::Formatter::write_str
+  0x000b4ea4      56b  i=  14  c=  0  s=  0  core::fmt::Formatter::debug_struct
+  0x000b4edc     200b  i=  50  c=  1  s=  0  core::fmt::Formatter::debug_struct_field1_finish
+  0x000b4fa4     252b  i=  63  c=  2  s=  0  core::fmt::Formatter::debug_struct_field2_finish
+  0x000b50a0      76b  i=  19  c=  0  s=  0  core::fmt::Formatter::debug_tuple
+  0x000b50ec     352b  i=  88  c=  0  s=  1  core::fmt::Formatter::debug_tuple_field1_finish
+  0x000b524c     472b  i= 118  c=  0  s=  1  core::fmt::Formatter::debug_tuple_field2_finish
+  0x000b5424      68b  i=  17  c=  0  s=  1  core::fmt::Formatter::debug_list
+  0x000b5468      84b  i=  21  c=  0  s=  0  core::fmt::Formatter::debug_map
+  0x000b5b00     192b  i=  48  c=  1  s=  0  core::fmt::pointer_fmt_inner
+  0x000b5bc0     236b  i=  59  c=  0  s=  0  core::slice::memchr::memchr_aligned
+  0x000b5cac      56b  i=  14  c=  0  s=  0  core::slice::sort::stable::drift::sqrt_approx
+  0x000b5ce4      56b  i=  14  c=  1  s=  0  core::slice::sort::shared::smallsort::panic_on_ord_violation
+  0x000b5d1c      12b  i=   3  c=  1  s=  0  core::slice::index::slice_start_index_len_fail
+  0x000b5d28      12b  i=   3  c=  1  s=  0  core::slice::index::slice_end_index_len_fail
+  0x000b5d34      12b  i=   3  c=  1  s=  0  core::slice::index::slice_index_order_fail
+  0x000b5d40      52b  i=  13  c=  1  s=  0  core::slice::index::slice_end_index_overflow_fail
+  0x000b5d74      24b  i=   6  c=  1  s=  0  core::slice::_<impl $u5b$T$u5d$>::copy_from_slice::len_mismatch_fail
+  0x000b5d8c     584b  i= 146  c=  0  s=  1  core::str::converts::from_utf8
+  0x000b5fd4    1536b  i= 384  c=  0  s=  0  core::str::count::do_count_chars
+  0x000b65d4     704b  i= 176  c=  0  s=  0  core::str::count::char_count_general_case
+  0x000b6894    2264b  i= 566  c=  7  s=  0  core::str::pattern::StrSearcher::new
+  0x000b76d4      12b  i=   3  c=  1  s=  0  core::str::slice_error_fail
+  0x000b76e0     836b  i= 209  c=  5  s=  1  core::str::slice_error_fail_rt
+  0x000b7a24     700b  i= 175  c=  4  s=  2  core::unicode::printable::is_printable
+  0x000b7ce0      44b  i=  11  c=  0  s=  0  core::alloc::layout::Layout::is_size_align_valid
+  0x000b7d0c      52b  i=  13  c=  1  s=  0  core::panicking::panic_const::panic_const_div_by_zero
+  0x000b7d40      52b  i=  13  c=  1  s=  0  core::panicking::panic_const::panic_const_rem_by_zero
+  0x000b7d74     128b  i=  32  c=  1  s=  0  core::fmt::num::_<impl core::fmt::LowerHex for u8>::fmt
+  0x000b7df4     128b  i=  32  c=  1  s=  0  core::fmt::num::_<impl core::fmt::UpperHex for u8>::fmt
+  0x000b7e74     128b  i=  32  c=  1  s=  0  core::fmt::num::_<impl core::fmt::LowerHex for u16>::fmt
+  0x000b7ef4     128b  i=  32  c=  1  s=  0  core::fmt::num::_<impl core::fmt::UpperHex for u16>::fmt
+  0x000b7f74     128b  i=  32  c=  1  s=  0  core::fmt::num::_<impl core::fmt::LowerHex for i32>::fmt
+  0x000b7ff4     128b  i=  32  c=  1  s=  0  core::fmt::num::_<impl core::fmt::UpperHex for i32>::fmt
+  0x000b8074     128b  i=  32  c=  1  s=  0  core::fmt::num::_<impl core::fmt::LowerHex for usize>::fmt
+  0x000b80f4     128b  i=  32  c=  1  s=  0  core::fmt::num::_<impl core::fmt::UpperHex for usize>::fmt
+  0x000b8174     164b  i=  41  c=  1  s=  2  core::fmt::num::imp::_<impl core::fmt::Display for u8>::fmt
+  0x000b8218      44b  i=  11  c=  0  s=  0  core::fmt::num::imp::_<impl core::fmt::Display for i16>::fmt
+  0x000b8244     268b  i=  67  c=  1  s=  4  core::fmt::num::imp::_<impl u16>::_fmt
+  0x000b8350      28b  i=   7  c=  0  s=  0  core::fmt::num::imp::_<impl core::fmt::Display for u32>::fmt
+  0x000b836c      40b  i=  10  c=  0  s=  0  core::fmt::num::imp::_<impl core::fmt::Display for i32>::fmt
+  0x000b8394     292b  i=  73  c=  1  s=  4  core::fmt::num::imp::_<impl u32>::_fmt
+  0x000b84b8      28b  i=   7  c=  0  s=  0  core::fmt::num::imp::_<impl core::fmt::Display for u64>::fmt
+  0x000b84d4     304b  i=  76  c=  1  s=  4  core::fmt::num::imp::_<impl u64>::_fmt
+  0x000b8808      80b  i=  20  c=  1  s=  0  core::slice::index::slice_start_index_len_fail::do_panic::runtime
+  0x000b8858      80b  i=  20  c=  1  s=  0  core::slice::index::slice_end_index_len_fail::do_panic::runtime
+  0x000b88a8      80b  i=  20  c=  1  s=  0  core::slice::index::slice_index_order_fail::do_panic::runtime
+  0x000b88f8      84b  i=  21  c=  1  s=  0  core::slice::_<impl $u5b$T$u5d$>::copy_from_slice::len_mismatch_fail::do_panic::runtime
+  0x000b894c      36b  i=   9  c=  0  s=  0  core::unicode::unicode_data::cc::lookup
+  0x000b8970     276b  i=  69  c=  0  s=  1  core::unicode::unicode_data::grapheme_extend::lookup_slow
+  0x000b8a84     416b  i= 104  c=  1  s=  0  core::unicode::unicode_data::conversions::to_upper
+
+## std  (116 fns, 60092 bytes)
+  0x00053c74     252b  i=  63  c=  9  s=  0  std::sys::thread_local::os::Storage<T>::get
+  0x0005640c     132b  i=  33  c=  2  s=  0  std::sync::poison::once::Once::call_once_force::_{{closure}}
+  0x00056490     172b  i=  43  c=  2  s=  0  std::sync::poison::once::Once::call_once_force::_{{closure}}
+  0x0005653c      64b  i=  16  c=  1  s=  0  std::sync::poison::once::Once::call_once_force::_{{closure}}
+  0x0005657c      80b  i=  20  c=  1  s=  0  std::sync::once_lock::OnceLock<T>::initialize
+  0x000565cc      80b  i=  20  c=  1  s=  0  std::sync::once_lock::OnceLock<T>::initialize
+  0x0005661c     188b  i=  47  c=  7  s=  0  std::sync::once_lock::OnceLock<T>::initialize
+  0x00058dac     312b  i=  78  c=  9  s=  0  std::sys::thread_local::os::Storage<T>::get
+  0x00059800     312b  i=  78  c= 10  s=  0  std::io::default_write_fmt
+  0x00059c78     420b  i= 105  c= 10  s=  0  std::io::Write::write_all
+  0x00059e1c       4b  i=   1  c=  0  s=  0  std::io::Write::write_fmt
+  0x00059e20      84b  i=  21  c=  6  s=  0  std::sys::thread_local::os::destroy_value
+  0x00059fe4     344b  i=  86  c=  9  s=  1  std::io::Write::write_all
+  0x0005f710     252b  i=  63  c=  9  s=  0  std::sys::thread_local::os::Storage<T>::get
+  0x0009713c      68b  i=  17  c=  3  s=  0  std::rt::handle_rt_panic
+  0x00097180     168b  i=  42  c=  4  s=  0  std::thread::current::id::get_or_init::_{{closure}}
+  0x00097228      92b  i=  23  c=  2  s=  0  std::thread::current::current
+  0x00097284     416b  i= 104  c= 18  s=  0  std::thread::current::init_current
+  0x0009745c      68b  i=  17  c=  1  s=  0  std::thread::local::panic_access_error
+  0x000974e4     300b  i=  75  c=  8  s=  0  std::thread::park
+  0x00097610      56b  i=  14  c=  1  s=  0  std::thread::ThreadId::new::exhausted
+  0x00097758     224b  i=  56  c=  6  s=  0  std::thread::Thread::new
+  0x00097838     424b  i= 106  c= 12  s=  0  std::env::current_dir
+  0x000979e0     356b  i=  89  c=  9  s=  0  std::env::_var_os
+  0x00097b44     472b  i= 118  c=  8  s=  2  std::env::current_exe
+  0x00097f74     560b  i= 140  c=  5  s=  0  std::fs::OpenOptions::_open
+  0x000981b4     316b  i=  79  c= 12  s=  0  std::io::error::Error::new
+  0x000982f0     696b  i= 174  c= 22  s= 11  std::io::error::_<impl core::fmt::Debug for std::io::error::repr_bitpacked::Repr>::fmt
+  0x000987ac     132b  i=  33  c=  2  s=  0  std::io::impls::_<impl std::io::Write for alloc::vec::Vec<u8,A>>::write
+  0x00098830     332b  i=  83  c=  3  s=  0  std::io::impls::_<impl std::io::Write for alloc::vec::Vec<u8,A>>::write_vectored
+  0x0009897c      20b  i=   5  c=  0  s=  0  std::io::impls::_<impl std::io::Write for alloc::vec::Vec<u8,A>>::is_write_vectored
+  0x00098990     128b  i=  32  c=  2  s=  0  std::io::impls::_<impl std::io::Write for alloc::vec::Vec<u8,A>>::write_all
+  0x00098a10     324b  i=  81  c=  3  s=  0  std::io::impls::_<impl std::io::Write for alloc::vec::Vec<u8,A>>::write_all_vectored
+  0x00098b54      20b  i=   5  c=  0  s=  0  std::io::impls::_<impl std::io::Write for alloc::vec::Vec<u8,A>>::flush
+  0x00098b68     224b  i=  56  c=  4  s=  0  std::io::stdio::try_set_output_capture
+  0x00098c48     700b  i= 175  c=  5  s=  0  std::io::default_read_to_end
+  0x00098f04     240b  i=  60  c=  5  s=  0  std::io::default_read_to_end::small_probe_read
+  0x000991fc     232b  i=  58  c=  3  s=  0  std::io::Write::write_all
+  0x000992e4     460b  i= 115  c=  6  s=  0  std::io::Write::write_all_vectored
+  0x000994b0     320b  i=  80  c= 10  s=  0  std::io::Write::write_fmt
+  0x000995f0     320b  i=  80  c= 10  s=  0  std::io::Write::write_fmt
+  0x00099730     320b  i=  80  c= 10  s=  0  std::io::Write::write_fmt
+  0x00099870     300b  i=  75  c=  2  s=  1  std::panic::get_backtrace_style
+  0x0009999c     380b  i=  95  c=  1  s=  0  std::path::Components::len_before_body
+  0x00099b18     796b  i= 199  c=  5  s=  0  std::path::Components::as_path
+  0x00099e34     284b  i=  71  c=  3  s=  0  std::path::Components::parse_next_component_back
+  0x0009a868     796b  i= 199  c=  9  s=  0  std::path::PathBuf::_set_extension
+  0x0009ab84     540b  i= 135  c=  4  s=  0  std::path::Path::_strip_prefix
+  0x0009ada0     452b  i= 113  c= 10  s=  0  std::path::Path::is_file
+  0x0009af64      12b  i=   3  c=  1  s=  0  std::process::abort
+  0x0009af70     204b  i=  51  c=  4  s=  1  std::sync::poison::once::Once::call_once_force::_{{closure}}
+  0x0009b03c     128b  i=  32  c=  5  s=  0  std::sync::once_lock::OnceLock<T>::initialize
+  0x0009b0bc     228b  i=  57  c=  3  s=  0  std::sys::pal::common::small_c_string::run_with_cstr_allocating
+  0x0009b1a0     216b  i=  54  c=  4  s=  0  std::sys::pal::common::small_c_string::run_with_cstr_allocating
+  0x0009b278     192b  i=  48  c=  2  s=  0  std::sys::pal::common::small_c_string::run_with_cstr_allocating
+  0x0009b338     224b  i=  56  c=  3  s=  0  std::sys::pal::common::small_c_string::run_with_cstr_allocating
+  0x0009b418     416b  i= 104  c=  0  s=  0  std::sys::personality::dwarf::eh::read_encoded_offset
+  0x0009b5b8     164b  i=  41  c=  2  s=  0  std::sys::backtrace::lock
+  0x0009b65c      84b  i=  21  c=  0  s=  0  std::sys::backtrace::BacktraceLock::print
+  0x0009b8d8      48b  i=  12  c=  0  s=  0  std::sys::backtrace::_print_fmt::_{{closure}}
+  0x0009b908     320b  i=  80  c=  4  s=  0  std::sys::backtrace::_print_fmt::_{{closure}}
+  0x0009ba48     652b  i= 163  c=  9  s=  3  std::sys::backtrace::_print_fmt::_{{closure}}::_{{closure}}
+  0x0009bcd4      12b  i=   3  c=  1  s=  0  std::sys::backtrace::__rust_end_short_backtrace
+  0x0009bce0     260b  i=  65  c=  4  s=  2  std::sys::backtrace::output_filename
+  0x0009be28     336b  i=  84  c=  7  s=  0  std::alloc::default_alloc_error_hook
+  0x0009c294     448b  i= 112  c= 17  s=  0  std::panicking::default_hook
+  0x0009c454     468b  i= 117  c= 14  s=  2  std::panicking::default_hook::_{{closure}}
+  0x0009c628     644b  i= 161  c=  9  s=  1  std::panicking::default_hook::_{{closure}}::_{{closure}}
+  0x0009c8ac     320b  i=  80  c=  9  s=  0  std::panicking::panic_count::increase
+  0x0009c9ec     240b  i=  60  c=  9  s=  0  std::panicking::panic_count::finished_panic_hook
+  0x0009cadc     260b  i=  65  c=  9  s=  0  std::panicking::panic_count::decrease
+  0x0009cbe0     240b  i=  60  c=  9  s=  0  std::panicking::panic_count::get_count
+  0x0009ccd0     232b  i=  58  c=  9  s=  0  std::panicking::panic_count::is_zero_slow_path
+  0x0009cdb8      76b  i=  19  c=  6  s=  0  std::panicking::try::cleanup
+  0x0009d0ec     188b  i=  47  c=  5  s=  0  std::panicking::begin_panic_handler::_{{closure}}
+  0x0009d1a8     184b  i=  46  c=  0  s=  1  std::panicking::payload_as_str
+  0x0009d260     508b  i= 127  c= 14  s=  0  std::panicking::rust_panic_with_hook
+  0x0009d4bc     244b  i=  61  c=  3  s=  0  std::backtrace_rs::symbolize::Symbol::name
+  0x0009d6b0     772b  i= 193  c=  7  s=  3  std::backtrace_rs::print::BacktraceFrameFmt::print_raw_with_column
+  0x0009d9b4     408b  i= 102  c=  3  s=  2  std::backtrace_rs::print::BacktraceFrameFmt::print_fileline
+  0x0009dce8      44b  i=  11  c=  1  s=  0  std::sys::pal::unix::futex::futex_wake
+  0x0009dd14     492b  i= 123  c=  0  s=  0  std::sys::pal::unix::decode_error_kind
+  0x0009df00      12b  i=   3  c=  1  s=  0  std::sys::pal::unix::abort_internal
+  0x0009df0c      24b  i=   6  c=  0  s=  0  std::sys::personality::gcc::find_eh_action::_{{closure}}
+  0x0009df24      24b  i=   6  c=  0  s=  0  std::sys::personality::gcc::find_eh_action::_{{closure}}
+  0x0009e2b4     416b  i= 104  c= 10  s=  0  std::sys::env::unix::getenv::_{{closure}}
+  0x0009e454     444b  i= 111  c=  2  s=  0  std::sys::fs::unix::File::open_c
+  0x0009e610     408b  i= 102  c= 11  s=  0  std::sys::fs::unix::readlink
+  0x0009e7a8     224b  i=  56  c=  7  s=  0  std::sys::fs::unix::canonicalize
+  0x0009e888     312b  i=  78  c=  5  s=  0  std::sys::os_str::bytes::Slice::check_public_boundary::slow_path
+  0x0009e9c0    1296b  i= 324  c= 31  s=  3  std::sys::random::linux::getrandom
+  0x0009eed0      48b  i=  12  c=  1  s=  0  std::sys::random::linux::hashmap_random_keys
+  0x0009eff8     288b  i=  72  c=  2  s=  0  std::sys::sync::mutex::futex::Mutex::lock_contended
+  0x0009f118      32b  i=   8  c=  0  s=  0  std::sys::sync::mutex::futex::Mutex::wake
+  0x0009f138     692b  i= 173  c=  8  s=  0  std::sys::sync::once::futex::Once::call
+  0x0009f3ec     480b  i= 120  c=  3  s=  0  std::sys::sync::rwlock::futex::RwLock::read_contended
+  0x0009f5cc     312b  i=  78  c=  2  s=  1  std::sys::sync::rwlock::futex::RwLock::wake_writer_or_readers
+  0x0009f704     116b  i=  29  c=  6  s=  0  std::sys::thread_local::os::destroy_value
+  0x0009f778     156b  i=  39  c=  7  s=  0  std::sys::thread_local::os::destroy_value
+  0x0009f814      56b  i=  14  c=  1  s=  0  std::sys::thread_local::guard::key::enable
+  0x0009f84c     220b  i=  55  c= 10  s=  0  std::sys::thread_local::guard::key::enable::run
+  0x0009f928     244b  i=  61  c=  8  s=  0  std::sys::thread_local::key::racy::LazyKey::lazy_init
+  0x0009fa1c      44b  i=  11  c=  1  s=  0  std::alloc::rust_oom
+  0x0009fa60      76b  i=  19  c=  3  s=  0  std::backtrace_rs::backtrace::libunwind::trace::trace_fn
+  0x0009faac     276b  i=  69  c=  6  s=  0  std::backtrace_rs::symbolize::gimli::stash::Stash::allocate
+  0x0009fbc0    8396b  i=2099  c=184  s= 35  std::backtrace_rs::symbolize::gimli::Context::new
+  0x000a1c8c     400b  i= 100  c= 11  s=  0  std::backtrace_rs::symbolize::gimli::mmap
+  0x000a1e1c    1636b  i= 409  c= 35  s=  1  std::backtrace_rs::symbolize::gimli::resolve
+  0x000a2480   14344b  i=3586  c=219  s=  9  std::backtrace_rs::symbolize::gimli::resolve::_{{closure}}
+  0x000a5c88     976b  i= 244  c= 20  s=  0  std::backtrace_rs::symbolize::gimli::elf::_<impl std::backtrace_rs::symbolize::gimli::Mapping>::load_dwarf_package
+  0x000a6058    1588b  i= 397  c=  6  s=  0  std::backtrace_rs::symbolize::gimli::elf::Object::parse
+  0x000a668c     828b  i= 207  c= 10  s=  0  std::backtrace_rs::symbolize::gimli::elf::Object::section
+  0x000a69c8     244b  i=  61  c=  1  s=  0  std::backtrace_rs::symbolize::gimli::elf::Object::search_symtab
+  0x000a6abc     360b  i=  90  c=  0  s=  0  std::backtrace_rs::symbolize::gimli::elf::Object::build_id
+  0x000a6c24     316b  i=  79  c=  2  s=  0  std::backtrace_rs::symbolize::gimli::elf::decompress_zlib
+  0x000a6d60    1308b  i= 327  c= 28  s=  0  std::backtrace_rs::symbolize::gimli::libs_dl_iterate_phdr::callback
+
+## alloc  (94 fns, 23964 bytes)
+  0x0004bce4     384b  i=  96  c= 11  s=  1  alloc::collections::btree::node::Handle<alloc::collections::btree::node::NodeRef<alloc::collections::btree::node::marker::Mut,K,V,alloc::collections::btree::node::marker::Leaf>,alloc::collections::btree::node::marker::KV>::split
+  0x0004be64    2036b  i= 509  c= 43  s=  2  alloc::collections::btree::node::Handle<alloc::collections::btree::node::NodeRef<alloc::collections::btree::node::marker::Mut,K,V,alloc::collections::btree::node::marker::Leaf>,alloc::collections::btree::node::marker::Edge>::insert_recursing
+  0x0004c658     572b  i= 143  c= 16  s=  2  alloc::collections::btree::node::Handle<alloc::collections::btree::node::NodeRef<alloc::collections::btree::node::marker::Mut,K,V,alloc::collections::btree::node::marker::Internal>,alloc::collections::btree::node::marker::KV>::split
+  0x00050130     952b  i= 238  c= 15  s=  1  alloc::str::join_generic_copy
+  0x00052a38     564b  i= 141  c=  9  s=  0  alloc::collections::btree::map::BTreeMap<K,V,A>::insert
+  0x00052c6c     544b  i= 136  c=  9  s=  0  alloc::collections::btree::map::IntoIter<K,V,A>::dying_next
+  0x000548ac     124b  i=  31  c=  2  s=  0  alloc::raw_vec::finish_grow
+  0x00054928     248b  i=  62  c=  3  s=  0  alloc::raw_vec::RawVecInner<A>::reserve::do_reserve_and_handle
+  0x00058c88     124b  i=  31  c=  2  s=  0  alloc::raw_vec::finish_grow
+  0x00058d04     168b  i=  42  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x000593a0     452b  i= 113  c= 10  s=  0  alloc::sync::Arc<T,A>::drop_slow
+  0x00059564      72b  i=  18  c=  0  s=  0  alloc::sync::Arc<T,A>::drop_slow
+  0x000595ac     168b  i=  42  c=  2  s=  0  alloc::sync::Arc<T,A>::drop_slow
+  0x00059654     272b  i=  68  c=  6  s=  0  alloc::sync::Arc<T,A>::drop_slow
+  0x00059764     156b  i=  39  c=  3  s=  0  alloc::sync::Arc<T,A>::drop_slow
+  0x0005e0e0     124b  i=  31  c=  2  s=  0  alloc::raw_vec::finish_grow
+  0x0005e15c     168b  i=  42  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x0005e204     248b  i=  62  c=  3  s=  0  alloc::raw_vec::RawVecInner<A>::reserve::do_reserve_and_handle
+  0x0005fedc     124b  i=  31  c=  2  s=  0  alloc::raw_vec::finish_grow
+  0x0005ff58     184b  i=  46  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x00060010     160b  i=  40  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x000600b0     184b  i=  46  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x00060168     168b  i=  42  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x00060210     248b  i=  62  c=  3  s=  0  alloc::raw_vec::RawVecInner<A>::reserve::do_reserve_and_handle
+  0x000617b0     168b  i=  42  c=  2  s=  0  alloc::sync::Arc<T,A>::drop_slow
+  0x000623c0     128b  i=  32  c=  3  s=  0  alloc::vec::Vec<T,A>::push
+  0x00062440      52b  i=  13  c=  2  s=  0  alloc::alloc::exchange_malloc
+  0x00078e78     252b  i=  63  c=  1  s=  0  alloc::vec::Vec<T,A>::resize
+  0x00079c0c     124b  i=  31  c=  2  s=  0  alloc::raw_vec::finish_grow
+  0x00079c88     184b  i=  46  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x00079d40     168b  i=  42  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x00079de8     152b  i=  38  c=  2  s=  0  alloc::raw_vec::RawVecInner<A>::shrink_unchecked
+  0x00079e80     248b  i=  62  c=  3  s=  0  alloc::raw_vec::RawVecInner<A>::reserve::do_reserve_and_handle
+  0x0007a358     124b  i=  31  c=  2  s=  0  alloc::raw_vec::finish_grow
+  0x0007a3d4     184b  i=  46  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x0007a48c     236b  i=  59  c=  3  s=  0  alloc::raw_vec::RawVecInner<A>::reserve::do_reserve_and_handle
+  0x0007ea54     108b  i=  27  c=  2  s=  0  alloc::raw_vec::finish_grow
+  0x0007eac0     168b  i=  42  c=  3  s=  0  alloc::raw_vec::RawVecInner<A>::reserve::do_reserve_and_handle
+  0x00080d14     124b  i=  31  c=  2  s=  0  alloc::raw_vec::finish_grow
+  0x00080d90     248b  i=  62  c=  3  s=  0  alloc::raw_vec::RawVecInner<A>::reserve::do_reserve_and_handle
+  0x0008993c     564b  i= 141  c=  9  s=  0  alloc::collections::btree::map::IntoIter<K,V,A>::dying_next
+  0x00089b70     564b  i= 141  c=  9  s=  0  alloc::collections::btree::map::IntoIter<K,V,A>::dying_next
+  0x00089da4     108b  i=  27  c=  1  s=  0  alloc::sync::Arc<T,A>::drop_slow
+  0x00089e10     116b  i=  29  c=  1  s=  0  alloc::sync::Arc<T,A>::drop_slow
+  0x00089e84     220b  i=  55  c=  6  s=  0  alloc::sync::Arc<T,A>::drop_slow
+  0x00089f60     160b  i=  40  c=  3  s=  0  alloc::sync::Arc<T,A>::drop_slow
+  0x0008a000      84b  i=  21  c=  2  s=  0  alloc::alloc::exchange_malloc
+  0x0008a054     136b  i=  34  c=  2  s=  0  alloc::raw_vec::finish_grow
+  0x0008a0dc     196b  i=  49  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x0008a1a0     196b  i=  49  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x0008a264     192b  i=  48  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x0008a324     180b  i=  45  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x0008a3d8     196b  i=  49  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x0008a49c     180b  i=  45  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x0008a550     192b  i=  48  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x0008a610     180b  i=  45  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x0008a6c4     180b  i=  45  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x0008a778     192b  i=  48  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x0008a838     240b  i=  60  c=  3  s=  0  alloc::raw_vec::RawVecInner<A>::reserve::do_reserve_and_handle
+  0x000a8044      44b  i=  11  c=  2  s=  0  alloc::raw_vec::RawVecInner<A>::reserve::do_reserve_and_handle
+  0x000a83f0     140b  i=  35  c=  0  s=  0  alloc::collections::btree::map::BTreeMap<K,V,A>::get
+  0x000a847c     148b  i=  37  c=  0  s=  0  alloc::collections::btree::map::BTreeMap<K,V,A>::entry
+  0x000a8510     196b  i=  49  c=  5  s=  0  alloc::collections::btree::map::entry::VacantEntry<K,V,A>::insert_entry
+  0x000a85d4     180b  i=  45  c=  4  s=  1  alloc::collections::btree::node::NodeRef<alloc::collections::btree::node::marker::Mut,K,V,alloc::collections::btree::node::marker::Leaf>::push_with_handle
+  0x000a8688     216b  i=  54  c=  4  s=  1  alloc::collections::btree::node::NodeRef<alloc::collections::btree::node::marker::Mut,K,V,alloc::collections::btree::node::marker::Internal>::push
+  0x000a8760     304b  i=  76  c=  8  s=  0  alloc::collections::btree::node::Handle<alloc::collections::btree::node::NodeRef<alloc::collections::btree::node::marker::Mut,K,V,NodeType>,alloc::collections::btree::node::marker::KV>::split_leaf_data
+  0x000a8890     136b  i=  34  c=  5  s=  0  alloc::collections::btree::node::Handle<alloc::collections::btree::node::NodeRef<alloc::collections::btree::node::marker::Mut,K,V,alloc::collections::btree::node::marker::Leaf>,alloc::collections::btree::node::marker::KV>::split
+  0x000a8918     236b  i=  59  c=  5  s=  0  alloc::collections::btree::node::Handle<alloc::collections::btree::node::NodeRef<alloc::collections::btree::node::marker::Mut,K,V,alloc::collections::btree::node::marker::Leaf>,alloc::collections::btree::node::marker::Edge>::insert_fit
+  0x000a8a04     460b  i= 115  c= 12  s=  0  alloc::collections::btree::node::Handle<alloc::collections::btree::node::NodeRef<alloc::collections::btree::node::marker::Mut,K,V,alloc::collections::btree::node::marker::Leaf>,alloc::collections::btree::node::marker::Edge>::insert_recursing
+  0x000a8bd0     376b  i=  94  c=  8  s=  0  alloc::collections::btree::node::Handle<alloc::collections::btree::node::NodeRef<alloc::collections::btree::node::marker::Mut,K,V,alloc::collections::btree::node::marker::Leaf>,alloc::collections::btree::node::marker::Edge>::insert
+  0x000a8d48     332b  i=  83  c=  9  s=  0  alloc::collections::btree::node::Handle<alloc::collections::btree::node::NodeRef<alloc::collections::btree::node::marker::Mut,K,V,alloc::collections::btree::node::marker::Internal>,alloc::collections::btree::node::marker::KV>::split
+  0x000a8e94     312b  i=  78  c=  6  s=  0  alloc::collections::btree::node::Handle<alloc::collections::btree::node::NodeRef<alloc::collections::btree::node::marker::Mut,K,V,alloc::collections::btree::node::marker::Internal>,alloc::collections::btree::node::marker::Edge>::insert_fit
+  0x000a8fcc     412b  i= 103  c= 10  s=  0  alloc::collections::btree::node::Handle<alloc::collections::btree::node::NodeRef<alloc::collections::btree::node::marker::Mut,K,V,alloc::collections::btree::node::marker::Internal>,alloc::collections::btree::node::marker::Edge>::insert
+  0x000a9168      56b  i=  14  c=  2  s=  0  alloc::boxed::Box<T,A>::new_uninit_in
+  0x000a91a0      56b  i=  14  c=  2  s=  0  alloc::boxed::Box<T,A>::new_uninit_in
+  0x000a91d8     136b  i=  34  c=  2  s=  0  alloc::raw_vec::finish_grow
+  0x000a9260      72b  i=  18  c=  2  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x000a92a8      72b  i=  18  c=  2  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x000a92f0      96b  i=  24  c=  0  s=  0  alloc::raw_vec::RawVecInner<A>::deallocate
+  0x000a9350     252b  i=  63  c=  1  s=  0  alloc::raw_vec::RawVecInner<A>::grow_amortized
+  0x000a944c     184b  i=  46  c=  2  s=  0  alloc::raw_vec::RawVecInner<A>::try_allocate_in
+  0x000b19d4      52b  i=  13  c=  1  s=  0  alloc::raw_vec::capacity_overflow
+  0x000b1a08     160b  i=  40  c=  3  s=  0  alloc::raw_vec::RawVec<T,A>::grow_one
+  0x000b1aa8     176b  i=  44  c=  3  s=  0  alloc::raw_vec::RawVecInner<A>::reserve::do_reserve_and_handle
+  0x000b1b58     136b  i=  34  c=  2  s=  0  alloc::raw_vec::finish_grow
+  0x000b1be0      24b  i=   6  c=  2  s=  0  alloc::raw_vec::handle_error
+  0x000b1bf8      24b  i=   6  c=  1  s=  0  alloc::alloc::handle_alloc_error
+  0x000b1da4      48b  i=  12  c=  1  s=  0  alloc::ffi::c_str::CString::from_vec_unchecked
+  0x000b1dd4     396b  i=  99  c=  7  s=  0  alloc::ffi::c_str::CString::_from_vec_unchecked
+  0x000b1f60     416b  i= 104  c=  6  s=  1  alloc::fmt::format::format_inner
+  0x000b2100    2016b  i= 504  c= 11  s=  0  alloc::str::_<impl str>::to_uppercase
+  0x000b28e0     580b  i= 145  c= 12  s=  0  alloc::string::String::from_utf8_lossy
+  0x000b2b24     220b  i=  55  c=  1  s=  0  alloc::string::String::try_reserve
+  0x000b2f10     112b  i=  28  c=  1  s=  1  alloc::sync::arcinner_layout_for_value_layout
+
+## _<alloc  (62 fns, 11168 bytes)
+  0x000434ec      20b  i=   5  c=  0  s=  0  _<alloc::string::String as core::fmt::Debug>::fmt
+  0x00043500     312b  i=  78  c=  1  s=  0  _<alloc::string::String as core::fmt::Write>::write_char
+  0x00043638     124b  i=  31  c=  2  s=  0  _<alloc::string::String as core::fmt::Write>::write_str
+  0x000436b4      20b  i=   5  c=  0  s=  0  _<alloc::string::String as core::fmt::Display>::fmt
+  0x0004d9c8     312b  i=  78  c=  1  s=  0  _<alloc::string::String as core::fmt::Write>::write_char
+  0x0004db00     124b  i=  31  c=  2  s=  0  _<alloc::string::String as core::fmt::Write>::write_str
+  0x0004db7c     252b  i=  63  c=  4  s=  0  _<alloc::vec::Vec<u8> as hex::FromHex>::from_hex
+  0x0004dc78     116b  i=  29  c=  3  s=  0  _<alloc::vec::Vec<T,A> as core::fmt::Debug>::fmt
+  0x0004dcec     276b  i=  69  c= 11  s=  0  _<alloc::vec::Vec<T,A> as core::ops::drop::Drop>::drop
+  0x0004de00     104b  i=  26  c=  4  s=  0  _<alloc::vec::Vec<T,A> as core::ops::drop::Drop>::drop
+  0x0004e140     460b  i= 115  c=  6  s=  0  _<alloc::string::String as core::iter::traits::collect::FromIterator<char>>::from_iter
+  0x0004e30c     404b  i= 101  c=  9  s=  0  _<alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter
+  0x00052340     304b  i=  76  c=  5  s=  0  _<alloc::collections::btree::map::Iter<K,V> as core::iter::traits::iterator::Iterator>::next
+  0x0005307c      80b  i=  20  c=  1  s=  0  _<alloc::collections::btree::map::BTreeMap<K,V,A> as core::ops::drop::Drop>::drop
+  0x00054a20      60b  i=  15  c=  1  s=  0  _<alloc::ffi::c_str::NulError as core::fmt::Debug>::fmt
+  0x00054a5c      28b  i=   7  c=  0  s=  0  _<alloc::raw_vec::RawVec<T,A> as core::ops::drop::Drop>::drop
+  0x00055990      20b  i=   5  c=  0  s=  0  _<alloc::string::String as core::fmt::Display>::fmt
+  0x00058fd0     360b  i=  90  c=  5  s=  0  _<alloc::vec::Vec<T,A> as core::ops::drop::Drop>::drop
+  0x0005a74c      20b  i=   5  c=  0  s=  0  _<alloc::string::String as core::fmt::Debug>::fmt
+  0x0005a760     312b  i=  78  c=  1  s=  0  _<alloc::string::String as core::fmt::Write>::write_char
+  0x0005a898     124b  i=  31  c=  2  s=  0  _<alloc::string::String as core::fmt::Write>::write_str
+  0x0005cdb0     304b  i=  76  c=  5  s=  0  _<alloc::collections::btree::map::Iter<K,V> as core::iter::traits::iterator::Iterator>::next
+  0x0005cf08     312b  i=  78  c=  1  s=  0  _<alloc::string::String as core::fmt::Write>::write_char
+  0x0005d040     124b  i=  31  c=  2  s=  0  _<alloc::string::String as core::fmt::Write>::write_str
+  0x000610f0     312b  i=  78  c=  1  s=  0  _<alloc::string::String as core::fmt::Write>::write_char
+  0x00061228     124b  i=  31  c=  2  s=  0  _<alloc::string::String as core::fmt::Write>::write_str
+  0x000612a4     200b  i=  50  c=  5  s=  0  _<alloc::vec::into_iter::IntoIter<T,A> as core::ops::drop::Drop>::drop
+  0x0006136c     460b  i= 115  c=  6  s=  0  _<alloc::string::String as core::iter::traits::collect::FromIterator<char>>::from_iter
+  0x0006220c     312b  i=  78  c=  1  s=  0  _<alloc::string::String as core::fmt::Write>::write_char
+  0x00062344     124b  i=  31  c=  2  s=  0  _<alloc::string::String as core::fmt::Write>::write_str
+  0x00062474      20b  i=   5  c=  0  s=  0  _<alloc::string::String as core::fmt::Display>::fmt
+  0x00065918      20b  i=   5  c=  0  s=  0  _<alloc::string::String as core::fmt::Display>::fmt
+  0x00069508      20b  i=   5  c=  0  s=  0  _<alloc::string::String as core::fmt::Display>::fmt
+  0x0006bef4      20b  i=   5  c=  0  s=  0  _<alloc::string::String as core::fmt::Display>::fmt
+  0x0006e670     120b  i=  30  c=  2  s=  0  _<alloc::vec::Vec<T,A> as alloc::vec::spec_extend::SpecExtend<&T,core::slice::iter::Iter<T>>>::spec_extend
+  0x0006e948     192b  i=  48  c=  2  s=  0  _<alloc::vec::Vec<u8> as hex::FromHex>::from_hex
+  0x0006ea08     184b  i=  46  c=  2  s=  0  _<alloc::vec::Vec<u8> as hex::FromHex>::from_hex
+  0x0006eac0     252b  i=  63  c=  4  s=  0  _<alloc::vec::Vec<u8> as hex::FromHex>::from_hex
+  0x0006ebbc     264b  i=  66  c=  5  s=  0  _<alloc::vec::Vec<T,A> as core::clone::Clone>::clone
+  0x0006ecc4     104b  i=  26  c=  4  s=  0  _<alloc::vec::Vec<T,A> as core::ops::drop::Drop>::drop
+  0x0006ed2c     420b  i= 105  c=  9  s=  0  _<alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter
+  0x0006eed0     420b  i= 105  c=  9  s=  0  _<alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter
+  0x0006f074     420b  i= 105  c=  9  s=  0  _<alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter
+  0x00078f74     176b  i=  44  c=  3  s=  0  _<alloc::vec::Vec<T,A> as core::clone::Clone>::clone
+  0x00079024     444b  i= 111  c=  7  s=  0  _<alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter
+  0x0007a578     356b  i=  89  c=  5  s=  0  _<alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter
+  0x00089760      32b  i=   8  c=  0  s=  0  _<alloc::string::String as core::fmt::Debug>::fmt
+  0x00089780     316b  i=  79  c=  1  s=  0  _<alloc::string::String as core::fmt::Write>::write_char
+  0x000898bc     128b  i=  32  c=  2  s=  0  _<alloc::string::String as core::fmt::Write>::write_str
+  0x00091ad8      32b  i=   8  c=  0  s=  0  _<alloc::string::String as core::fmt::Display>::fmt
+  0x00091af8      76b  i=  19  c=  1  s=  0  _<alloc::ffi::c_str::NulError as core::fmt::Debug>::fmt
+  0x000a7fc8     124b  i=  31  c=  2  s=  0  _<alloc::vec::Vec<T,A> as alloc::vec::spec_extend::SpecExtend<&T,core::slice::iter::Iter<T>>>::spec_extend
+  0x000a9504      16b  i=   4  c=  0  s=  0  _<alloc::vec::Vec<T,A> as core::ops::drop::Drop>::drop
+  0x000a954c      24b  i=   6  c=  0  s=  0  _<alloc::raw_vec::RawVec<T,A> as core::ops::drop::Drop>::drop
+  0x000b1c10      24b  i=   6  c=  0  s=  0  _<alloc::boxed::convert::<impl core::convert::From<alloc::string::String> for alloc::boxed::Box<dyn core::error::Error$u2b$core::marker::Sync$u2b$core::marker::Send>>::from::StringError as core::error::Error>::description
+  0x000b1c28      32b  i=   8  c=  0  s=  0  _<alloc::boxed::convert::<impl core::convert::From<alloc::string::String> for alloc::boxed::Box<dyn core::error::Error$u2b$core::marker::Sync$u2b$core::marker::Send>>::from::StringError as core::fmt::Display>::fmt
+  0x000b1c48      32b  i=   8  c=  0  s=  0  _<alloc::boxed::convert::<impl core::convert::From<alloc::string::String> for alloc::boxed::Box<dyn core::error::Error$u2b$core::marker::Sync$u2b$core::marker::Send>>::from::StringError as core::fmt::Debug>::fmt
+  0x000b1c68      12b  i=   3  c=  0  s=  0  _<alloc::collections::btree::mem::replace::PanicGuard as core::ops::drop::Drop>::drop
+  0x000b2c00     152b  i=  38  c=  3  s=  0  _<alloc::string::String as core::clone::Clone>::clone
+  0x000b2c98     204b  i=  51  c=  3  s=  0  _<alloc::string::String as core::convert::From<alloc::borrow::Cow<str>>>::from
+  0x000b2d64     120b  i=  30  c=  2  s=  0  _<alloc::string::String as core::fmt::Write>::write_str
+  0x000b2ddc     308b  i=  77  c=  1  s=  0  _<alloc::string::String as core::fmt::Write>::write_char
+
+## _<&T as core  (42 fns, 2564 bytes)
+  0x0004cd04      20b  i=   5  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x0004cd18     196b  i=  49  c=  1  s=  7  _<&T as core::fmt::Debug>::fmt
+  0x0004cddc     112b  i=  28  c=  3  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x0004ce4c      20b  i=   5  c=  0  s=  0  _<&T as core::fmt::Display>::fmt
+  0x0004fce8     108b  i=  27  c=  1  s=  3  _<&T as core::fmt::Debug>::fmt
+  0x0004fd54     220b  i=  55  c=  4  s=  4  _<&T as core::fmt::Debug>::fmt
+  0x00052470     216b  i=  54  c=  4  s=  4  _<&T as core::fmt::Debug>::fmt
+  0x00052548      28b  i=   7  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x00052564     104b  i=  26  c=  1  s=  3  _<&T as core::fmt::Debug>::fmt
+  0x000525cc     112b  i=  28  c=  1  s=  3  _<&T as core::fmt::Debug>::fmt
+  0x0005263c      20b  i=   5  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x00052650      20b  i=   5  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x00052664      28b  i=   7  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x00052680      44b  i=  11  c=  0  s=  2  _<&T as core::fmt::Debug>::fmt
+  0x000526ac       8b  i=   2  c=  0  s=  0  _<&T as core::fmt::Display>::fmt
+  0x00060f7c      28b  i=   7  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x00060f98      28b  i=   7  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x00060fb4      20b  i=   5  c=  0  s=  0  _<&T as core::fmt::Display>::fmt
+  0x00060fc8      20b  i=   5  c=  0  s=  0  _<&T as core::fmt::Display>::fmt
+  0x0006f218       8b  i=   2  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x0007d280       8b  i=   2  c=  0  s=  0  _<&T as core::fmt::Display>::fmt
+  0x0007d288       8b  i=   2  c=  0  s=  0  _<&T as core::fmt::Display>::fmt
+  0x0007d524      12b  i=   3  c=  0  s=  0  _<&T as core::fmt::Display>::fmt
+  0x0007d530       8b  i=   2  c=  0  s=  0  _<&T as core::fmt::Display>::fmt
+  0x0007d538      20b  i=   5  c=  0  s=  0  _<&T as core::fmt::Display>::fmt
+  0x0007d9e0      20b  i=   5  c=  0  s=  0  _<&T as core::fmt::Display>::fmt
+  0x00080f38     116b  i=  29  c=  3  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x00080fac      32b  i=   8  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x00080fcc      48b  i=  12  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x00080ffc      48b  i=  12  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x0008102c      28b  i=   7  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x00081048      48b  i=  12  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x00081078     104b  i=  26  c=  1  s=  0  _<&T as core::fmt::Display>::fmt
+  0x000810e0      32b  i=   8  c=  0  s=  0  _<&T as core::fmt::Display>::fmt
+  0x000a9b78      48b  i=  12  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x000a9ba8      32b  i=   8  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x000a9bc8      56b  i=  14  c=  0  s=  2  _<&T as core::fmt::Debug>::fmt
+  0x000a9c00      20b  i=   5  c=  0  s=  0  _<&T as core::fmt::Display>::fmt
+  0x000b8604     236b  i=  59  c=  1  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x000b86f0     228b  i=  57  c=  1  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x000b87d4      24b  i=   6  c=  0  s=  0  _<&T as core::fmt::Debug>::fmt
+  0x000b87ec      28b  i=   7  c=  0  s=  0  _<&T as core::fmt::Display>::fmt
+
+## num_bigint  (37 fns, 41808 bytes)
+  0x0006f220     612b  i= 153  c=  7  s=  0  num_bigint::biguint::addition::_<impl core::ops::arith::Add<&num_bigint::biguint::BigUint> for num_bigint::biguint::BigUint>::add
+  0x0006f484     504b  i= 126  c=  6  s=  0  num_bigint::biguint::subtraction::_<impl core::ops::arith::Sub<&num_bigint::biguint::BigUint> for num_bigint::biguint::BigUint>::sub
+  0x0006f67c     440b  i= 110  c=  4  s=  0  num_bigint::biguint::subtraction::_<impl core::ops::arith::SubAssign<&num_bigint::biguint::BigUint> for num_bigint::biguint::BigUint>::sub_assign
+  0x0006f834     832b  i= 208  c=  9  s=  0  num_bigint::biguint::subtraction::_<impl core::ops::arith::Sub<num_bigint::biguint::BigUint> for &num_bigint::biguint::BigUint>::sub
+  0x0006fe28       4b  i=   1  c=  0  s=  0  num_bigint::biguint::BigUint::modpow
+  0x0006fe2c    1148b  i= 287  c= 20  s=  0  num_bigint::bigint::addition::_<impl core::ops::arith::Add for &num_bigint::bigint::BigInt>::add
+  0x000702a8     908b  i= 227  c= 12  s=  0  num_bigint::bigint::addition::_<impl core::ops::arith::Add for num_bigint::bigint::BigInt>::add
+  0x00070634    1128b  i= 282  c= 20  s=  0  num_bigint::bigint::subtraction::_<impl core::ops::arith::Sub for &num_bigint::bigint::BigInt>::sub
+  0x00070a9c     768b  i= 192  c= 10  s=  0  num_bigint::bigint::subtraction::_<impl core::ops::arith::Sub<&num_bigint::bigint::BigInt> for num_bigint::bigint::BigInt>::sub
+  0x00070d9c     928b  i= 232  c= 12  s=  0  num_bigint::bigint::subtraction::_<impl core::ops::arith::Sub for num_bigint::bigint::BigInt>::sub
+  0x0007113c     476b  i= 119  c=  9  s=  0  num_bigint::biguint::multiplication::bigint_from_slice
+  0x00071318    8508b  i=2127  c=139  s=  0  num_bigint::biguint::multiplication::mac3
+  0x00073454     448b  i= 112  c=  8  s=  0  num_bigint::biguint::multiplication::mul3
+  0x00073614     312b  i=  78  c=  2  s=  0  num_bigint::biguint::multiplication::scalar_mul
+  0x0007374c    1508b  i= 377  c= 17  s=  0  num_bigint::biguint::multiplication::sub_sign
+  0x00073d30     604b  i= 151  c=  7  s=  1  num_bigint::bigint::shift::_<impl core::ops::bit::Shr<i32> for num_bigint::bigint::BigInt>::shr
+  0x00073f8c     472b  i= 118  c= 10  s=  0  num_bigint::biguint::multiplication::_<impl core::ops::arith::Mul for num_bigint::biguint::BigUint>::mul
+  0x00074164     528b  i= 132  c= 10  s=  0  num_bigint::biguint::multiplication::_<impl core::ops::arith::Mul for &num_bigint::biguint::BigUint>::mul
+  0x00074374     544b  i= 136  c=  7  s=  0  num_bigint::biguint::division::div_rem_digit
+  0x00074594     412b  i= 103  c=  8  s=  0  num_bigint::biguint::convert::from_bitwise_digits_le
+  0x00074730     548b  i= 137  c=  8  s=  0  num_bigint::biguint::convert::to_bitwise_digits_le
+  0x00074954    5068b  i=1267  c= 78  s=  0  num_bigint::biguint::convert::to_radix_le
+  0x00075d20     560b  i= 140  c= 10  s=  0  num_bigint::biguint::multiplication::_<impl core::ops::arith::Mul for &num_bigint::biguint::BigUint>::mul
+  0x00075f50     392b  i=  98  c=  6  s=  0  num_bigint::biguint::division::_<impl core::ops::arith::Rem for &num_bigint::biguint::BigUint>::rem
+  0x000760d8    1728b  i= 432  c= 29  s=  0  num_bigint::biguint::power::modpow
+  0x00076798     636b  i= 159  c= 18  s=  0  num_bigint::biguint::power::plain_modpow::_{{closure}}
+  0x00076a14     560b  i= 140  c= 10  s=  0  num_bigint::biguint::multiplication::_<impl core::ops::arith::Mul for &num_bigint::biguint::BigUint>::mul
+  0x00076cc4     392b  i=  98  c=  6  s=  0  num_bigint::biguint::division::_<impl core::ops::arith::Rem for &num_bigint::biguint::BigUint>::rem
+  0x00076e4c    1016b  i= 254  c= 15  s=  0  num_bigint::biguint::monty::montgomery
+  0x00077244    3832b  i= 958  c= 80  s=  1  num_bigint::biguint::monty::monty_modpow
+  0x0007813c     544b  i= 136  c=  7  s=  0  num_bigint::biguint::division::div_rem_digit
+  0x0007835c    1156b  i= 289  c= 26  s=  4  num_bigint::biguint::division::div_rem_ref
+  0x000787e0    1688b  i= 422  c= 18  s=  0  num_bigint::biguint::division::div_rem_core
+  0x000791e0     216b  i=  54  c=  1  s=  0  num_bigint::biguint::subtraction::sub2
+  0x000792b8    1236b  i= 309  c= 19  s=  0  num_bigint::biguint::shift::biguint_shl2
+  0x0007978c     960b  i= 240  c= 15  s=  0  num_bigint::biguint::shift::biguint_shr2
+  0x00079b4c     192b  i=  48  c=  1  s=  0  num_bigint::biguint::addition::add2
+
+## _<std  (35 fns, 8856 bytes)
+  0x00052fa0     220b  i=  55  c=  3  s=  0  _<std::collections::hash::map::HashMap<K,V,S> as core::fmt::Debug>::fmt
+  0x00053b4c      52b  i=  13  c=  2  s=  1  _<std::sync::poison::PoisonError<T> as core::fmt::Debug>::fmt
+  0x000559a4     332b  i=  83  c=  8  s=  1  _<std::sync::once_lock::OnceLock<T> as core::convert::From<T>>::from
+  0x00059bb4     196b  i=  49  c=  6  s=  0  _<std::io::default_write_fmt::Adapter<T> as core::fmt::Write>::write_str
+  0x00097424      56b  i=  14  c=  2  s=  1  _<std::thread::local::AccessError as core::fmt::Debug>::fmt
+  0x000974a0      68b  i=  17  c=  3  s=  0  _<std::thread::PanicGuard as core::ops::drop::Drop>::drop
+  0x00097648     272b  i=  68  c=  8  s=  1  _<std::thread::thread_name_string::ThreadNameString as core::convert::From<alloc::string::String>>::from
+  0x00097d1c      40b  i=  10  c=  1  s=  0  _<std::ffi::os_str::Display as core::fmt::Debug>::fmt
+  0x00097d44     196b  i=  49  c=  4  s=  0  _<std::ffi::os_str::Display as core::fmt::Display>::fmt
+  0x000981a4      16b  i=   4  c=  0  s=  0  _<std::io::error::Error as core::fmt::Debug>::fmt
+  0x000985a8     516b  i= 129  c= 10  s=  1  _<std::io::error::Error as core::fmt::Display>::fmt
+  0x00098ff4     232b  i=  58  c=  5  s=  0  _<std::io::default_write_fmt::Adapter<T> as core::fmt::Write>::write_str
+  0x000990dc     128b  i=  32  c=  2  s=  0  _<std::io::default_write_fmt::Adapter<T> as core::fmt::Write>::write_str
+  0x0009915c     160b  i=  40  c=  3  s=  0  _<std::io::default_write_fmt::Adapter<T> as core::fmt::Write>::write_str
+  0x00099f50     944b  i= 236  c=  5  s=  0  _<std::path::Components as core::iter::traits::iterator::Iterator>::next
+  0x0009a300     872b  i= 218  c=  8  s=  0  _<std::path::Components as core::iter::traits::double_ended::DoubleEndedIterator>::next_back
+  0x0009a668     512b  i= 128  c=  5  s=  0  _<std::path::Components as core::cmp::PartialEq>::eq
+  0x0009b6b0     552b  i= 138  c=  8  s=  2  _<std::sys::backtrace::BacktraceLock::print::DisplayBacktrace as core::fmt::Display>::fmt
+  0x0009bde4      68b  i=  17  c=  3  s=  0  _<std::sys::thread_local::abort_on_dtor_unwind::DtorUnwindGuard as core::ops::drop::Drop>::drop
+  0x0009ce24     288b  i=  72  c=  8  s=  0  _<std::panicking::begin_panic_handler::FormatStringPayload as core::panic::PanicPayload>::take_box
+  0x0009cf44     176b  i=  44  c=  3  s=  0  _<std::panicking::begin_panic_handler::FormatStringPayload as core::panic::PanicPayload>::get
+  0x0009cff4      92b  i=  23  c=  1  s=  0  _<std::panicking::begin_panic_handler::FormatStringPayload as core::fmt::Display>::fmt
+  0x0009d050      80b  i=  20  c=  2  s=  0  _<std::panicking::begin_panic_handler::StaticStrPayload as core::panic::PanicPayload>::take_box
+  0x0009d0a0      24b  i=   6  c=  0  s=  0  _<std::panicking::begin_panic_handler::StaticStrPayload as core::panic::PanicPayload>::get
+  0x0009d0b8      24b  i=   6  c=  0  s=  0  _<std::panicking::begin_panic_handler::StaticStrPayload as core::panic::PanicPayload>::as_str
+  0x0009d0d0      28b  i=   7  c=  0  s=  0  _<std::panicking::begin_panic_handler::StaticStrPayload as core::fmt::Display>::fmt
+  0x0009d5b0     256b  i=  64  c=  4  s=  1  _<std::backtrace_rs::symbolize::SymbolName as core::fmt::Display>::fmt
+  0x0009db4c      52b  i=  13  c=  0  s=  2  _<std::io::error::ErrorKind as core::fmt::Debug>::fmt
+  0x0009db80     360b  i=  90  c=  4  s=  0  _<std::path::Component as core::cmp::PartialEq>::eq
+  0x0009ef00     104b  i=  26  c=  2  s=  0  _<std::sys::stdio::unix::Stderr as std::io::Write>::write
+  0x0009ef68     104b  i=  26  c=  2  s=  0  _<std::sys::stdio::unix::Stderr as std::io::Write>::write_vectored
+  0x0009efd0      20b  i=   5  c=  0  s=  0  _<std::sys::stdio::unix::Stderr as std::io::Write>::is_write_vectored
+  0x0009efe4      20b  i=   5  c=  0  s=  0  _<std::sys::stdio::unix::Stderr as std::io::Write>::flush
+  0x000a727c    1588b  i= 397  c= 23  s=  9  _<std::backtrace_rs::symbolize::gimli::parse_running_mmaps::MapsEntry as core::str::traits::FromStr>::from_str
+  0x000a78b0     208b  i=  52  c=  0  s=  7  _<std::backtrace_rs::symbolize::gimli::parse_running_mmaps::MapsEntry as core::str::traits::FromStr>::from_str::_{{closure}}
+
+## bytes  (31 fns, 5640 bytes)
+  0x0007f540     160b  i=  40  c=  4  s=  0  bytes::bytes::Bytes::copy_from_slice
+  0x0007f6f4      20b  i=   5  c=  0  s=  0  bytes::bytes::static_clone
+  0x0007f708     140b  i=  35  c=  3  s=  0  bytes::bytes::static_to_vec
+  0x0007f794     176b  i=  44  c=  3  s=  0  bytes::bytes::static_to_mut
+  0x0007f844       8b  i=   2  c=  0  s=  0  bytes::bytes::static_is_unique
+  0x0007f84c       4b  i=   1  c=  0  s=  0  bytes::bytes::static_drop
+  0x0007f850      92b  i=  23  c=  1  s=  0  bytes::bytes::promotable_even_clone
+  0x0007f8ac     108b  i=  27  c=  1  s=  0  bytes::bytes::promotable_even_to_vec
+  0x0007f918     316b  i=  79  c=  6  s=  0  bytes::bytes::promotable_even_to_mut
+  0x0007fa54     292b  i=  73  c=  7  s=  2  bytes::bytes::promotable_even_drop
+  0x0007fb78      92b  i=  23  c=  1  s=  0  bytes::bytes::promotable_odd_clone
+  0x0007fbd4     108b  i=  27  c=  1  s=  0  bytes::bytes::promotable_odd_to_vec
+  0x0007fc40     316b  i=  79  c=  6  s=  0  bytes::bytes::promotable_odd_to_mut
+  0x0007fd7c     288b  i=  72  c=  7  s=  2  bytes::bytes::promotable_odd_drop
+  0x0007fe9c      32b  i=   8  c=  0  s=  0  bytes::bytes::promotable_is_unique
+  0x0007febc      60b  i=  15  c=  1  s=  0  bytes::bytes::shared_clone
+  0x0007fef8     404b  i= 101  c= 12  s=  1  bytes::bytes::shared_to_vec_impl
+  0x0008008c      24b  i=   6  c=  0  s=  0  bytes::bytes::shared_to_vec
+  0x000800a4     636b  i= 159  c= 17  s=  1  bytes::bytes::shared_to_mut_impl
+  0x00080320      24b  i=   6  c=  0  s=  0  bytes::bytes::shared_to_mut
+  0x00080338      20b  i=   5  c=  0  s=  0  bytes::bytes::shared_is_unique
+  0x0008034c     196b  i=  49  c=  5  s=  1  bytes::bytes::shared_drop
+  0x00080410     328b  i=  82  c=  8  s=  0  bytes::bytes::shallow_clone_vec
+  0x00080558     912b  i= 228  c= 12  s=  0  bytes::bytes_mut::BytesMut::reserve_inner
+  0x000809f0      60b  i=  15  c=  1  s=  0  bytes::bytes_mut::shared_v_clone
+  0x00080a2c     344b  i=  86  c=  8  s=  0  bytes::bytes_mut::shared_v_to_vec
+  0x00080b84     292b  i=  73  c=  5  s=  0  bytes::bytes_mut::shared_v_to_mut
+  0x00080ca8      20b  i=   5  c=  0  s=  0  bytes::bytes_mut::shared_v_is_unique
+  0x00080cbc      88b  i=  22  c=  1  s=  0  bytes::bytes_mut::shared_v_drop
+  0x00080e88       8b  i=   2  c=  1  s=  0  bytes::abort
+  0x00080e90      72b  i=  18  c=  1  s=  0  bytes::panic_advance
+
+## libunwind  (31 fns, 13856 bytes)
+  0x000b96f0     400b  i= 100  c=  6  s=  3  libunwind::CFI_Parser
+  0x000b9880     712b  i= 178  c=  7  s=  5  libunwind::CFI_Parser
+  0x000b9b48       8b  i=   2  c=  0  s=  0  libunwind::AbstractUnwindCursor
+  0x000b9b50       8b  i=   2  c=  0  s=  0  libunwind::UnwindCursor
+  0x000b9b58      64b  i=  16  c=  0  s=  0  libunwind::UnwindCursor
+  0x000b9b98     284b  i=  71  c=  3  s=  3  libunwind::UnwindCursor
+  0x000b9cb4     284b  i=  71  c=  3  s=  3  libunwind::UnwindCursor
+  0x000b9dd0      20b  i=   5  c=  0  s=  0  libunwind::UnwindCursor
+  0x000b9de4      16b  i=   4  c=  0  s=  0  libunwind::UnwindCursor
+  0x000b9df4      16b  i=   4  c=  0  s=  0  libunwind::UnwindCursor
+  0x000b9e04     208b  i=  52  c=  3  s=  0  libunwind::UnwindCursor
+  0x000b9ed4      68b  i=  17  c=  0  s=  0  libunwind::UnwindCursor
+  0x000b9f18      12b  i=   3  c=  0  s=  0  libunwind::UnwindCursor
+  0x000b9f24      12b  i=   3  c=  0  s=  0  libunwind::UnwindCursor
+  0x000b9f30      44b  i=  11  c=  0  s=  0  libunwind::UnwindCursor
+  0x000b9f5c     536b  i= 134  c=  8  s=  0  libunwind::UnwindCursor
+  0x000ba174      12b  i=   3  c=  0  s=  0  libunwind::UnwindCursor
+  0x000ba180     292b  i=  73  c=  0  s=  0  libunwind::UnwindCursor
+  0x000ba2a4    1096b  i= 274  c= 19  s=  9  libunwind::DwarfInstructions
+  0x000ba6ec    2848b  i= 712  c= 40  s= 27  libunwind::CFI_Parser
+  0x000bb20c     252b  i=  63  c=  3  s=  3  libunwind::DwarfInstructions
+  0x000bb308     508b  i= 127  c=  7  s=  6  libunwind::DwarfInstructions
+  0x000bb504     788b  i= 197  c= 22  s= 21  libunwind::LocalAddressSpace::getEncodedP
+  0x000bb818     464b  i= 116  c=  6  s=  6  libunwind::LocalAddressSpace::getULEB128
+  0x000bb9e8    2500b  i= 625  c= 35  s= 30  libunwind::DwarfInstructions
+  0x000bc3ac     756b  i= 189  c= 14  s=  0  libunwind::UnwindCursor
+  0x000bc6a0     448b  i= 112  c=  3  s=  1  libunwind
+  0x000bc860     456b  i= 114  c=  6  s=  0  libunwind::CFI_Parser
+  0x000bca28     464b  i= 116  c=  8  s=  1  libunwind::EHHeaderParser
+  0x000bcbf8     232b  i=  58  c=  6  s=  6  libunwind::EHHeaderParser
+  0x000bcce0      48b  i=  12  c=  0  s=  1  libunwind::Registers_arm64::getRegisterName
+
+## rustc_demangle  (31 fns, 15816 bytes)
+  0x000ab33c     260b  i=  65  c=  2  s=  1  rustc_demangle::v0::HexNibbles::try_parse_uint
+  0x000ab440      68b  i=  17  c=  0  s=  1  rustc_demangle::v0::basic_type
+  0x000ab484     184b  i=  46  c=  1  s=  0  rustc_demangle::v0::Parser::hex_nibbles
+  0x000ab53c     244b  i=  61  c=  0  s=  0  rustc_demangle::v0::Parser::integer_62
+  0x000ab630     152b  i=  38  c=  1  s=  0  rustc_demangle::v0::Parser::opt_integer_62
+  0x000ab6c8     104b  i=  26  c=  0  s=  0  rustc_demangle::v0::Parser::namespace
+  0x000ab730     152b  i=  38  c=  1  s=  0  rustc_demangle::v0::Parser::backref
+  0x000ab7c8     568b  i= 142  c=  3  s=  0  rustc_demangle::v0::Parser::ident
+  0x000aba00      96b  i=  24  c=  2  s=  1  rustc_demangle::v0::Printer::skipping_printing
+  0x000aba60     232b  i=  58  c=  3  s=  3  rustc_demangle::v0::Printer::print_backref
+  0x000abb48     232b  i=  58  c=  3  s=  3  rustc_demangle::v0::Printer::print_backref
+  0x000abc30     224b  i=  56  c=  3  s=  3  rustc_demangle::v0::Printer::print_backref
+  0x000abd10     680b  i= 170  c=  7  s=  0  rustc_demangle::v0::Printer::print_quoted_escaped_chars
+  0x000abfb8     276b  i=  69  c=  5  s=  4  rustc_demangle::v0::Printer::print_lifetime_from_index
+  0x000ac0cc     412b  i= 103  c=  8  s=  6  rustc_demangle::v0::Printer::in_binder
+  0x000ac268     424b  i= 106  c=  7  s=  6  rustc_demangle::v0::Printer::in_binder
+  0x000ac410     460b  i= 115  c=  8  s=  5  rustc_demangle::v0::Printer::print_sep_list
+  0x000ac5dc     172b  i=  43  c=  2  s=  1  rustc_demangle::v0::Printer::print_sep_list
+  0x000ac688     164b  i=  41  c=  2  s=  1  rustc_demangle::v0::Printer::print_sep_list
+  0x000ac72c     368b  i=  92  c=  6  s=  3  rustc_demangle::v0::Printer::print_sep_list
+  0x000ac89c     176b  i=  44  c=  2  s=  1  rustc_demangle::v0::Printer::print_sep_list
+  0x000ac94c     584b  i= 146  c=  9  s=  9  rustc_demangle::v0::Printer::print_sep_list
+  0x000acb94    1584b  i= 396  c= 37  s= 26  rustc_demangle::v0::Printer::print_path
+  0x000ad1c4    1216b  i= 304  c= 27  s= 21  rustc_demangle::v0::Printer::print_type
+  0x000ad684     836b  i= 209  c= 18  s= 12  rustc_demangle::v0::Printer::print_type::_{{closure}}
+  0x000ad9c8     336b  i=  84  c=  7  s=  3  rustc_demangle::v0::Printer::print_path_maybe_open_generics
+  0x000adb18    1540b  i= 385  c= 37  s= 27  rustc_demangle::v0::Printer::print_const
+  0x000ae11c     348b  i=  87  c=  9  s=  4  rustc_demangle::v0::Printer::print_const_uint
+  0x000ae278    1048b  i= 262  c= 13  s=  5  rustc_demangle::v0::Printer::print_const_str_literal
+  0x000ae690    2596b  i= 649  c= 11  s=  2  rustc_demangle::demangle
+  0x000af0b4      80b  i=  20  c=  1  s=  0  rustc_demangle::try_demangle
+
+## serde_json  (30 fns, 14232 bytes)
+  0x0004c894     112b  i=  28  c=  4  s=  0  serde_json::error::Error::fix_position
+  0x0004e4a0     280b  i=  70  c=  8  s=  0  serde_json::de::from_trait
+  0x0004e5b8      76b  i=  19  c=  4  s=  0  serde_json::de::Deserializer<R>::peek_error
+  0x0004e604     724b  i= 181  c=  5  s=  0  serde_json::de::Deserializer<R>::parse_number
+  0x0004e8d8     384b  i=  96  c=  3  s=  0  serde_json::de::Deserializer<R>::parse_integer
+  0x0004ea58     560b  i= 140  c=  2  s=  0  serde_json::de::Deserializer<R>::parse_exponent
+  0x0004ec88      76b  i=  19  c=  4  s=  0  serde_json::de::Deserializer<R>::error
+  0x0004ecd4    2616b  i= 654  c= 43  s=  0  serde_json::value::de::_<impl serde_core::de::Deserialize for serde_json::value::Value>::deserialize
+  0x0005a914     124b  i=  31  c=  5  s=  0  serde_json::error::Error::syntax
+  0x0005a990     120b  i=  30  c=  5  s=  0  serde_json::error::Error::io
+  0x0005ae6c    2308b  i= 577  c=  2  s=  0  serde_json::read::SliceRead::position_of_index
+  0x0005b770      64b  i=  16  c=  0  s=  0  serde_json::read::SliceRead::skip_to_escape_slow
+  0x0005bac4      88b  i=  22  c=  4  s=  0  serde_json::read::error
+  0x0005bb1c     104b  i=  26  c=  5  s=  0  serde_json::read::error
+  0x0005bb84     104b  i=  26  c=  5  s=  0  serde_json::read::error
+  0x0005bbec     100b  i=  25  c=  5  s=  0  serde_json::read::error
+  0x0005bc50     680b  i= 170  c= 10  s=  0  serde_json::read::parse_escape
+  0x0005bef8    1480b  i= 370  c= 14  s=  8  serde_json::read::parse_unicode_escape
+  0x0005c588      88b  i=  22  c=  4  s=  0  serde_json::de::Deserializer<R>::error
+  0x0005c5e0      92b  i=  23  c=  4  s=  0  serde_json::de::Deserializer<R>::peek_error
+  0x0005c63c     512b  i= 128  c=  2  s=  0  serde_json::de::Deserializer<R>::parse_decimal
+  0x0005c83c     560b  i= 140  c=  2  s=  0  serde_json::de::Deserializer<R>::parse_exponent
+  0x0005ca6c     384b  i=  96  c=  1  s=  0  serde_json::de::Deserializer<R>::parse_long_integer
+  0x0005cbec     308b  i=  77  c=  1  s=  0  serde_json::de::Deserializer<R>::parse_decimal_overflow
+  0x0005cd20     144b  i=  36  c=  1  s=  0  serde_json::de::Deserializer<R>::parse_exponent_overflow
+  0x0005d658     320b  i=  80  c=  6  s=  3  serde_json::ser::format_escaped_str
+  0x0005d798     320b  i=  80  c=  6  s=  3  serde_json::ser::format_escaped_str
+  0x0005d8d8     780b  i= 195  c= 16  s= 10  serde_json::value::ser::_<impl serde_core::ser::Serialize for serde_json::value::Value>::serialize
+  0x0005dbe4     676b  i= 169  c= 17  s= 10  serde_json::value::ser::_<impl serde_core::ser::Serialize for serde_json::value::Value>::serialize
+  0x0005de88      48b  i=  12  c=  0  s=  0  serde_json::number::Number::from_f64
+
+## obfstr  (24 fns, 960 bytes)
+  0x0004b7bc      44b  i=  11  c=  0  s=  0  obfstr::xref::inner
+  0x0004b7e8      40b  i=  10  c=  0  s=  0  obfstr::xref::inner
+  0x0004b810      56b  i=  14  c=  0  s=  0  obfstr::xref::inner
+  0x0004b848      44b  i=  11  c=  0  s=  0  obfstr::xref::inner
+  0x0004b874      40b  i=  10  c=  0  s=  0  obfstr::xref::inner
+  0x0004b89c      24b  i=   6  c=  0  s=  0  obfstr::xref::inner
+  0x0004b8b4      44b  i=  11  c=  0  s=  0  obfstr::xref::inner
+  0x0004b8e0      36b  i=   9  c=  0  s=  0  obfstr::xref::inner
+  0x0004b904      36b  i=   9  c=  0  s=  0  obfstr::xref::inner
+  0x0004b928      44b  i=  11  c=  0  s=  0  obfstr::xref::inner
+  0x0004b954      40b  i=  10  c=  0  s=  0  obfstr::xref::inner
+  0x0004b97c      32b  i=   8  c=  0  s=  0  obfstr::xref::inner
+  0x0004b99c      44b  i=  11  c=  0  s=  0  obfstr::xref::inner
+  0x0004b9c8      40b  i=  10  c=  0  s=  0  obfstr::xref::inner
+  0x0004b9f0      36b  i=   9  c=  0  s=  0  obfstr::xref::inner
+  0x0004ba14      44b  i=  11  c=  0  s=  0  obfstr::xref::inner
+  0x0004ba40      40b  i=  10  c=  0  s=  0  obfstr::xref::inner
+  0x0004ba68      36b  i=   9  c=  0  s=  0  obfstr::xref::inner
+  0x0004ba8c      44b  i=  11  c=  0  s=  0  obfstr::xref::inner
+  0x0004bab8      48b  i=  12  c=  0  s=  0  obfstr::xref::inner
+  0x0004bae8      44b  i=  11  c=  0  s=  0  obfstr::xref::inner
+  0x0004bb14      24b  i=   6  c=  0  s=  0  obfstr::xref::inner
+  0x0004bb2c      36b  i=   9  c=  0  s=  0  obfstr::xref::inner
+  0x0004bb50      44b  i=  11  c=  0  s=  0  obfstr::xref::inner
+
+## _<core  (23 fns, 6528 bytes)
+  0x000434d8      20b  i=   5  c=  0  s=  1  _<core::fmt::Error as core::fmt::Debug>::fmt
+  0x000504e8     488b  i= 122  c=  0  s=  0  _<core::hash::sip::Hasher<S> as core::hash::Hasher>::write
+  0x00053374     304b  i=  76  c=  2  s=  0  _<core::iter::adapters::GenericShunt<I,R> as core::iter::traits::iterator::Iterator>::next
+  0x0005a738      20b  i=   5  c=  0  s=  0  _<core::fmt::Error as core::fmt::Debug>::fmt
+  0x0005fa4c     488b  i= 122  c=  0  s=  0  _<core::hash::sip::Hasher<S> as core::hash::Hasher>::write
+  0x00060e48     308b  i=  77  c=  2  s=  0  _<core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::try_fold
+  0x000621f8      20b  i=   5  c=  0  s=  1  _<core::fmt::Error as core::fmt::Debug>::fmt
+  0x0007f52c      20b  i=   5  c=  0  s=  1  _<core::alloc::layout::LayoutError as core::fmt::Debug>::fmt
+  0x00091b44     416b  i= 104  c=  4  s=  0  _<core::str::pattern::CharSearcher as core::str::pattern::Searcher>::next_match
+  0x000a98bc     700b  i= 175  c=  5  s=  1  _<core::iter::sources::from_fn::FromFn<F> as core::iter::traits::iterator::Iterator>::next
+  0x000aa02c      32b  i=   8  c=  0  s=  1  _<core::fmt::Error as core::fmt::Debug>::fmt
+  0x000aa04c      76b  i=  19  c=  1  s=  2  _<core::num::error::ParseIntError as core::fmt::Debug>::fmt
+  0x000aa098     852b  i= 213  c=  4  s=  0  _<core::str::pattern::StrSearcher as core::str::pattern::Searcher>::next
+  0x000aa3ec      36b  i=   9  c=  0  s=  0  _<core::str::iter::Chars as core::iter::traits::iterator::Iterator>::count
+  0x000b1994      32b  i=   8  c=  0  s=  1  _<core::fmt::Error as core::fmt::Debug>::fmt
+  0x000b19b4      32b  i=   8  c=  0  s=  1  _<core::alloc::layout::LayoutError as core::fmt::Debug>::fmt
+  0x000b2f80     520b  i= 130  c=  4  s=  1  _<core::ops::range::Range<Idx> as core::fmt::Debug>::fmt
+  0x000b3884     600b  i= 150  c=  0  s=  1  _<core::fmt::builders::PadAdapter as core::fmt::Write>::write_str
+  0x000b3adc     128b  i=  32  c=  0  s=  1  _<core::fmt::builders::PadAdapter as core::fmt::Write>::write_char
+  0x000b4518      28b  i=   7  c=  0  s=  0  _<core::fmt::Arguments as core::fmt::Display>::fmt
+  0x000b54bc      24b  i=   6  c=  0  s=  0  _<core::fmt::Formatter as core::fmt::Write>::write_char
+  0x000b716c     924b  i= 231  c=  5  s=  0  _<core::str::lossy::Debug as core::fmt::Debug>::fmt
+  0x000b7508     460b  i= 115  c=  0  s=  1  _<core::str::lossy::Utf8Chunks as core::iter::traits::iterator::Iterator>::next
+
+## gimli  (23 fns, 29888 bytes)
+  0x0008a928     708b  i= 177  c=  2  s=  0  gimli::read::line::parse_file_v5
+  0x0008abec     888b  i= 222  c=  6  s=  0  gimli::read::line::FileEntryFormat::parse
+  0x0008af64    2328b  i= 582  c=  1  s=  0  gimli::read::line::parse_attribute
+  0x0008b87c     228b  i=  57  c=  2  s=  0  gimli::read::line::parse_directory_v5
+  0x0008b960     564b  i= 141  c=  0  s=  0  gimli::read::line::FileEntry<R,Offset>::parse
+  0x0008bb94    4004b  i=1001  c=  3  s=  0  gimli::read::unit::parse_attribute
+  0x0008cb38    1516b  i= 379  c=  0  s=  0  gimli::read::unit::skip_attributes
+  0x0008d124    1776b  i= 444  c= 17  s=  0  gimli::read::unit::Attribute<R>::value
+  0x0008d814     764b  i= 191  c=  2  s=  0  gimli::read::unit::EntriesCursor<R>::next_entry
+  0x0008db10     164b  i=  41  c=  0  s=  0  gimli::read::unit::AttributeValue<R,Offset>::udata_value
+  0x0008dbb4    1296b  i= 324  c=  0  s=  0  gimli::read::unit::DebugInfoUnitHeadersIter<R>::next
+  0x0008e0c4    7164b  i=1791  c= 63  s=  0  gimli::read::dwarf::Unit<R>::new
+  0x0008fcc0     548b  i= 137  c=  0  s=  0  gimli::read::dwarf::Dwarf<R>::attr_string
+  0x0008fee4    1904b  i= 476  c=  0  s=  0  gimli::read::index::UnitIndex<R>::parse
+  0x00090654     204b  i=  51  c=  0  s=  0  gimli::read::reader::Reader::read_offset
+  0x00090720     556b  i= 139  c=  0  s=  0  gimli::read::reader::Reader::read_sleb128
+  0x0009094c     188b  i=  47  c=  0  s=  0  gimli::read::reader::Reader::read_uleb128
+  0x00090a08     296b  i=  74  c=  0  s=  0  gimli::read::reader::Reader::read_sized_offset
+  0x00090b30     828b  i= 207  c=  0  s=  0  gimli::read::aranges::ArangeHeader<R,Offset>::parse
+  0x00090e6c    3180b  i= 795  c=  0  s=  0  gimli::read::rnglists::RngListIter<R>::next
+  0x000a9564     268b  i=  67  c=  8  s=  0  gimli::read::abbrev::Abbreviations::insert
+  0x000a9670     148b  i=  37  c=  3  s=  0  gimli::read::abbrev::Abbreviation::new
+  0x000a9704     368b  i=  92  c=  9  s=  0  gimli::read::abbrev::Attributes::push
+
+## ckemv_emv_kernel  (20 fns, 32016 bytes)
+  0x00060308    2880b  i= 720  c=  0  s= 85  ckemv_emv_kernel::tags::get_tag_name
+  0x00061538     452b  i= 113  c=  0  s=  0  ckemv_emv_kernel::types::generate_negative_correlated_time
+  0x00062590     184b  i=  46  c=  1  s=  0  ckemv_emv_kernel::dispatcher::TransactionDispatcher::get_context
+  0x00062648     156b  i=  39  c=  2  s=  1  ckemv_emv_kernel::dispatcher::TransactionDispatcher::status
+  0x000626e4     372b  i=  93  c=  6  s=  0  ckemv_emv_kernel::dispatcher::TransactionDispatcher::get_results
+  0x00062858    1336b  i= 334  c= 17  s=  5  ckemv_emv_kernel::dispatcher::TransactionDispatcher::next_command
+  0x00062d90    2572b  i= 643  c= 56  s= 11  ckemv_emv_kernel::dispatcher::TransactionDispatcher::process_response
+  0x0006379c     292b  i=  73  c= 11  s=  0  ckemv_emv_kernel::dispatcher::TransactionDispatcher::extract_aids_from_ppse
+  0x000638c0     280b  i=  70  c=  6  s=  1  ckemv_emv_kernel::dispatcher::TransactionDispatcher::find_aids_recursive
+  0x00063bec     644b  i= 161  c=  8  s=  0  ckemv_emv_kernel::results::EmvResults::fallback_track2
+  0x00063e70    1228b  i= 307  c= 33  s=  2  ckemv_emv_kernel::results::build_tlv_tree
+  0x0006433c    5216b  i=1304  c= 83  s= 10  ckemv_emv_kernel::results::extract_emv_data
+  0x00067c88    6212b  i=1553  c=118  s=  5  ckemv_emv_kernel::dol::build_dol_payload
+  0x000695a8    2416b  i= 604  c= 37  s=  1  ckemv_emv_kernel::crypto::oda::recover_cert
+  0x00069f18    1728b  i= 432  c= 36  s=  3  ckemv_emv_kernel::crypto::oda::verify_issuer_public_key
+  0x0006a5d8    1760b  i= 440  c= 38  s=  3  ckemv_emv_kernel::crypto::oda::verify_icc_public_key
+  0x0006acb8    1392b  i= 348  c= 18  s=  0  ckemv_emv_kernel::crypto::oda::build_static_data
+  0x0006b228    2624b  i= 656  c= 56  s= 11  ckemv_emv_kernel::crypto::oda::verify_certificates
+  0x0006bc68     136b  i=  34  c=  4  s=  0  ckemv_emv_kernel::crypto::oda::verify_certificates::_{{closure}}
+  0x0006bcf0     136b  i=  34  c=  4  s=  0  ckemv_emv_kernel::crypto::oda::verify_certificates::_{{closure}}
+
+## _<ckemv_emv_kernel  (13 fns, 18944 bytes)
+  0x000439f4     112b  i=  28  c=  1  s=  3  _<ckemv_emv_kernel::types::TransactionStatus as core::fmt::Debug>::fmt
+  0x000616fc     100b  i=  25  c=  2  s=  0  _<ckemv_emv_kernel::types::TransactionContext as core::default::Default>::default
+  0x000639d8     148b  i=  37  c=  1  s=  0  _<ckemv_emv_kernel::types::TransactionContext as core::clone::Clone>::clone
+  0x00065a04    1104b  i= 276  c= 22  s=  4  _<ckemv_emv_kernel::kernels::visa::VisaKernel as ckemv_emv_kernel::types::EmvKernelStrategy>::next_command
+  0x00065e54    3940b  i= 985  c= 68  s= 23  _<ckemv_emv_kernel::kernels::visa::VisaKernel as ckemv_emv_kernel::types::EmvKernelStrategy>::process_response
+  0x00066db8      68b  i=  17  c=  0  s=  0  _<ckemv_emv_kernel::kernels::visa::VisaKernel as ckemv_emv_kernel::types::EmvKernelStrategy>::status
+  0x00066dfc     152b  i=  38  c=  1  s=  0  _<ckemv_emv_kernel::kernels::visa::VisaKernel as ckemv_emv_kernel::types::EmvKernelStrategy>::get_context
+  0x00066e94    3448b  i= 862  c= 54  s=  0  _<ckemv_emv_kernel::kernels::visa::VisaKernel as ckemv_emv_kernel::types::EmvKernelStrategy>::get_results
+  0x0006bfe0    1784b  i= 446  c= 36  s=  4  _<ckemv_emv_kernel::kernels::mchip::MastercardKernel as ckemv_emv_kernel::types::EmvKernelStrategy>::next_command
+  0x0006c6d8    4420b  i=1105  c= 81  s= 16  _<ckemv_emv_kernel::kernels::mchip::MastercardKernel as ckemv_emv_kernel::types::EmvKernelStrategy>::process_response
+  0x0006d81c      68b  i=  17  c=  0  s=  0  _<ckemv_emv_kernel::kernels::mchip::MastercardKernel as ckemv_emv_kernel::types::EmvKernelStrategy>::status
+  0x0006d860     152b  i=  38  c=  1  s=  0  _<ckemv_emv_kernel::kernels::mchip::MastercardKernel as ckemv_emv_kernel::types::EmvKernelStrategy>::get_context
+  0x0006d8f8    3448b  i= 862  c= 54  s=  0  _<ckemv_emv_kernel::kernels::mchip::MastercardKernel as ckemv_emv_kernel::types::EmvKernelStrategy>::get_results
+
+## _<serde_json  (13 fns, 5388 bytes)
+  0x0004c904    1024b  i= 256  c= 20  s=  0  _<serde_json::value::de::<impl serde_core::de::Deserialize for serde_json::value::Value>::deserialize::ValueVisitor as serde_core::de::Visitor>::visit_map
+  0x0004e05c     228b  i=  57  c=  4  s=  0  _<serde_json::value::de::KeyClassifier as serde_core::de::DeserializeSeed>::deserialize
+  0x0004fa2c     388b  i=  97  c=  2  s=  0  _<serde_json::de::MapAccess<R> as serde_core::de::MapAccess>::next_key_seed::has_next_key
+  0x0004fbb0     312b  i=  78  c=  5  s=  0  _<serde_json::de::MapAccess<R> as serde_core::de::MapAccess>::next_key_seed
+  0x0005a21c    1084b  i= 271  c= 28  s= 14  _<serde_json::value::Value as core::fmt::Display>::fmt
+  0x0005aa08     604b  i= 151  c=  0  s=  1  _<serde_json::error::ErrorCode as core::fmt::Display>::fmt
+  0x0005ac64     320b  i=  80  c=  6  s=  0  _<serde_json::error::Error as core::fmt::Debug>::fmt
+  0x0005b7b0      16b  i=   4  c=  0  s=  0  _<serde_json::read::StrRead as serde_json::read::Read>::position
+  0x0005b7c0      24b  i=   6  c=  0  s=  0  _<serde_json::read::StrRead as serde_json::read::Read>::peek_position
+  0x0005b7d8     748b  i= 187  c= 12  s=  0  _<serde_json::read::StrRead as serde_json::read::Read>::parse_str
+  0x0005d0bc      88b  i=  22  c=  0  s=  0  _<serde_json::value::ser::SerializeMap as serde_core::ser::SerializeMap>::end
+  0x0005deb8     276b  i=  69  c=  8  s=  1  _<serde_json::number::Number as serde_core::ser::Serialize>::serialize
+  0x0005dfcc     276b  i=  69  c=  8  s=  1  _<serde_json::number::Number as serde_core::ser::Serialize>::serialize
+
+## addr2line  (12 fns, 22212 bytes)
+  0x00091df8     380b  i=  95  c=  0  s=  0  addr2line::Context<R>::find_unit
+  0x00091f74    1208b  i= 302  c= 16  s=  0  addr2line::line::render_file
+  0x0009242c    6960b  i=1740  c= 66  s=  0  addr2line::line::LazyLines::borrow
+  0x00093f5c     980b  i= 245  c=  6  s=  0  addr2line::unit::ResUnit<R>::find_function_or_location
+  0x00094330    5408b  i=1352  c= 67  s=  0  addr2line::unit::ResUnit<R>::find_function_or_location::_{{closure}}
+  0x00095850    1108b  i= 277  c=  8  s=  0  addr2line::lookup::LoopingLookup<T,L,F>::new_lookup
+  0x00095ca4     884b  i= 221  c=  8  s=  1  addr2line::function::name_entry
+  0x00096018    3872b  i= 968  c= 24  s=  0  addr2line::function::Function<R>::parse_children
+  0x00096f38     516b  i= 129  c=  1  s=  0  addr2line::function::name_attr
+  0x000a8070     316b  i=  79  c=  1  s=  0  addr2line::line::Lines::find_location
+  0x000a81ac     416b  i= 104  c= 14  s=  0  addr2line::line::path_push
+  0x000a834c     164b  i=  41  c=  2  s=  0  addr2line::line::has_windows_root
+
+## ckemv_android  (10 fns, 23704 bytes)
+  0x00043a64    2168b  i= 542  c= 55  s=  4  ckemv_android::native_initialize
+  0x000442dc    1056b  i= 264  c= 28  s=  4  ckemv_android::native_get_next_command
+  0x000446fc    1708b  i= 427  c= 45  s=  6  ckemv_android::native_process_response
+  0x00044da8     808b  i= 202  c= 21  s=  3  ckemv_android::native_get_status
+  0x000450d0    2816b  i= 704  c= 75  s=  3  ckemv_android::native_get_pan
+  0x00045bd0    2816b  i= 704  c= 75  s=  3  ckemv_android::native_get_atc
+  0x000466d0    2816b  i= 704  c= 75  s=  3  ckemv_android::native_get_arqc
+  0x000471d0    2816b  i= 704  c= 75  s=  3  ckemv_android::native_get_aid
+  0x00047cd0    3824b  i= 956  c= 93  s=  7  ckemv_android::native_get_tx_parameters
+  0x00048bc0    2876b  i= 719  c= 56  s=  5  ckemv_android::native_get_raw_data
+
+## jni  (10 fns, 13520 bytes)
+  0x000506d0    1828b  i= 457  c= 30  s= 16  jni::wrapper::jnienv::JNIEnv::find_class
+  0x00050df4    1684b  i= 421  c= 26  s= 16  jni::wrapper::jnienv::JNIEnv::new_string
+  0x00051488    1828b  i= 457  c= 30  s= 16  jni::wrapper::jnienv::JNIEnv::new_string
+  0x00051bac    1940b  i= 485  c= 27  s= 15  jni::wrapper::jnienv::JNIEnv::register_native_methods
+  0x0007c5f0    1828b  i= 457  c= 30  s= 16  jni::wrapper::jnienv::JNIEnv::find_class
+  0x0007cd14    1388b  i= 347  c= 18  s= 15  jni::wrapper::jnienv::JNIEnv::get_string
+  0x0007d560     268b  i=  67  c=  4  s=  1  jni::wrapper::strings::ffi_str::_<impl core::convert::From<&jni::wrapper::strings::ffi_str::JNIStr> for alloc::borrow::Cow<str>>::from
+  0x0007d66c     884b  i= 221  c=  8  s=  8  jni::wrapper::java_vm::vm::JavaVM::get_env
+  0x0007d9f4     256b  i=  64  c=  8  s=  0  jni::wrapper::strings::java_str::_<impl core::convert::From<jni::wrapper::strings::java_str::JavaStr> for alloc::string::String>::from
+  0x0007e01c    1616b  i= 404  c= 22  s=  0  jni::wrapper::strings::java_str::JavaStr::from_env
+
+## _<hashbrown  (7 fns, 2036 bytes)
+  0x0004de68     240b  i=  60  c=  1  s=  0  _<hashbrown::raw::RawTable<T,A> as core::ops::drop::Drop>::drop
+  0x0004df58     260b  i=  65  c=  2  s=  0  _<hashbrown::raw::RawTable<T,A> as core::ops::drop::Drop>::drop
+  0x000574b8     236b  i=  59  c=  1  s=  0  _<hashbrown::raw::RawTable<T,A> as core::ops::drop::Drop>::drop
+  0x00058ee4     236b  i=  59  c=  1  s=  0  _<hashbrown::raw::RawTable<T,A> as core::ops::drop::Drop>::drop
+  0x00059ac4     240b  i=  60  c=  1  s=  0  _<hashbrown::raw::RawTable<T,A> as core::ops::drop::Drop>::drop
+  0x0005edc8     564b  i= 141  c= 10  s=  0  _<hashbrown::raw::RawTable<T,A> as core::clone::Clone>::clone
+  0x0005effc     260b  i=  65  c=  2  s=  0  _<hashbrown::raw::RawTable<T,A> as core::ops::drop::Drop>::drop
+
+## _<jni  (7 fns, 3256 bytes)
+  0x000436c8     772b  i= 193  c= 11  s= 19  _<jni::wrapper::errors::Error as core::fmt::Debug>::fmt
+  0x00052e8c     276b  i=  69  c=  8  s=  0  _<jni::wrapper::strings::ffi_str::JNIString as core::convert::From<T>>::from
+  0x0007d290     252b  i=  63  c=  2  s=  0  _<jni::wrapper::signature::JavaType as core::fmt::Display>::fmt
+  0x0007d38c     108b  i=  27  c=  0  s=  2  _<jni::wrapper::signature::ReturnType as core::fmt::Display>::fmt
+  0x0007d3f8     300b  i=  75  c=  2  s=  2  _<jni::wrapper::signature::TypeSignature as core::fmt::Display>::fmt
+  0x0007daf4     644b  i= 161  c=  1  s=  4  _<jni::wrapper::errors::Error as core::fmt::Display>::fmt
+  0x0007e66c     904b  i= 226  c= 14  s=  0  _<jni::wrapper::strings::java_str::JavaStr as core::ops::drop::Drop>::drop
+
+## _<T as alloc  (6 fns, 732 bytes)
+  0x00062520     112b  i=  28  c=  3  s=  0  _<T as alloc::slice::<impl $u5b$T$u5d$>::to_vec_in::ConvertVec>::to_vec
+  0x00063b7c     112b  i=  28  c=  3  s=  0  _<T as alloc::slice::<impl $u5b$T$u5d$>::to_vec_in::ConvertVec>::to_vec
+  0x00065994     112b  i=  28  c=  3  s=  0  _<T as alloc::slice::<impl $u5b$T$u5d$>::to_vec_in::ConvertVec>::to_vec
+  0x0006951c     140b  i=  35  c=  3  s=  0  _<T as alloc::slice::<impl $u5b$T$u5d$>::to_vec_in::ConvertVec>::to_vec
+  0x0006bf70     112b  i=  28  c=  3  s=  0  _<T as alloc::slice::<impl $u5b$T$u5d$>::to_vec_in::ConvertVec>::to_vec
+  0x00091ce4     144b  i=  36  c=  3  s=  0  _<T as alloc::slice::<impl $u5b$T$u5d$>::to_vec_in::ConvertVec>::to_vec
+
+## _<rustc_demangle  (6 fns, 4356 bytes)
+  0x000aa410    2844b  i= 711  c= 17  s= 17  _<rustc_demangle::legacy::Demangle as core::fmt::Display>::fmt
+  0x000aaf2c    1040b  i= 260  c=  7  s=  3  _<rustc_demangle::v0::Ident as core::fmt::Display>::fmt
+  0x000af104      72b  i=  18  c=  1  s=  0  _<rustc_demangle::DemangleStyle as core::fmt::Display>::fmt
+  0x000af14c      60b  i=  15  c=  0  s=  0  _<rustc_demangle::SizeLimitedFmtAdapter<F> as core::fmt::Write>::write_str
+  0x000af188     308b  i=  77  c=  4  s=  2  _<rustc_demangle::Demangle as core::fmt::Display>::fmt
+  0x000af2bc      32b  i=   8  c=  0  s=  1  _<rustc_demangle::SizeLimitExhausted as core::fmt::Debug>::fmt
+
+## iso7816_tlv  (6 fns, 2668 bytes)
+  0x0007a1f8      56b  i=  14  c=  1  s=  0  iso7816_tlv::ber::tag::Tag::to_bytes
+  0x0007a230      60b  i=  15  c=  1  s=  0  iso7816_tlv::ber::tag::Tag::is_constructed
+  0x0007a6dc     192b  i=  48  c=  1  s=  0  iso7816_tlv::ber::value::Value::len_as_bytes
+  0x0007a948     844b  i= 211  c= 21  s=  0  iso7816_tlv::ber::tlv::Tlv::to_vec
+  0x0007ac94    1280b  i= 320  c= 21  s=  0  iso7816_tlv::ber::tlv::Tlv::read
+  0x0007b194     236b  i=  59  c=  7  s=  0  iso7816_tlv::ber::tlv::Tlv::parse_all
+
+## _<log  (5 fns, 96 bytes)
+  0x0007f3f4       8b  i=   2  c=  0  s=  0  _<log::NopLogger as log::Log>::enabled
+  0x0007f3fc       4b  i=   1  c=  0  s=  0  _<log::NopLogger as log::Log>::log
+  0x0007f400       4b  i=   1  c=  0  s=  0  _<log::NopLogger as log::Log>::flush
+  0x0007f47c      20b  i=   5  c=  0  s=  1  _<log::SetLoggerError as core::fmt::Display>::fmt
+  0x0007f490      60b  i=  15  c=  0  s=  1  _<log::__private_api::GlobalLogger as log::Log>::log
+
+## hashbrown  (5 fns, 3016 bytes)
+  0x000530cc     680b  i= 170  c=  7  s=  0  hashbrown::map::HashMap<K,V,S,A>::insert
+  0x0005f100    1552b  i= 388  c= 13  s=  0  hashbrown::raw::RawTable<T,A>::reserve_rehash
+  0x0005fc34     680b  i= 170  c=  7  s=  0  hashbrown::map::HashMap<K,V,S,A>::insert
+  0x000af2dc      68b  i=  17  c=  1  s=  0  hashbrown::raw::Fallibility::capacity_overflow
+  0x000af320      36b  i=   9  c=  1  s=  0  hashbrown::raw::Fallibility::alloc_err
+
+## serde_core  (5 fns, 2184 bytes)
+  0x0005373c     836b  i= 209  c= 18  s=  0  serde_core::ser::Serializer::collect_map
+  0x0005d114     704b  i= 176  c= 16  s=  7  serde_core::ser::Serializer::collect_seq
+  0x0005d3d4     196b  i=  49  c=  5  s=  3  serde_core::ser::Serializer::collect_seq
+  0x0005d498     292b  i=  73  c=  6  s=  3  serde_core::ser::SerializeMap::serialize_entry
+  0x0005d5bc     156b  i=  39  c=  3  s=  2  serde_core::ser::SerializeMap::serialize_entry
+
+## _<android_logger  (4 fns, 2008 bytes)
+  0x00055af0     120b  i=  30  c=  1  s=  0  _<android_logger::AndroidLogger as log::Log>::enabled
+  0x00055b68    1432b  i= 358  c= 14  s=  1  _<android_logger::AndroidLogger as log::Log>::log
+  0x00056100       4b  i=   1  c=  0  s=  0  _<android_logger::AndroidLogger as log::Log>::flush
+  0x00056104     452b  i= 113  c=  8  s=  0  _<android_logger::PlatformLogWriter as core::fmt::Write>::write_str
+
+## _<hex  (4 fns, 448 bytes)
+  0x00062488     152b  i=  38  c=  1  s=  5  _<hex::error::FromHexError as core::fmt::Debug>::fmt
+  0x0007a0d0     172b  i=  43  c=  1  s=  2  _<hex::error::FromHexError as core::fmt::Display>::fmt
+  0x0007a17c      84b  i=  21  c=  0  s=  0  _<hex::BytesToHexChars as core::iter::traits::iterator::Iterator>::next
+  0x0007a1d0      40b  i=  10  c=  0  s=  0  _<hex::BytesToHexChars as core::iter::traits::iterator::Iterator>::size_hint
+
+## cesu8  (4 fns, 2188 bytes)
+  0x0007eb68      20b  i=   5  c=  0  s=  0  cesu8::from_java_cesu8
+  0x0007eb7c     960b  i= 240  c= 11  s=  0  cesu8::from_cesu8_internal
+  0x0007ef3c     192b  i=  48  c=  1  s=  0  cesu8::to_java_cesu8
+  0x0007effc    1016b  i= 254  c= 14  s=  3  cesu8::to_cesu8_internal
+
+## miniz_oxide  (4 fns, 8728 bytes)
+  0x000af42c     988b  i= 247  c=  1  s=  0  miniz_oxide::inflate::core::init_tree
+  0x000af808    1104b  i= 276  c=  7  s=  6  miniz_oxide::inflate::core::transfer
+  0x000afc58     136b  i=  34  c=  0  s=  0  miniz_oxide::inflate::core::apply_match
+  0x000afce0    6500b  i=1625  c= 24  s= 16  miniz_oxide::inflate::core::decompress
+
+## OUTLINED_FUNCTION_0  (3 fns, 48 bytes)
+  0x000575a4       8b  i=   2  c=  0  s=  0  OUTLINED_FUNCTION_0
+  0x000a7980      16b  i=   4  c=  0  s=  0  OUTLINED_FUNCTION_0
+  0x000b8c24      24b  i=   6  c=  0  s=  0  OUTLINED_FUNCTION_0
+
+## _<bytes  (3 fns, 540 bytes)
+  0x0007f5e0     276b  i=  69  c=  5  s=  0  _<bytes::bytes::Bytes as core::convert::From<alloc::vec::Vec<u8>>>::from
+  0x000808e8     128b  i=  32  c=  1  s=  0  _<bytes::bytes_mut::BytesMut as core::ops::drop::Drop>::drop
+  0x00080968     136b  i=  34  c=  3  s=  0  _<bytes::bytes_mut::BytesMut as bytes::buf::buf_mut::BufMut>::put_slice
+
+## log  (3 fns, 220 bytes)
+  0x0007e9f4      96b  i=  24  c=  1  s=  0  log::__private_api::log
+  0x0007f404     120b  i=  30  c=  0  s=  0  log::set_logger
+  0x0007f4cc       4b  i=   1  c=  0  s=  0  log::__private_api::loc
+
+## once_cell  (3 fns, 1312 bytes)
+  0x00054a78      60b  i=  15  c=  1  s=  0  once_cell::imp::OnceCell<T>::initialize
+  0x00054ab4     692b  i= 173  c= 15  s=  0  once_cell::imp::OnceCell<T>::initialize::_{{closure}}
+  0x0007c3c0     560b  i= 140  c= 12  s=  0  once_cell::imp::initialize_or_wait
+
+## _<&mut T as core  (2 fns, 56 bytes)
+  0x00089354      24b  i=   6  c=  0  s=  0  _<&mut T as core::fmt::Display>::fmt
+  0x000aa00c      32b  i=   8  c=  0  s=  0  _<&mut T as core::fmt::Debug>::fmt
+
+## _<T as core  (2 fns, 96 bytes)
+  0x00080ed8      48b  i=  12  c=  0  s=  0  _<T as core::any::Any>::type_id
+  0x00080f08      48b  i=  12  c=  0  s=  0  _<T as core::any::Any>::type_id
+
+## _<char as core  (2 fns, 528 bytes)
+  0x000b58f0     232b  i=  58  c=  1  s=  0  _<char as core::fmt::Debug>::fmt
+  0x000b59d8     296b  i=  74  c=  4  s=  0  _<char as core::fmt::Display>::fmt
+
+## _<ckemv_core  (2 fns, 208 bytes)
+  0x0006592c     104b  i=  26  c=  1  s=  3  _<ckemv_core::response::status::StatusWord as core::fmt::Debug>::fmt
+  0x0006bf08     104b  i=  26  c=  1  s=  3  _<ckemv_core::response::status::StatusWord as core::fmt::Debug>::fmt
+
+## _<gimli  (2 fns, 204 bytes)
+  0x00091d74     132b  i=  33  c=  0  s=  0  _<gimli::read::unit::AttributeValue<R,Offset> as core::clone::Clone>::clone
+  0x000a9874      72b  i=  18  c=  1  s=  0  _<gimli::read::abbrev::Attributes as core::ops::deref::Deref>::deref
+
+## _<str as core  (2 fns, 992 bytes)
+  0x000b5510     960b  i= 240  c=  3  s=  0  _<str as core::fmt::Debug>::fmt
+  0x000b58d0      32b  i=   8  c=  0  s=  0  _<str as core::fmt::Display>::fmt
+
+## android_logger  (2 fns, 568 bytes)
+  0x00053b80     244b  i=  61  c=  7  s=  1  android_logger::Config::with_tag
+  0x000562c8     324b  i=  81  c=  6  s=  1  android_logger::init_once
+
+## ckemv_core  (2 fns, 848 bytes)
+  0x000534a4     664b  i= 166  c= 15  s=  0  ckemv_core::command::ApduCommand::to_bytes
+  0x0007a018     184b  i=  46  c=  1  s=  1  ckemv_core::response::Response::from_bytes
+
+## env_filter  (2 fns, 1004 bytes)
+  0x000575ac     444b  i= 111  c=  9  s=  0  env_filter::filter::Filter::matches
+  0x00058a58     560b  i= 140  c= 12  s=  0  env_filter::op::FilterOp::is_match
+
+## regex_automata  (2 fns, 2796 bytes)
+  0x00057768     832b  i= 208  c= 22  s=  0  regex_automata::util::pool::inner::Pool<T,F>::get_slow
+  0x00057aa8    1964b  i= 491  c= 45  s=  0  regex_automata::util::pool::inner::Pool<T,F>::put_value
+
+## JNI_OnLoad  (1 fns, 8384 bytes)
+  0x000496fc    8384b  i=2096  c=195  s=  0  JNI_OnLoad
+
+## OUTLINED_FUNCTION_1  (1 fns, 12 bytes)
+  0x000a7990      12b  i=   3  c=  0  s=  0  OUTLINED_FUNCTION_1
+
+## OUTLINED_FUNCTION_10  (1 fns, 28 bytes)
+  0x000a7a04      28b  i=   7  c=  0  s=  0  OUTLINED_FUNCTION_10
+
+## OUTLINED_FUNCTION_11  (1 fns, 8 bytes)
+  0x000a7a20       8b  i=   2  c=  0  s=  0  OUTLINED_FUNCTION_11
+
+## OUTLINED_FUNCTION_12  (1 fns, 24 bytes)
+  0x000a7a28      24b  i=   6  c=  0  s=  0  OUTLINED_FUNCTION_12
+
+## OUTLINED_FUNCTION_13  (1 fns, 36 bytes)
+  0x000a7a40      36b  i=   9  c=  0  s=  0  OUTLINED_FUNCTION_13
+
+## OUTLINED_FUNCTION_15  (1 fns, 20 bytes)
+  0x000a7a64      20b  i=   5  c=  0  s=  0  OUTLINED_FUNCTION_15
+
+## OUTLINED_FUNCTION_16  (1 fns, 16 bytes)
+  0x000a7a78      16b  i=   4  c=  0  s=  0  OUTLINED_FUNCTION_16
+
+## OUTLINED_FUNCTION_17  (1 fns, 16 bytes)
+  0x000a7a88      16b  i=   4  c=  0  s=  0  OUTLINED_FUNCTION_17
+
+## OUTLINED_FUNCTION_18  (1 fns, 16 bytes)
+  0x000a7a98      16b  i=   4  c=  0  s=  0  OUTLINED_FUNCTION_18
+
+## OUTLINED_FUNCTION_19  (1 fns, 8 bytes)
+  0x000a7aa8       8b  i=   2  c=  0  s=  0  OUTLINED_FUNCTION_19
+
+## OUTLINED_FUNCTION_2  (1 fns, 12 bytes)
+  0x000a799c      12b  i=   3  c=  0  s=  0  OUTLINED_FUNCTION_2
+
+## OUTLINED_FUNCTION_20  (1 fns, 8 bytes)
+  0x000a7ab0       8b  i=   2  c=  0  s=  0  OUTLINED_FUNCTION_20
+
+## OUTLINED_FUNCTION_21  (1 fns, 16 bytes)
+  0x000a7ab8      16b  i=   4  c=  0  s=  0  OUTLINED_FUNCTION_21
+
+## OUTLINED_FUNCTION_22  (1 fns, 24 bytes)
+  0x000a7ac8      24b  i=   6  c=  0  s=  0  OUTLINED_FUNCTION_22
+
+## OUTLINED_FUNCTION_23  (1 fns, 8 bytes)
+  0x000a7ae0       8b  i=   2  c=  0  s=  0  OUTLINED_FUNCTION_23
+
+## OUTLINED_FUNCTION_24  (1 fns, 12 bytes)
+  0x000a7ae8      12b  i=   3  c=  0  s=  0  OUTLINED_FUNCTION_24
+
+## OUTLINED_FUNCTION_25  (1 fns, 8 bytes)
+  0x000a7af4       8b  i=   2  c=  0  s=  0  OUTLINED_FUNCTION_25
+
+## OUTLINED_FUNCTION_26  (1 fns, 8 bytes)
+  0x000a7afc       8b  i=   2  c=  0  s=  0  OUTLINED_FUNCTION_26
+
+## OUTLINED_FUNCTION_27  (1 fns, 12 bytes)
+  0x000a7b04      12b  i=   3  c=  0  s=  0  OUTLINED_FUNCTION_27
+
+## OUTLINED_FUNCTION_28  (1 fns, 20 bytes)
+  0x000a7b10      20b  i=   5  c=  0  s=  0  OUTLINED_FUNCTION_28
+
+## OUTLINED_FUNCTION_29  (1 fns, 20 bytes)
+  0x000a7b24      20b  i=   5  c=  0  s=  1  OUTLINED_FUNCTION_29
+
+## OUTLINED_FUNCTION_3  (1 fns, 16 bytes)
+  0x000a79a8      16b  i=   4  c=  0  s=  0  OUTLINED_FUNCTION_3
+
+## OUTLINED_FUNCTION_30  (1 fns, 12 bytes)
+  0x000a7b38      12b  i=   3  c=  0  s=  0  OUTLINED_FUNCTION_30
+
+## OUTLINED_FUNCTION_4  (1 fns, 12 bytes)
+  0x000a79b8      12b  i=   3  c=  0  s=  0  OUTLINED_FUNCTION_4
+
+## OUTLINED_FUNCTION_5  (1 fns, 16 bytes)
+  0x000a79c4      16b  i=   4  c=  0  s=  0  OUTLINED_FUNCTION_5
+
+## OUTLINED_FUNCTION_6  (1 fns, 16 bytes)
+  0x000a79d4      16b  i=   4  c=  0  s=  0  OUTLINED_FUNCTION_6
+
+## OUTLINED_FUNCTION_7  (1 fns, 12 bytes)
+  0x000a79e4      12b  i=   3  c=  0  s=  0  OUTLINED_FUNCTION_7
+
+## OUTLINED_FUNCTION_8  (1 fns, 8 bytes)
+  0x000a79f0       8b  i=   2  c=  0  s=  0  OUTLINED_FUNCTION_8
+
+## OUTLINED_FUNCTION_9  (1 fns, 12 bytes)
+  0x000a79f8      12b  i=   3  c=  0  s=  0  OUTLINED_FUNCTION_9
+
+## _<$LP$$RP$ as core  (1 fns, 32 bytes)
+  0x000a9c14      32b  i=   8  c=  0  s=  1  _<$LP$$RP$ as core::fmt::Debug>::fmt
+
+## _<$u5b$A$u5d$ as core  (1 fns, 56 bytes)
+  0x000a9514      56b  i=  14  c=  1  s=  0  _<$u5b$A$u5d$ as core::slice::cmp::SlicePartialEq<B>>::equal
+
+## _<$u5b$T$u5d$ as core  (1 fns, 116 bytes)
+  0x000a9c34     116b  i=  29  c=  3  s=  0  _<$u5b$T$u5d$ as core::fmt::Debug>::fmt
+
+## _<&$u5b$u8$u5d$ as object  (1 fns, 600 bytes)
+  0x000a7d70     600b  i= 150  c=  0  s=  0  _<&$u5b$u8$u5d$ as object::read::read_ref::ReadRef>::read_bytes_at_until
+
+## _<&std  (1 fns, 364 bytes)
+  0x00097e08     364b  i=  91  c=  9  s=  0  _<&std::fs::File as std::io::Read>::read_to_string
+
+## _<&str as alloc  (1 fns, 304 bytes)
+  0x000b1c74     304b  i=  76  c=  8  s=  0  _<&str as alloc::ffi::c_str::CString::new::SpecNewImpl>::spec_new_impl
+
+## _<&str as core  (1 fns, 1012 bytes)
+  0x0008936c    1012b  i= 253  c=  8  s=  0  _<&str as core::str::pattern::Pattern>::is_contained_in
+
+## _<*mut T as core  (1 fns, 20 bytes)
+  0x00089340      20b  i=   5  c=  0  s=  0  _<*mut T as core::fmt::Debug>::fmt
+
+## _<bool as core  (1 fns, 60 bytes)
+  0x000b54d4      60b  i=  15  c=  0  s=  1  _<bool as core::fmt::Display>::fmt
+
+## _<cesu8  (1 fns, 20 bytes)
+  0x0007d54c      20b  i=   5  c=  0  s=  1  _<cesu8::Cesu8DecodingError as core::fmt::Debug>::fmt
+
+## _<combine  (1 fns, 40 bytes)
+  0x000439cc      40b  i=  10  c=  0  s=  0  _<combine::error::StringStreamError as core::fmt::Debug>::fmt
+
+## _<f64 as zmij  (1 fns, 1432 bytes)
+  0x0005e57c    1432b  i= 358  c=  5  s=  1  _<f64 as zmij::private::Sealed>::write_to_zmij_buffer
+
+## _<num_bigint  (1 fns, 692 bytes)
+  0x0006fb74     692b  i= 173  c=  7  s=  0  _<num_bigint::biguint::BigUint as core::fmt::Display>::fmt
+
+## _<once_cell  (1 fns, 276 bytes)
+  0x0007c2ac     276b  i=  69  c=  7  s=  0  _<once_cell::imp::Guard as core::ops::drop::Drop>::drop
+
+## _<u64 as itoa  (1 fns, 640 bytes)
+  0x0005e2fc     640b  i= 160  c=  1  s=  2  _<u64 as itoa::Unsigned>::fmt
+
+## _<usize as num_integer  (1 fns, 160 bytes)
+  0x00079f78     160b  i=  40  c=  1  s=  0  _<usize as num_integer::roots::Roots>::sqrt::go
+
+## _RNvCs691rhTbG0Ee_7___rustc10rust_panic  (1 fns, 96 bytes)
+  0x0009d45c      96b  i=  24  c=  4  s=  0  _RNvCs691rhTbG0Ee_7___rustc10rust_panic
+
+## _RNvCs691rhTbG0Ee_7___rustc11___rdl_alloc  (1 fns, 88 bytes)
+  0x0009bf78      88b  i=  22  c=  1  s=  0  _RNvCs691rhTbG0Ee_7___rustc11___rdl_alloc
+
+## _RNvCs691rhTbG0Ee_7___rustc12___rust_alloc  (1 fns, 4 bytes)
+  0x00054d68       4b  i=   1  c=  0  s=  0  _RNvCs691rhTbG0Ee_7___rustc12___rust_alloc
+
+## _RNvCs691rhTbG0Ee_7___rustc13___rdl_dealloc  (1 fns, 16 bytes)
+  0x0009bfd0      16b  i=   4  c=  0  s=  0  _RNvCs691rhTbG0Ee_7___rustc13___rdl_dealloc
+
+## _RNvCs691rhTbG0Ee_7___rustc13___rdl_realloc  (1 fns, 172 bytes)
+  0x0009bfe0     172b  i=  43  c=  3  s=  0  _RNvCs691rhTbG0Ee_7___rustc13___rdl_realloc
+
+## _RNvCs691rhTbG0Ee_7___rustc14___rust_dealloc  (1 fns, 4 bytes)
+  0x00054d6c       4b  i=   1  c=  0  s=  0  _RNvCs691rhTbG0Ee_7___rustc14___rust_dealloc
+
+## _RNvCs691rhTbG0Ee_7___rustc14___rust_realloc  (1 fns, 4 bytes)
+  0x00054d70       4b  i=   1  c=  0  s=  0  _RNvCs691rhTbG0Ee_7___rustc14___rust_realloc
+
+## _RNvCs691rhTbG0Ee_7___rustc17___rust_drop_panic  (1 fns, 188 bytes)
+  0x0009c11c     188b  i=  47  c=  9  s=  0  _RNvCs691rhTbG0Ee_7___rustc17___rust_drop_panic
+
+## _RNvCs691rhTbG0Ee_7___rustc17rust_begin_unwind  (1 fns, 32 bytes)
+  0x0009ce04      32b  i=   8  c=  1  s=  0  _RNvCs691rhTbG0Ee_7___rustc17rust_begin_unwind
+
+## _RNvCs691rhTbG0Ee_7___rustc18___rdl_alloc_zeroed  (1 fns, 144 bytes)
+  0x0009c08c     144b  i=  36  c=  2  s=  0  _RNvCs691rhTbG0Ee_7___rustc18___rdl_alloc_zeroed
+
+## _RNvCs691rhTbG0Ee_7___rustc18___rust_start_panic  (1 fns, 168 bytes)
+  0x000a7cb0     168b  i=  42  c=  5  s=  0  _RNvCs691rhTbG0Ee_7___rustc18___rust_start_panic
+
+## _RNvCs691rhTbG0Ee_7___rustc19___rust_alloc_zeroed  (1 fns, 4 bytes)
+  0x00054d74       4b  i=   1  c=  0  s=  0  _RNvCs691rhTbG0Ee_7___rustc19___rust_alloc_zeroed
+
+## _RNvCs691rhTbG0Ee_7___rustc20___rust_panic_cleanup  (1 fns, 104 bytes)
+  0x000a7c48     104b  i=  26  c=  3  s=  0  _RNvCs691rhTbG0Ee_7___rustc20___rust_panic_cleanup
+
+## _RNvCs691rhTbG0Ee_7___rustc24___rust_foreign_exception  (1 fns, 188 bytes)
+  0x0009c1d8     188b  i=  47  c=  9  s=  0  _RNvCs691rhTbG0Ee_7___rustc24___rust_foreign_exception
+
+## _RNvCs691rhTbG0Ee_7___rustc26___rust_alloc_error_handler  (1 fns, 4 bytes)
+  0x00054d78       4b  i=   1  c=  0  s=  0  _RNvCs691rhTbG0Ee_7___rustc26___rust_alloc_error_handler
+
+## _RNvCs691rhTbG0Ee_7___rustc8___rg_oom  (1 fns, 24 bytes)
+  0x0009fa48      24b  i=   6  c=  1  s=  0  _RNvCs691rhTbG0Ee_7___rustc8___rg_oom
+
+## _Unwind_Backtrace  (1 fns, 136 bytes)
+  0x000bcda0     136b  i=  34  c=  3  s=  0  _Unwind_Backtrace
+
+## _Unwind_DeleteException  (1 fns, 28 bytes)
+  0x000b93c4      28b  i=   7  c=  0  s=  0  _Unwind_DeleteException
+
+## _Unwind_GetDataRelBase  (1 fns, 72 bytes)
+  0x000bcd10      72b  i=  18  c=  3  s=  3  _Unwind_GetDataRelBase
+
+## _Unwind_GetIP  (1 fns, 48 bytes)
+  0x000b93e8      48b  i=  12  c=  1  s=  0  _Unwind_GetIP
+
+## _Unwind_GetIPInfo  (1 fns, 64 bytes)
+  0x000bce28      64b  i=  16  c=  1  s=  0  _Unwind_GetIPInfo
+
+## _Unwind_GetLanguageSpecificData  (1 fns, 52 bytes)
+  0x000b935c      52b  i=  13  c=  1  s=  0  _Unwind_GetLanguageSpecificData
+
+## _Unwind_GetRegionStart  (1 fns, 52 bytes)
+  0x000b9390      52b  i=  13  c=  1  s=  0  _Unwind_GetRegionStart
+
+## _Unwind_GetTextRelBase  (1 fns, 72 bytes)
+  0x000bcd58      72b  i=  18  c=  3  s=  3  _Unwind_GetTextRelBase
+
+## _Unwind_RaiseException  (1 fns, 248 bytes)
+  0x000b8fb0     248b  i=  62  c=  7  s=  0  _Unwind_RaiseException
+
+## _Unwind_Resume  (1 fns, 136 bytes)
+  0x000b91e0     136b  i=  34  c=  6  s=  3  _Unwind_Resume
+
+## _Unwind_SetGR  (1 fns, 8 bytes)
+  0x000b93e0       8b  i=   2  c=  0  s=  0  _Unwind_SetGR
+
+## _Unwind_SetIP  (1 fns, 16 bytes)
+  0x000b9418      16b  i=   4  c=  0  s=  0  _Unwind_SetIP
+
+## __atexit_handler_wrapper  (1 fns, 20 bytes)
+  0x00042694      20b  i=   5  c=  0  s=  0  __atexit_handler_wrapper
+
+## __emutls_unregister_key  (1 fns, 8 bytes)
+  0x00042684       8b  i=   2  c=  0  s=  0  __emutls_unregister_key
+
+## __on_dlclose  (1 fns, 16 bytes)
+  0x00042674      16b  i=   4  c=  0  s=  0  __on_dlclose
+
+## __on_dlclose_late  (1 fns, 8 bytes)
+  0x0004268c       8b  i=   2  c=  0  s=  0  __on_dlclose_late
+
+## __udivti3  (1 fns, 40 bytes)
+  0x000b8c3c      40b  i=  10  c=  1  s=  0  __udivti3
+
+## __unw_get_proc_info  (1 fns, 64 bytes)
+  0x000b9660      64b  i=  16  c=  0  s=  0  __unw_get_proc_info
+
+## __unw_get_reg  (1 fns, 124 bytes)
+  0x000b94d4     124b  i=  31  c=  0  s=  0  __unw_get_reg
+
+## __unw_init_local  (1 fns, 172 bytes)
+  0x000b9428     172b  i=  43  c=  2  s=  0  __unw_init_local
+
+## __unw_is_signal_frame  (1 fns, 40 bytes)
+  0x000b96c8      40b  i=  10  c=  0  s=  0  __unw_is_signal_frame
+
+## __unw_resume  (1 fns, 40 bytes)
+  0x000b96a0      40b  i=  10  c=  0  s=  0  __unw_resume
+
+## __unw_set_reg  (1 fns, 236 bytes)
+  0x000b9550     236b  i=  59  c=  0  s=  0  __unw_set_reg
+
+## __unw_step  (1 fns, 36 bytes)
+  0x000b963c      36b  i=   9  c=  0  s=  0  __unw_step
+
+## adler2  (1 fns, 780 bytes)
+  0x000b1644     780b  i= 195  c=  0  s=  0  adler2::Adler32::write_slice
+
+## atexit  (1 fns, 28 bytes)
+  0x000426a8      28b  i=   7  c=  0  s=  0  atexit
+
+## compiler_builtins  (1 fns, 844 bytes)
+  0x000b8c64     844b  i= 211  c=  0  s=  0  compiler_builtins::int::specialized_div_rem::u128_div_rem
+
+## panic_unwind  (1 fns, 24 bytes)
+  0x000a7d58      24b  i=   6  c=  3  s=  0  panic_unwind::imp::panic::exception_cleanup
+
+## rust_eh_personality  (1 fns, 888 bytes)
+  0x0009df3c     888b  i= 222  c= 12  s=  1  rust_eh_personality
+
+## sha1  (1 fns, 4140 bytes)
+  0x0007b280    4140b  i=1035  c=  0  s=  0  sha1::compress::compress
+
+## unwind_phase2  (1 fns, 312 bytes)
+  0x000b90a8     312b  i=  78  c=  9  s=  3  unwind_phase2
+
+## unwind_phase2_forced  (1 fns, 244 bytes)
+  0x000b9268     244b  i=  61  c=  5  s=  0  unwind_phase2_forced
+

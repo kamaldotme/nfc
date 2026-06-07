@@ -1,0 +1,47 @@
+[
+  {
+    "method": "GET",
+    "path": "/me",
+    "status": 200,
+    "content_type": "application/json",
+    "body": {
+      "name": "analyst-mock",
+      "cves": [
+        {
+          "id": 1, "name": "visa-baseline", "amount": 100000,
+          "mastercard_tags": {},
+          "visa_tags": {
+            "9F66": "B6004000",
+            "9F37": "A1B2C3D4",
+            "9F03": "000000000000",
+            "9F35": "22",
+            "9F33": "E0F8C8",
+            "9F1A": "0840",
+            "5F2A": "0840",
+            "95":   "0000000000",
+            "9C":   "00"
+          }
+        },
+        {
+          "id": 2, "name": "mc-baseline", "amount": 100000,
+          "mastercard_tags": {
+            "9F66": "B6004000",
+            "9F37": "B2C3D4E5",
+            "9F03": "000000000000",
+            "9F35": "22",
+            "9F33": "E0F8C8",
+            "9F1A": "0840",
+            "5F2A": "0840",
+            "95":   "0000000000",
+            "9C":   "00"
+          },
+          "visa_tags": {}
+        }
+      ],
+      "latest_version": null
+    }
+  },
+  {"method": "POST",   "path": "/harvest",    "status": 200, "content_type": "application/json", "body": {"result": "Success", "stored": true}},
+  {"method": "GET",    "path": "/report",     "status": 200, "content_type": "application/json", "body": {"status": "ok"}},
+  {"method": "POST",   "path": "/update_apk", "status": 200, "content_type": "application/json", "body": {"result": "Success", "update": false}}
+]

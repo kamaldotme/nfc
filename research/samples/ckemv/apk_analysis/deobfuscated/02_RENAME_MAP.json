@@ -1,0 +1,228 @@
+{
+  "$schema_note": "Single source of truth mapping obfuscated -> semantic names for every operator-authored class. Library packages are intentionally omitted (see 01_PACKAGE_TRIAGE.md).",
+  "source_root": "apk_analysis/sources/sources/",
+  "target_root": "apk_analysis/deobfuscated/src/",
+  "operator_classes": {
+    "kept_names": [
+      {
+        "orig": "xyz/happify/ckemv/MainActivity.java",
+        "semantic": "xyz/happify/ckemv/MainActivity.java",
+        "kind": "Activity",
+        "notes": "Kept-name (referenced from AndroidManifest)."
+      },
+      {
+        "orig": "xyz/happify/ckemv/SyncWorker.java",
+        "semantic": "xyz/happify/ckemv/SyncWorker.java",
+        "kind": "CoroutineWorker",
+        "notes": "Kept-name (WorkManager dispatches by FQN)."
+      },
+      {
+        "orig": "xyz/happify/ckemv/EmvKernel.java",
+        "semantic": "xyz/happify/ckemv/jni/EmvKernel.java",
+        "kind": "JNI bridge",
+        "notes": "Kept-name (System.loadLibrary + RegisterNatives matches by FQN). Moved into a `jni` sub-package for clarity."
+      },
+      {
+        "orig": "xyz/happify/ckemv/Reporter.java",
+        "semantic": "xyz/happify/ckemv/jni/Reporter.java",
+        "kind": "JNI bridge",
+        "notes": "Same reason as EmvKernel."
+      },
+      {
+        "orig": "xyz/happify/ckemv/AppVersion.java",
+        "semantic": "xyz/happify/ckemv/model/AppVersion.java",
+        "kind": "data class",
+        "notes": "Field names pinned by Gson reflection (major/minor/hash)."
+      },
+      {
+        "orig": "xyz/happify/ckemv/CardRecord.java",
+        "semantic": "xyz/happify/ckemv/model/CardRecord.java",
+        "kind": "data class",
+        "notes": "Wire-shape pinned by Gson; fields pan/aid/network/rawData/txs."
+      },
+      {
+        "orig": "xyz/happify/ckemv/CveConfig.java",
+        "semantic": "xyz/happify/ckemv/model/CveConfig.java",
+        "kind": "data class",
+        "notes": "Wire-shape pinned by Gson; fields id/name/amount/mastercard_tags/visa_tags."
+      },
+      {
+        "orig": "xyz/happify/ckemv/HarvestedTx.java",
+        "semantic": "xyz/happify/ckemv/model/HarvestedTx.java",
+        "kind": "data class",
+        "notes": "Wire-shape pinned by Gson; fields atc/arqc/timeMs/params/cve_id."
+      },
+      {
+        "orig": "xyz/happify/ckemv/MeResponse.java",
+        "semantic": "xyz/happify/ckemv/model/MeResponse.java",
+        "kind": "data class",
+        "notes": "Wire-shape pinned by Gson; fields name/cves/latest_version."
+      },
+      {
+        "orig": "xyz/happify/ckemv/R.java",
+        "semantic": "(skipped — generated resource table, not operator-authored)",
+        "kind": "generated",
+        "notes": "390 KB of auto-generated int constants. Not interesting."
+      }
+    ],
+    "renamed": [
+      {
+        "orig": "B2/a.java",
+        "semantic": "xyz/happify/ckemv/db/HarvestDatabaseHelper.java",
+        "kind": "SQLiteOpenHelper",
+        "evidence": "extends SQLiteOpenHelper, creates tables cards/transactions/stats/cves; called from MainActivity and SyncWorker.",
+        "renames": {
+          "i": "getApiKey",
+          "o": "insertCard",
+          "a": "deleteCard",
+          "A": "replaceAllCves",
+          "b": "getAllCves"
+        }
+      },
+      {
+        "orig": "B2/b.java",
+        "semantic": "xyz/happify/ckemv/ui/QrScanCallback.java",
+        "kind": "ActivityResultCallback",
+        "evidence": "Implements ActivityResultCallback<ScanIntentResult>. On QR scan completion writes the decoded string to stats.api_key.",
+        "secondary": "Also reused by R8 as a SupportSQLiteOpenHelper.Factory shim — not operator behavior; that path is split out into a separate shim class in the deobfuscated tree."
+      },
+      {
+        "orig": "B2/q.java",
+        "semantic": "xyz/happify/ckemv/nfc/NfcTapHandler.java",
+        "kind": "suspend lambda",
+        "evidence": "Drives IsoDep.connect/transceive against an NFC tag, calls EmvKernel.initialize/getNextCommand/processResponse, harvests ARQCs, persists via HarvestDatabaseHelper. Launched from MainActivity.onNewIntent."
+      },
+      {
+        "orig": "B2/s.java",
+        "semantic": "xyz/happify/ckemv/net/UploadLoop.java",
+        "kind": "suspend lambda",
+        "evidence": "Infinite loop with delay(10_000), reads cards+transactions, posts each via Reporter.uploadHarvestData, deletes on 'Success'."
+      },
+      {
+        "orig": "B2/t.java",
+        "semantic": "xyz/happify/ckemv/net/ConfigUpdateLoop.java",
+        "kind": "suspend lambda",
+        "evidence": "Infinite loop with delay(60_000), polls Reporter.fetchCves, replaces cves table, triggers self-update when latest_version > 1.7."
+      },
+      {
+        "orig": "B2/o.java",
+        "semantic": "xyz/happify/ckemv/net/PostTapUploader.java",
+        "kind": "suspend lambda",
+        "evidence": "Single-shot upload spawned at end of NfcTapHandler — same body as one UploadLoop iteration."
+      },
+      {
+        "orig": "B2/h.java",
+        "semantic": "xyz/happify/ckemv/update/ApkSideloader.java",
+        "kind": "suspend lambda",
+        "evidence": "Runs on Main, builds FileProvider URI for the downloaded APK and fires ACTION_VIEW with application/vnd.android.package-archive."
+      },
+      {
+        "orig": "B2/w.java",
+        "semantic": "xyz/happify/ckemv/ui/DecoyView.java",
+        "kind": "View",
+        "evidence": "Custom View. Spawns animation thread, draws 16 bouncing dots + connecting lines. Backs the entire visible 'Geometry Saver' decoy."
+      },
+      {
+        "orig": "B2/v.java",
+        "semantic": "xyz/happify/ckemv/ui/AnimationDot.java",
+        "kind": "data record",
+        "evidence": "Pure struct {x, y, r, vx, vy, color} consumed by DecoyView."
+      },
+      {
+        "orig": "B2/u.java",
+        "semantic": "xyz/happify/ckemv/ui/DecoyAnimationRunnable.java",
+        "kind": "Runnable (fan-out)",
+        "evidence": "R8 fused many Runnables here. Case 0 is the DecoyView animation thread (60 FPS). Cases 1-16 are library Runnables (WorkManager + sidesheet + AppCompat) — not operator code; the deobfuscated tree only emits case 0."
+      },
+      {
+        "orig": "B2/m.java",
+        "semantic": "xyz/happify/ckemv/ui/ShowProgressBar.java",
+        "kind": "suspend lambda (Main)",
+        "evidence": "Single call: progressBar.setVisibility(VISIBLE)."
+      },
+      {
+        "orig": "B2/p.java",
+        "semantic": "xyz/happify/ckemv/ui/HideProgressBar.java",
+        "kind": "suspend lambda (Main)",
+        "evidence": "Single call: progressBar.setVisibility(INVISIBLE)."
+      },
+      {
+        "orig": "B2/n.java",
+        "semantic": "xyz/happify/ckemv/ui/UploadAckFlash.java",
+        "kind": "suspend lambda (Main)",
+        "evidence": "Brief visual ack after a successful immediate upload — pulse the progress bar."
+      },
+      {
+        "orig": "B2/r.java",
+        "semantic": "xyz/happify/ckemv/ui/UploadAckFlashLoop.java",
+        "kind": "suspend lambda (Main)",
+        "evidence": "Same as UploadAckFlash but invoked from UploadLoop. Functionally interchangeable."
+      },
+      {
+        "orig": "B2/l.java",
+        "semantic": "xyz/happify/ckemv/ui/ProgressPump.java",
+        "kind": "suspend lambda (Main)",
+        "evidence": "Collects MainActivity.D (MutableStateFlow<Integer>) and forwards each value into ProgressPumpStep (formerly B2/k.java)."
+      },
+      {
+        "orig": "B2/k.java",
+        "semantic": "xyz/happify/ckemv/ui/ProgressPumpStep.java",
+        "kind": "FlowCollector",
+        "evidence": "Single emit: progressBar.setProgress(value)."
+      },
+      {
+        "orig": "B2/d.java",
+        "semantic": "xyz/happify/ckemv/ui/LongPressActionListener.java",
+        "kind": "View.OnLongClickListener (fused)",
+        "evidence": "Two cases — paste-key dialog and QR-scan launcher. Both attached in MainActivity.onCreate."
+      },
+      {
+        "orig": "B2/f.java",
+        "semantic": "xyz/happify/ckemv/update/SelfUpdateContinuation.java",
+        "kind": "Continuation",
+        "evidence": "Continuation state machine for MainActivity.w (the self-updater); fields hold (this, apiKey, version, resumed object, label index). Kept for reference only — not editable as source."
+      },
+      {
+        "orig": "B2/c.java",
+        "semantic": "(omitted — compiler continuation, 11 lines, no operator semantics)",
+        "kind": "Continuation"
+      },
+      {
+        "orig": "B2/g.java",
+        "semantic": "(omitted — compiler continuation, 26 lines)",
+        "kind": "Continuation"
+      },
+      {
+        "orig": "B2/i.java",
+        "semantic": "(omitted — compiler continuation, 26 lines)",
+        "kind": "Continuation"
+      },
+      {
+        "orig": "B2/j.java",
+        "semantic": "(omitted — compiler continuation, 26 lines)",
+        "kind": "Continuation"
+      },
+      {
+        "orig": "B2/InterfaceC0106a.java",
+        "semantic": "(omitted — empty marker interface)",
+        "kind": "marker interface"
+      },
+      {
+        "orig": "B2/InterfaceC0107b.java",
+        "semantic": "(omitted — empty marker interface)",
+        "kind": "marker interface"
+      }
+    ]
+  },
+  "library_packages_omitted": [
+    "A", "A0", "A1", "a2", "B", "B0", "B1", "C", "C1", "c0", "c2", "d", "d0", "d1", "d2",
+    "E", "e0", "e1", "e2", "F", "F0", "f1", "f2", "G", "G0", "G1", "g2", "H", "h0", "H1", "h2",
+    "i", "I0", "I1", "i2", "J", "J0", "J1", "j2", "K", "k0", "K1", "L", "L0", "L1", "l2",
+    "M", "m0", "M1", "m2", "N", "n0", "n1", "n2", "O", "O0", "O1", "o2",
+    "p", "p0", "P1", "p2", "Q", "q0", "Q1", "q2", "R", "r0", "r1", "r2",
+    "s", "S0", "S1", "s2", "T", "T0", "T1", "t2", "U", "U0", "u2", "V", "v0", "v1", "v2",
+    "w", "W0", "w1", "w2", "X", "X0", "X1", "Y", "y0", "y1", "y2",
+    "Z", "Z0", "z1", "z2",
+    "androidx/*", "kotlin/*", "okhttp3/*", "com/journeyapps/*", "com/google/*", "b1/*"
+  ]
+}

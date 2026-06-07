@@ -1,0 +1,2 @@
+[local_c2] listening on 0.0.0.0:8771 (device reaches it at http://10.0.2.2:8771) — logging to /Users/mogli/Desktop/Nfc research/research/apk_analysis/dynamic/local_c2/../captures/local_c2_access.log
+{"ts": "2026-05-23T17:48:10.634", "method": "GET", "path": "/me", "headers": {"Host": "127.0.0.1:8771", "User-Agent": "curl/8.7.1", "Accept": "*/*", "Authorization": "Bearer HOSTTEST"}, "authorization": "Bearer HOSTTEST", "content_type": null, "body_len": 0, "body": ""}

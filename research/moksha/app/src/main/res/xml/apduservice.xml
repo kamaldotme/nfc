@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Registers the HCE observer under Visa and Mastercard AIDs.
+    When a real POS terminal selects one of these AIDs, Android
+    routes the session to HceObserverService, letting us see the
+    terminal's GENERATE AC command (which contains the UN).
+-->
+<host-apdu-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/hce_desc"
+    android:requireDeviceUnlock="false">
+    <aid-group
+        android:description="@string/hce_aid_desc"
+        android:category="payment">
+        <!-- Visa Credit/Debit -->
+        <aid-filter android:name="A0000000031010"/>
+        <!-- Visa Electron -->
+        <aid-filter android:name="A0000000032010"/>
+        <!-- Mastercard -->
+        <aid-filter android:name="A0000000041010"/>
+        <!-- Maestro -->
+        <aid-filter android:name="A0000000043060"/>
+    </aid-group>
+</host-apdu-service>

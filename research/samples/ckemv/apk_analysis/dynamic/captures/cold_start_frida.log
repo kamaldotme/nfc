@@ -1,0 +1,18 @@
+[17:44:41] device: Device(id="emulator-5554", name="Android Emulator 5554", type='usb')
+[17:44:41] attached to running target=7535
+[17:44:41][trace_jni.js:info] [trace] class not found: xyz.happify.ckemv.jni.EmvKernel
+[17:44:41][trace_jni.js:info] [trace] class not found: xyz.happify.ckemv.jni.Reporter
+[17:44:41][trace_jni.js:info] [trace] class not found: xyz.happify.ckemv.nfc.NfcTapHandler
+[17:44:41][trace_jni.js:info] [trace] class not found: xyz.happify.ckemv.net.UploadLoop
+[17:44:41][trace_jni.js:info] [trace] class not found: xyz.happify.ckemv.net.ConfigUpdateLoop
+[17:44:41][trace_jni.js:info] [trace] class not found: xyz.happify.ckemv.net.PostTapUploader
+[17:44:41][trace_jni.js:info] [trace] class not found: xyz.happify.ckemv.update.ApkSideloader
+[17:44:41][trace_jni.js:info] [trace] hooked 1 methods on xyz.happify.ckemv.SyncWorker
+[17:44:41][trace_jni.js:info] [trace] hooked 7 methods on xyz.happify.ckemv.MainActivity
+[17:44:42][trace_jni.js:info] [trace] RegisterNatives symbol not resolvable on this device — skipping
+[17:44:42][trace_jni.js:info] [trace] all Java hooks installed.
+[17:44:42] loaded hooks/trace_jni.js
+[17:44:42][rustls_bypass.js:info] [rustls] libckemv_reporter.so not yet loaded; will retry on next dlopen
+[17:44:42] loaded hooks/rustls_bypass.js
+[17:44:42] running for 18s ...
+[17:45:00] done.

@@ -1,0 +1,67 @@
+.class public final Lw0/b;
+.super Lw0/d;
+.source "SourceFile"
+
+
+# instance fields
+.field public final synthetic c:Ln0/s;
+
+.field public final synthetic d:Ljava/util/UUID;
+
+
+# direct methods
+.method public constructor <init>(Ln0/s;Ljava/util/UUID;)V
+    .locals 0
+
+    iput-object p1, p0, Lw0/b;->c:Ln0/s;
+
+    iput-object p2, p0, Lw0/b;->d:Ljava/util/UUID;
+
+    invoke-direct {p0}, Lw0/d;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b()V
+    .locals 3
+
+    iget-object v0, p0, Lw0/b;->c:Ln0/s;
+
+    iget-object v1, v0, Ln0/s;->f:Landroidx/work/impl/WorkDatabase;
+
+    invoke-virtual {v1}, Landroidx/work/impl/WorkDatabase;->c()V
+
+    :try_start_0
+    iget-object v2, p0, Lw0/b;->d:Ljava/util/UUID;
+
+    invoke-virtual {v2}, Ljava/util/UUID;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Lw0/d;->a(Ln0/s;Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Landroidx/work/impl/WorkDatabase;->p()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-virtual {v1}, Landroidx/work/impl/WorkDatabase;->k()V
+
+    iget-object v1, v0, Ln0/s;->e:Lm0/a;
+
+    iget-object v2, v0, Ln0/s;->f:Landroidx/work/impl/WorkDatabase;
+
+    iget-object v0, v0, Ln0/s;->h:Ljava/util/List;
+
+    invoke-static {v1, v2, v0}, Ln0/l;->b(Lm0/a;Landroidx/work/impl/WorkDatabase;Ljava/util/List;)V
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    invoke-virtual {v1}, Landroidx/work/impl/WorkDatabase;->k()V
+
+    throw v0
+.end method

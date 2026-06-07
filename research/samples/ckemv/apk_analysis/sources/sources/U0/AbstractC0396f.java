@@ -1,0 +1,12 @@
+package u0;
+
+import android.app.Notification;
+import android.app.Service;
+
+/* renamed from: u0.f, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public abstract class AbstractC0396f {
+    public static void a(Service service, int i3, Notification notification, int i4) {
+        service.startForeground(i3, notification, i4);
+    }
+}

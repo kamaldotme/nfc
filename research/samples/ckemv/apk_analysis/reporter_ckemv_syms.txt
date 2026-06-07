@@ -1,0 +1,5 @@
+           de7a4     3312  LOCAL _ZN14ckemv_reporter26native_upload_harvest_data17hca508f3dbdced817E
+           df494     1880  LOCAL _ZN14ckemv_reporter17native_fetch_cves17hc104ab3912132366E
+           dfbec     1892  LOCAL _ZN14ckemv_reporter19native_fetch_report17hc0932ed7ded71ccdE
+           e7400     1940  LOCAL _ZN3jni7wrapper6jnienv6JNIEnv23register_native_methods17hb475c45d023be12bE
+           e0350     3692 GLOBAL JNI_OnLoad

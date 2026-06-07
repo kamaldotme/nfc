@@ -1,0 +1,391 @@
+{
+  "lib": "reporter",
+  "arch": "ARCH.AARCH64",
+  "type": "FILE_TYPE.DYN",
+  "entry": "0x0",
+  "sections": [
+    {
+      "name": "",
+      "type": "TYPE.SHT_NULL_",
+      "addr": "0x0",
+      "offset": "0x0",
+      "size": 0,
+      "flags": "0x0"
+    },
+    {
+      "name": ".note.android.ident",
+      "type": "TYPE.NOTE",
+      "addr": "0x270",
+      "offset": "0x270",
+      "size": 152,
+      "flags": "0x2"
+    },
+    {
+      "name": ".dynsym",
+      "type": "TYPE.DYNSYM",
+      "addr": "0x308",
+      "offset": "0x308",
+      "size": 1800,
+      "flags": "0x2"
+    },
+    {
+      "name": ".gnu.version",
+      "type": "TYPE.GNU_VERSYM",
+      "addr": "0xa10",
+      "offset": "0xa10",
+      "size": 150,
+      "flags": "0x2"
+    },
+    {
+      "name": ".gnu.version_r",
+      "type": "TYPE.GNU_VERNEED",
+      "addr": "0xaa8",
+      "offset": "0xaa8",
+      "size": 64,
+      "flags": "0x2"
+    },
+    {
+      "name": ".gnu.hash",
+      "type": "TYPE.GNU_HASH",
+      "addr": "0xae8",
+      "offset": "0xae8",
+      "size": 32,
+      "flags": "0x2"
+    },
+    {
+      "name": ".hash",
+      "type": "TYPE.HASH",
+      "addr": "0xb08",
+      "offset": "0xb08",
+      "size": 608,
+      "flags": "0x2"
+    },
+    {
+      "name": ".dynstr",
+      "type": "TYPE.STRTAB",
+      "addr": "0xd68",
+      "offset": "0xd68",
+      "size": 811,
+      "flags": "0x2"
+    },
+    {
+      "name": ".rela.dyn",
+      "type": "TYPE.RELA",
+      "addr": "0x1098",
+      "offset": "0x1098",
+      "size": 93576,
+      "flags": "0x2"
+    },
+    {
+      "name": ".rela.plt",
+      "type": "TYPE.RELA",
+      "addr": "0x17e20",
+      "offset": "0x17e20",
+      "size": 1728,
+      "flags": "0x42"
+    },
+    {
+      "name": ".gcc_except_table",
+      "type": "TYPE.PROGBITS",
+      "addr": "0x184e0",
+      "offset": "0x184e0",
+      "size": 73672,
+      "flags": "0x2"
+    },
+    {
+      "name": ".rodata",
+      "type": "TYPE.PROGBITS",
+      "addr": "0x2b000",
+      "offset": "0x2b000",
+      "size": 508592,
+      "flags": "0x32"
+    },
+    {
+      "name": ".eh_frame_hdr",
+      "type": "TYPE.PROGBITS",
+      "addr": "0xa72b0",
+      "offset": "0xa72b0",
+      "size": 27540,
+      "flags": "0x2"
+    },
+    {
+      "name": ".eh_frame",
+      "type": "TYPE.PROGBITS",
+      "addr": "0xade48",
+      "offset": "0xade48",
+      "size": 179372,
+      "flags": "0x2"
+    },
+    {
+      "name": ".text",
+      "type": "TYPE.PROGBITS",
+      "addr": "0xddb00",
+      "offset": "0xd9b00",
+      "size": 1363528,
+      "flags": "0x6"
+    },
+    {
+      "name": ".plt",
+      "type": "TYPE.PROGBITS",
+      "addr": "0x22a950",
+      "offset": "0x226950",
+      "size": 1184,
+      "flags": "0x6"
+    },
+    {
+      "name": ".data.rel.ro",
+      "type": "TYPE.PROGBITS",
+      "addr": "0x22edf0",
+      "offset": "0x226df0",
+      "size": 77864,
+      "flags": "0x3"
+    },
+    {
+      "name": ".fini_array",
+      "type": "TYPE.FINI_ARRAY",
+      "addr": "0x241e18",
+      "offset": "0x239e18",
+      "size": 16,
+      "flags": "0x3"
+    },
+    {
+      "name": ".dynamic",
+      "type": "TYPE.DYNAMIC",
+      "addr": "0x241e28",
+      "offset": "0x239e28",
+      "size": 384,
+      "flags": "0x3"
+    },
+    {
+      "name": ".got",
+      "type": "TYPE.PROGBITS",
+      "addr": "0x241fa8",
+      "offset": "0x239fa8",
+      "size": 640,
+      "flags": "0x3"
+    },
+    {
+      "name": ".got.plt",
+      "type": "TYPE.PROGBITS",
+      "addr": "0x242228",
+      "offset": "0x23a228",
+      "size": 600,
+      "flags": "0x3"
+    },
+    {
+      "name": ".data",
+      "type": "TYPE.PROGBITS",
+      "addr": "0x246480",
+      "offset": "0x23a480",
+      "size": 2592,
+      "flags": "0x3"
+    },
+    {
+      "name": ".bss",
+      "type": "TYPE.NOBITS",
+      "addr": "0x246ea0",
+      "offset": "0x23aea0",
+      "size": 2480,
+      "flags": "0x3"
+    },
+    {
+      "name": ".comment",
+      "type": "TYPE.PROGBITS",
+      "addr": "0x0",
+      "offset": "0x23aea0",
+      "size": 221,
+      "flags": "0x30"
+    },
+    {
+      "name": ".symtab",
+      "type": "TYPE.SYMTAB",
+      "addr": "0x0",
+      "offset": "0x23af80",
+      "size": 430752,
+      "flags": "0x0"
+    },
+    {
+      "name": ".shstrtab",
+      "type": "TYPE.STRTAB",
+      "addr": "0x0",
+      "offset": "0x2a4220",
+      "size": 256,
+      "flags": "0x0"
+    },
+    {
+      "name": ".strtab",
+      "type": "TYPE.STRTAB",
+      "addr": "0x0",
+      "offset": "0x2a4320",
+      "size": 392094,
+      "flags": "0x0"
+    }
+  ],
+  "segments": [
+    {
+      "type": "TYPE.PHDR",
+      "addr": "0x40",
+      "size": 560,
+      "flags": "FLAGS.R"
+    },
+    {
+      "type": "TYPE.LOAD",
+      "addr": "0x0",
+      "size": 891636,
+      "flags": "FLAGS.R"
+    },
+    {
+      "type": "TYPE.LOAD",
+      "addr": "0xddb00",
+      "size": 1364720,
+      "flags": "FLAGS.X|R"
+    },
+    {
+      "type": "TYPE.LOAD",
+      "addr": "0x22edf0",
+      "size": 79504,
+      "flags": "FLAGS.W|R"
+    },
+    {
+      "type": "TYPE.LOAD",
+      "addr": "0x246480",
+      "size": 5072,
+      "flags": "FLAGS.W|R"
+    },
+    {
+      "type": "TYPE.DYNAMIC",
+      "addr": "0x241e28",
+      "size": 384,
+      "flags": "FLAGS.W|R"
+    },
+    {
+      "type": "TYPE.GNU_RELRO",
+      "addr": "0x22edf0",
+      "size": 82448,
+      "flags": "FLAGS.R"
+    },
+    {
+      "type": "TYPE.GNU_EH_FRAME",
+      "addr": "0xa72b0",
+      "size": 27540,
+      "flags": "FLAGS.R"
+    },
+    {
+      "type": "TYPE.GNU_STACK",
+      "addr": "0x0",
+      "size": 0,
+      "flags": "FLAGS.W|R"
+    },
+    {
+      "type": "TYPE.NOTE",
+      "addr": "0x270",
+      "size": 152,
+      "flags": "FLAGS.R"
+    }
+  ],
+  "needed": [
+    "libc.so",
+    "libdl.so"
+  ],
+  "imported_count": 144,
+  "exported_count": 2,
+  "dynamic_entries": [
+    {
+      "tag": "TAG.NEEDED",
+      "value": "0x315"
+    },
+    {
+      "tag": "TAG.NEEDED",
+      "value": "0x322"
+    },
+    {
+      "tag": "TAG.FLAGS",
+      "value": "0x8"
+    },
+    {
+      "tag": "TAG.FLAGS_1",
+      "value": "0x1"
+    },
+    {
+      "tag": "TAG.RELA",
+      "value": "0x1098"
+    },
+    {
+      "tag": "TAG.RELASZ",
+      "value": "0x16d88"
+    },
+    {
+      "tag": "TAG.RELAENT",
+      "value": "0x18"
+    },
+    {
+      "tag": "TAG.RELACOUNT",
+      "value": "0xf39"
+    },
+    {
+      "tag": "TAG.JMPREL",
+      "value": "0x17e20"
+    },
+    {
+      "tag": "TAG.PLTRELSZ",
+      "value": "0x6c0"
+    },
+    {
+      "tag": "TAG.PLTGOT",
+      "value": "0x242228"
+    },
+    {
+      "tag": "TAG.PLTREL",
+      "value": "0x7"
+    },
+    {
+      "tag": "TAG.SYMTAB",
+      "value": "0x308"
+    },
+    {
+      "tag": "TAG.SYMENT",
+      "value": "0x18"
+    },
+    {
+      "tag": "TAG.STRTAB",
+      "value": "0xd68"
+    },
+    {
+      "tag": "TAG.STRSZ",
+      "value": "0x32b"
+    },
+    {
+      "tag": "TAG.GNU_HASH",
+      "value": "0xae8"
+    },
+    {
+      "tag": "TAG.HASH",
+      "value": "0xb08"
+    },
+    {
+      "tag": "TAG.FINI_ARRAY",
+      "value": "0x241e18"
+    },
+    {
+      "tag": "TAG.FINI_ARRAYSZ",
+      "value": "0x10"
+    },
+    {
+      "tag": "TAG.VERSYM",
+      "value": "0xa10"
+    },
+    {
+      "tag": "TAG.VERNEED",
+      "value": "0xaa8"
+    },
+    {
+      "tag": "TAG.VERNEEDNUM",
+      "value": "0x2"
+    },
+    {
+      "tag": "TAG.NULL",
+      "value": "0x0"
+    }
+  ],
+  "symbol_versions": []
+}

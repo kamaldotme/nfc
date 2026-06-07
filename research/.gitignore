@@ -1,0 +1,59 @@
+# Big artifacts that re-download / regenerate cheaply on a fresh host
+
+# Windows-side jadx bundle (Mac uses brew install jadx)
+apk_analysis/jadx/
+apk_analysis/jadx.zip
+
+# Windows-side cmdline-tools installer + unpack scratch
+apk_analysis/_cli_setup/
+
+# Wrong-arch frida-server (Mac uses the arm64 one only)
+apk_analysis/tools/frida-server-x86_64
+apk_analysis/tools/frida-server-x86_64.xz
+apk_analysis/tools/frida-server-arm64.xz
+
+# Apktool jar (re-download on Mac if needed)
+apk_analysis/tools/apktool.jar
+apk_analysis/tools/bin/
+
+# Dead frida-gadget repack path (Windows-only, abandoned)
+apk_analysis/dynamic/patched/
+
+# Windows-generated mitmproxy CA (Mac regenerates its own)
+apk_analysis/dynamic/mitmproxy/
+
+# Runtime captures + emulator logs
+apk_analysis/dynamic/captures/*.flow
+apk_analysis/dynamic/captures/*.log
+apk_analysis/dynamic/emulator.log
+
+# Docker stack output (huge, regenerable by re-running the compose)
+apk_analysis/docker/out/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+__pycache__/
+*.pyc
+
+# Python venv for frida-tools (Mac dynamic phase)
+apk_analysis/dynamic/.venv/
+
+# --- MalLab (Android RE lab) ---
+lab/.venv/
+lab/*.log
+lab/base-emulator.log
+lab/tools/frida-server-*          # large binaries; re-download per host
+lab/mitmproxy/mitmproxy-ca.pem    # CA private key — never commit
+lab/mitmproxy/*.p12
+samples/.*.emulator.log
+samples/*/captures/*
+!samples/*/captures/.gitkeep
+samples/*/sample.apk              # samples carry their own apk; don't bloat repo unless intended
+
+# Decompiled Android Studio projects (regenerable via jadx -e; large)
+samples/*/project/

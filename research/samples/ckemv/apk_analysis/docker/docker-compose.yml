@@ -1,0 +1,81 @@
+name: ckemv-re
+
+# Isolated reverse-engineering stack for the CKEMV harvester sample.
+# All containers, networks, volumes are prefixed `ckemv-re-` so they
+# never collide with the user's other running projects.
+#
+# Usage (from this directory):
+#   docker compose pull
+#   docker compose run --rm ghidra-kernel
+#   docker compose run --rm ghidra-reporter
+#   docker compose run --rm rizin
+#   docker compose run --rm rust-tools
+#
+# All containers are one-shot (no daemons). Outputs land in ./out/*.
+
+services:
+
+  ghidra-kernel:
+    image: blacktop/ghidra:latest
+    container_name: ckemv-re-ghidra-kernel
+    user: root
+    networks: [ckemv-re-net]
+    volumes:
+      - ../res_only/resources/lib/arm64-v8a:/samples:ro
+      - ./scripts:/scripts:ro
+      - ./out/ghidra:/out
+    working_dir: /tmp
+    entrypoint: ["/bin/bash", "/scripts/ghidra_run.sh"]
+    environment:
+      - SAMPLE=/samples/libckemv_android.so
+      - GHIDRA_OUT=/out/kernel
+      - GHIDRA_FILTER=ckemv
+      - PROJECT_NAME=ckemv_kernel
+
+  ghidra-reporter:
+    image: blacktop/ghidra:latest
+    container_name: ckemv-re-ghidra-reporter
+    user: root
+    networks: [ckemv-re-net]
+    volumes:
+      - ../res_only/resources/lib/arm64-v8a:/samples:ro
+      - ./scripts:/scripts:ro
+      - ./out/ghidra:/out
+    working_dir: /tmp
+    entrypoint: ["/bin/bash", "/scripts/ghidra_run.sh"]
+    environment:
+      - SAMPLE=/samples/libckemv_reporter.so
+      - GHIDRA_OUT=/out/reporter
+      - GHIDRA_FILTER=ckemv
+      - PROJECT_NAME=ckemv_reporter
+
+  radare2:
+    image: radare/radare2:latest
+    container_name: ckemv-re-radare2
+    user: root
+    networks: [ckemv-re-net]
+    volumes:
+      - ../res_only/resources/lib/arm64-v8a:/samples:ro
+      - ./scripts:/scripts:ro
+      - ./out/rizin:/out
+    working_dir: /out
+    entrypoint: ["/bin/sh", "/scripts/rizin_analyze.sh"]
+
+  rust-tools:
+    build:
+      context: .
+      dockerfile: Dockerfile.rust-tools
+    image: ckemv-re-rust-tools:local
+    container_name: ckemv-re-rust-tools
+    networks: [ckemv-re-net]
+    volumes:
+      - ..:/in:ro
+      - ./scripts:/scripts:ro
+      - ./out/rust:/out
+    working_dir: /out
+    entrypoint: ["/bin/bash", "/scripts/rust_demangle.sh"]
+
+networks:
+  ckemv-re-net:
+    name: ckemv-re-net
+    driver: bridge

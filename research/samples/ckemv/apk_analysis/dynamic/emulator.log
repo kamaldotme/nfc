@@ -1,0 +1,435 @@
+INFO         | Android emulator version 36.3.10.0 (build_id 14472402) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Found systemPath /Users/mogli/Library/Android/sdk/system-images/android-33/google_apis/arm64-v8a/
+INFO         | Increasing RAM size to 2048MB
+WARNING      | System image is writable
+INFO         | Guest GLES Driver: Auto (ext controls)
+library_mode host gpu mode host
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `CKEMV_ARM64_MAC` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `CKEMV_ARM64_MAC` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `CKEMV_ARM64_MAC` are met
+INFO         | Storing crashdata in: /tmp/android-mogli/emu-crash-36.3.10.db, detection is enabled for process: 51691
+INFO         | Initializing gfxstream backend
+INFO         | android_startOpenglesRenderer: gpu info
+INFO         | 
+INFO         | Setting ICD filenames for the loader = /Users/mogli/Library/Android/sdk/emulator/lib64/vulkan/MoltenVK_icd.json
+INFO         | SharedLibrary::open for [/Users/mogli/Library/Android/sdk/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]
+INFO         | SharedLibrary::open for [/Users/mogli/Library/Android/sdk/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib]: not found in map, open for the first time
+INFO         | SharedLibrary::open for [/Users/mogli/Library/Android/sdk/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix): begin
+INFO         | SharedLibrary::open for [/Users/mogli/Library/Android/sdk/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib] (posix,darwin): call dlopen
+INFO         | SharedLibrary::open succeeded for [/Users/mogli/Library/Android/sdk/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib].
+INFO         | Added library: /Users/mogli/Library/Android/sdk/emulator/qemu/darwin-aarch64/lib64/vulkan/libvulkan.dylib
+INFO         | MoltenVK is supported, enabling Vulkan portability.
+INFO         | Selecting Vulkan device: Apple M1 Pro, Version: 1.1.323
+INFO         | Disabling sparse binding feature support
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL]: not found in map, open for the first time
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL] (posix): begin
+INFO         | SharedLibrary::open for [/System/Library/Frameworks/OpenGL.framework/OpenGL] (posix,darwin): call dlopen
+INFO         | SharedLibrary::open succeeded for [/System/Library/Frameworks/OpenGL.framework/OpenGL].
+INFO         | SharedLibrary::open for [libshadertranslator.dylib]: not found in map, open for the first time
+INFO         | SharedLibrary::open for [libshadertranslator.dylib] (posix): begin
+INFO         | SharedLibrary::open for [libshadertranslator.dylib] (posix,darwin): call dlopen
+INFO         | SharedLibrary::open succeeded for [libshadertranslator.dylib].
+INFO         | Initializing VkEmulation features:
+INFO         |     glInteropSupported: false
+INFO         |     useDeferredCommands: true
+INFO         |     createResourceWithRequirements: true
+INFO         |     useVulkanComposition: false
+INFO         |     useVulkanNativeSwapchain: false
+INFO         |     enable guestRenderDoc: false
+INFO         |     ASTC LDR emulation mode: Gpu
+INFO         |     enable ETC2 emulation: true
+INFO         |     enable Ycbcr emulation: false
+INFO         |     guestVulkanOnly: false
+INFO         |     useDedicatedAllocations: false
+INFO         | Graphics Adapter Vendor Google (Apple)
+INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Apple M1 Pro)
+INFO         | Graphics API Version OpenGL ES 3.0 (4.1 Metal - 90.5)
+INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+INFO         | Graphics Device Extensions N/A
+INFO         | Sending adb public key [QAAAALvVqOaNWP7UNt4l605pKkuhc7DM/mHmKCcLRlbtvS5mJ7lDhNIAAaQVhfuWrGmIWg6DtSWcsVJGQ5M3KQ5OU9zo28PnNWhfDvt3EzR5a8w0HN3jjHEYYqmf3AqLJf36pujEFD240zZZ7VD2sDUoMHGLGOmjdoXJeWgLl+r0Y2quZ+1NzFf6EyISmcAMXXGt5yox1iznnlrGCQKCuVCK1QFyqUFd0Za8AIyI8LvvX8cbPMGmUiNCB45JzX4tZHqa9GX9/cy8+LEB8L4CRjUJ9+w6Kw9PlUVTan1SnieMvQeM8xux5yQVlbuxkQckxjWzjR1DnF5AlzIYY0jE9C8KH0cVjv2VbZS57Yj44wE6VHzjS8EvPd4DlR0ZqmOlHa/jFj3fWiOW9tpL1E8BeM+orrbCRBKXv4Ckj45vIHydyBUnORrpYnOFvJc87/r1uG3VNun6U/8zxEXGD9bdmSVPP5HJXg/sDb23RRmht5ZbVrp2OO9C2LUqpK1Av7Nx0OiZPcyBn8Y4WR9SNxSZbOtgIIVX37Sm+guxIXfLO4RQmrCNgAQfaRrpuxNjiY9JFjZ947aJEdqeECPF4bZoes0yliQjsVy8jo6N1WulFVUX+syYv1I609n+pOobtP+22yvBeWhql6yUFpgC1PpQ25Yc/qQG9hXd2h7SDya40ry1wk6XZjDtGgEAAQA= mogli@unknown]
+INFO         | Userspace boot properties:
+INFO         |   androidboot.boot_devices=a003600.virtio_mmio
+INFO         |   androidboot.dalvik.vm.heapsize=512m
+INFO         |   androidboot.debug.hwui.renderer=skiagl
+INFO         |   androidboot.debug.sf.nobootanimation=1
+INFO         |   androidboot.hardware=ranchu
+INFO         |   androidboot.hardware.gltransport=pipe
+INFO         |   androidboot.hardware.vulkan=ranchu
+INFO         |   androidboot.logcat=*:V
+INFO         |   androidboot.opengles.version=196608
+INFO         |   androidboot.qemu=1
+INFO         |   androidboot.qemu.adb.pubkey=QAAAALvVqOaNWP7UNt4l605pKkuhc7DM/mHmKCcLRlbtvS5mJ7lDhNIAAaQVhfuWrGmIWg6DtSWcsVJGQ5M3KQ5OU9zo28PnNWhfDvt3EzR5a8w0HN3jjHEYYqmf3AqLJf36pujEFD240zZZ7VD2sDUoMHGLGOmjdoXJeWgLl+r0Y2quZ+1NzFf6EyISmcAMXXGt5yox1iznnlrGCQKCuVCK1QFyqUFd0Za8AIyI8LvvX8cbPMGmUiNCB45JzX4tZHqa9GX9/cy8+LEB8L4CRjUJ9+w6Kw9PlUVTan1SnieMvQeM8xux5yQVlbuxkQckxjWzjR1DnF5AlzIYY0jE9C8KH0cVjv2VbZS57Yj44wE6VHzjS8EvPd4DlR0ZqmOlHa/jFj3fWiOW9tpL1E8BeM+orrbCRBKXv4Ckj45vIHydyBUnORrpYnOFvJc87/r1uG3VNun6U/8zxEXGD9bdmSVPP5HJXg/sDb23RRmht5ZbVrp2OO9C2LUqpK1Av7Nx0OiZPcyBn8Y4WR9SNxSZbOtgIIVX37Sm+guxIXfLO4RQmrCNgAQfaRrpuxNjiY9JFjZ947aJEdqeECPF4bZoes0yliQjsVy8jo6N1WulFVUX+syYv1I609n+pOobtP+22yvBeWhql6yUFpgC1PpQ25Yc/qQG9hXd2h7SDya40ry1wk6XZjDtGgEAAQA= mogli@unknown
+INFO         |   androidboot.qemu.avd_name=CKEMV_ARM64_MAC
+INFO         |   androidboot.qemu.camera_hq_edge_processing=0
+INFO         |   androidboot.qemu.camera_protocol_ver=1
+INFO         |   androidboot.qemu.cpuvulkan.version=4202496
+INFO         |   androidboot.qemu.gltransport.drawFlushInterval=800
+INFO         |   androidboot.qemu.gltransport.name=pipe
+INFO         |   androidboot.qemu.hwcodec.avcdec=2
+INFO         |   androidboot.qemu.hwcodec.hevcdec=2
+INFO         |   androidboot.qemu.hwcodec.vpxdec=2
+INFO         |   androidboot.qemu.settings.system.screen_off_timeout=2147483647
+INFO         |   androidboot.qemu.virtiowifi=1
+INFO         |   androidboot.qemu.vsync=60
+INFO         |   androidboot.serialno=EMULATOR36X3X10X0
+INFO         |   androidboot.vbmeta.digest=adf8628e8323788ef86179836a2969780b70d1e6d8e16532ea68df5084a123b6
+INFO         |   androidboot.vbmeta.hash_alg=sha256
+INFO         |   androidboot.vbmeta.size=6592
+INFO         |   androidboot.verifiedbootstate=orange
+INFO         |   androidboot.veritymode=enforcing
+INFO         | Monitoring duration of emulator setup.
+WARNING      | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+INFO         | Using security allow list from: /Users/mogli/Library/Android/sdk/emulator/lib/emulator_access.json
+WARNING      | *** Basic token auth should only be used by android-studio ***
+INFO         | The active JSON Web Key Sets can be found here: /Users/mogli/Library/Caches/TemporaryItems/avd/running/51691/jwks/a340c21a-b836-4ce6-b7c6-54ed1164b52d/active.jwk
+INFO         | Scanning /Users/mogli/Library/Caches/TemporaryItems/avd/running/51691/jwks/a340c21a-b836-4ce6-b7c6-54ed1164b52d for jwk keys.
+INFO         | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+INFO         | Advertising in: /Users/mogli/Library/Caches/TemporaryItems/avd/running/pid_51691.ini
+INFO         | Setting display: 0 configuration to: 1080x1920, dpi: 420x420 
+INFO         | setDisplayActiveConfig 0
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `CKEMV_ARM64_MAC` are met
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `CKEMV_ARM64_MAC` are passed
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `CKEMV_ARM64_MAC` are met
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_rgbcSensorValueWidget_valueChanged() (:0, )
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_posture_valueChanged(int) (:0, )
+USER_INFO    | Emulator is performing a full startup. This may take upto two minutes, or more.
+INFO         | AVD supportsNativeGLES=1, supportsGuestAngle=0
+INFO         | Platform does not support Guest Angle
+INFO         | Created extended window in 335.268ms
+WARNING      | adb command '/Users/mogli/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell am start-foreground-service -e meter on com.android.emulator.radio.config/.MeterService ' failed: 'adb: device offline'
+INFO         | Activated packet streamer for bluetooth emulation
+INFO         | Boot completed in 30405 ms
+INFO         | Increasing screen off timeout, logcat buffer size to 2M.
+INFO         | Wait for emulator (pid 51691) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+INFO         | Wait for emulator (pid 51691) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+INFO         | Saving with gfxstream=1
+INFO         | Saving snapshot 'default_boot' using 2133 ms
+[51740:1288891:20260528,001021.608628:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,001021.611694:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,002521.648518:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,002521.648519:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,004021.660780:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,004021.663430:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,005521.671094:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,005521.677368:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,011021.680235:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,011021.681452:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,012521.684710:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,012521.688119:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,014021.634735:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,014021.645604:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,015521.669081:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,015521.679686:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,021021.685968:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,021021.694491:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,022521.692869:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,022521.701326:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,024021.699738:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,024021.708202:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,025521.711094:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,025521.712027:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,031021.725859:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,031021.725568:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,032521.730539:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,032521.736928:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,212253.758245:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,212253.758228:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,213753.066271:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,213753.066271:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,215253.030817:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,215253.039432:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,220753.004377:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,220753.008318:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,222252.971805:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,222252.973336:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,223754.827985:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,223754.828684:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,225254.811674:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,225254.815788:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,230754.785310:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,230754.785248:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,232254.769726:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,232254.771395:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,233754.769919:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,233754.769919:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260528,235254.786247:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260528,235254.788325:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,000754.799013:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,000754.799012:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,002254.806069:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,002254.815397:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,003754.818170:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,003754.825787:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,005254.836974:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,005254.840925:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,010754.848280:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,010754.857849:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,012254.856905:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,012254.862848:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,013754.860974:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,013754.864959:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,015254.866963:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,015254.866963:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,020754.885642:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,020754.885642:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,022254.896166:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,022254.901340:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,023754.905789:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,023754.913539:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,025254.910845:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,025254.922614:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,030754.916261:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,030754.928192:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,032254.924978:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,032254.933222:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,033754.933051:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,033754.940746:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,035254.940827:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,035254.947185:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,104041.923685:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,104041.930031:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,123515.341527:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,123515.348620:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,125015.440089:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,125015.446609:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,130515.449632:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,130515.457871:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,132015.447951:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,132015.453393:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,133515.548300:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,133515.551126:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,135015.576152:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,135015.576152:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,140515.598449:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,140515.598448:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,142015.627748:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,142015.627748:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,143515.648399:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,143515.648399:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,145015.663366:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,145015.663366:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400030 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51740:1288891:20260529,150515.673476:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xb75038000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}
+[51735:1288854:20260529,150515.673476:ERROR crash_report_database_mac.mm:825] Failed to enumerate reports in directory /tmp/android-mogli/emu-crash-36.3.10.db/pending: Error Domain=NSCocoaErrorDomain Code=260 "The folder “pending” doesn’t exist." UserInfo={NSUserStringVariant=(
+    Folder
+), NSFilePath=/tmp/android-mogli/emu-crash-36.3.10.db/pending, NSURL=file:///tmp/android-mogli/emu-crash-36.3.10.db/pending, NSUnderlyingError=0xa15400000 {Error Domain=NSOSStatusErrorDomain Code=-43 "fnfErr: File not found"}}

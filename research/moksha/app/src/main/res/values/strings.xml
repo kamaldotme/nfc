@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Moksha</string>
+    <string name="hce_desc">EMV UN Observer (Research)</string>
+    <string name="hce_aid_desc">Visa / Mastercard UN Observer</string>
+    <string name="tab_observer">UN Observer</string>
+    <string name="tab_harvest">Targeted Harvest</string>
+    <string name="tab_proof">Pre-play Proof</string>
+</resources>

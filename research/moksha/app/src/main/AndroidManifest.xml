@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NFC reader mode (talk to cards) -->
+    <uses-permission android:name="android.permission.NFC" />
+    <!-- HCE mode (act as a card near terminals) -->
+    <uses-permission android:name="android.permission.BIND_NFC_SERVICE" />
+    <!-- C2 sync: HTTP GET to 127.0.0.1:4444 via ADB reverse tunnel -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.nfc" android:required="true" />
+    <uses-feature android:name="android.hardware.nfc.hce" android:required="false" />
+
+    <application
+        android:allowBackup="false"
+        android:label="Moksha"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- EMV UN Prover is HCE-only — it acts as a card TO terminals.
+                 It does NOT read physical cards, so TECH_DISCOVERED is intentionally absent. -->
+        </activity>
+
+        <!--
+            HCE service — phone emulates a Visa/MC card near a real POS terminal.
+            Purpose: OBSERVE the UN the terminal generates, then DECLINE.
+            No real cryptogram is ever returned to the terminal.
+        -->
+        <service
+            android:name=".HceObserverService"
+            android:exported="true"
+            android:permission="android.permission.BIND_NFC_SERVICE">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.nfc.cardemulation.host_apdu_service"
+                android:resource="@xml/apduservice" />
+        </service>
+
+    </application>
+</manifest>

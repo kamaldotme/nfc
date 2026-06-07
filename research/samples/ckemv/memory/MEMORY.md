@@ -1,0 +1,10 @@
+- [Project — CKEMV harvester research](project_ckemv_research.md) — defender-side static analysis of an NFC card-harvesting APK; tracker is the SoT
+- [User — security researcher](user_role.md) — works as a cyber-security analyst on Android/web endpoint threats
+- [Feedback — persistent tracker style](feedback_tracker_style.md) — wants a continuously-updated tracker so sessions can resume
+- [Reference — analysis artifacts location](reference_analysis_artifacts.md) — where the apk, decompiled sources, native libs, and analysis MDs live
+- [Reference — native analyzer pipeline](reference_analyzer_pipeline.md) — capstone+lief installed on host; reusable native_analyze.py/extract_operator.py in samples/ckemv/apk_analysis/
+- [Reference — Docker RE stack](reference_docker_re_stack.md) — isolated compose project ckemv-re (ghidra/radare2/rustfilt); recipe + gotchas; produces CKEMV_ULTRA_DEEP_REPORT.md
+- [Project — CKEMV operator handle cluster](project_ckemv_operator_handles.md) — Telegram handles supplied by user from pentest; previously-undisclosed Chinese-speaking NFC-harvester vendor
+- [Reference — NFC ecosystem intel sources](reference_nfc_ecosystem_intel.md) — canonical OSINT report list for ghost-tap / NFC-relay attribution questions
+- [Reference — deobfuscated source tree](reference_deobfuscated_tree.md) — Phase F output: 28 operator Kotlin files under deobfuscated/src/, with rename map + triage docs
+- [Reference — dynamic-analysis stack](reference_dynamic_analysis_stack.md) — frida/objection/jadx + Android SDK wiring; SOP in samples/ckemv/apk_analysis/DYNAMIC_ANALYSIS_SETUP.md; AVD/arch decision pending
