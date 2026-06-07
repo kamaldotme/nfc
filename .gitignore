@@ -1,0 +1,9 @@
+.aider*
+.DS_Store
+.playwright-mcp/
+research/**/.gradle/
+research/**/build/
+research/**/.idea/
+research/**/*.iml
+*.class
+node_modules/
