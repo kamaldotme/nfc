@@ -467,6 +467,8 @@ class MainActivity : AppCompatActivity() {
             try { put("raw_data", JSONObject(card.rawData)) }
             catch (_: Exception) { put("raw_data", card.rawData) }
             put("harvested_txs", txArr)
+            val key = db.getApiKey()
+            if (!key.isNullOrBlank()) put("api_key", key)
         }.toString()
     }
 

@@ -154,7 +154,15 @@ class HceObserverService : HostApduService() {
 
             if (cached != null) {
                 Log.i(TAG, "🎯 REPLAY HIT UN=$unHex → ARQC=${cached.arqcHex}")
+                // Report hit to C2 asynchronously — do not block HCE response path
+                val arqcCopy = cached.arqcHex
+                Thread { C2Client.reportReplayResult(unHex, arqcCopy, true) }.start()
                 return buildArqcResponse(cached.arqcHex.fromHex(), cached.atcHex.fromHex())
+            }
+
+            // REPLAY mode miss — report so dashboard shows ✗ MISS
+            if (replayMode) {
+                Thread { C2Client.reportReplayResult(unHex, "", false) }.start()
             }
             false
         } else false

